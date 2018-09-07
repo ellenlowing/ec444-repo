@@ -7,10 +7,10 @@ In this skill assignment, I successfully flashed ESP32 with example program Hell
 
 ## Sketches and Photos
 ### Hello World program on console
-![alt text](https://github.com/BU-EC444/Lo-Ellen/skills/1-intro-tools/images/flash.png "Hello world on console")
+![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/flash.png "Hello world on console")
 
 ### Exercise 1 of Git Onboard
-![alt text](https://github.com/BU-EC444/Lo-Ellen/skills/1-intro-tools/images/branch.png "Network on insights page")
+![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/branch.png "Network on insights page")
 
 
 ## Modules, Tools, Source Used in Solution
