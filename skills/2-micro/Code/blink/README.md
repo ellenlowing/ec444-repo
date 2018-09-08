@@ -7,10 +7,10 @@ In this skill assignment, I successfully controlled LEDs with GPIO signals via c
 
 ## Sketches and Photos
 ### Wiring
-<center><img src="./img/IMG_2259.jpeg" width="100%" /></center>
+<center><img src="./img/IMG_2259.jpeg" width="80%" /></center>
 
 ### Console
-<center><img src="./img/console.png" width="100%" /></center>
+<center><img src="./img/console.png" width="80%" /></center>
 Enter 4-digit binary number. Each digit corresponds to 1 LED.
 
 ## Modules, Tools, Source Used in Solution
