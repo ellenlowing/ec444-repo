@@ -6,8 +6,12 @@ Author: Ellen Lo, 2019-09-07
 In this skill assignment, I successfully controlled LEDs with GPIO signals via console.
 
 ## Sketches and Photos
-### Hello World program on console
+### Wiring
 <center><img src="./img/IMG_2259.jpeg" width="100%" /></center>
+
+### Console
+<center><img src="./img/console.png" width="100%" /></center>
+Enter 4-digit binary number. Each digit corresponds to 1 LED.
 
 ## Modules, Tools, Source Used in Solution
 -[esp-idf leds example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/get-started/blink)
