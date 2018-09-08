@@ -20,4 +20,3 @@ Enter 4-digit binary number. Each digit corresponds to 1 LED.
 
 ## Supporting Artifacts
 -[Video Demo](https://youtu.be/DgJuB904x20)
-
