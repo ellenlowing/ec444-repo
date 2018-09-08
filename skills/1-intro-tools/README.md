@@ -28,7 +28,7 @@ Hello World program on console
 ### Demonstrate Uploading Video to the Cloud
 I chose Youtube to upload videos.
 
--[LED PWM control demo](https://www.youtube.com/watch?v=Tmge6lqoqDs&feature=youtu.be)
+[LED PWM control demo](https://www.youtube.com/watch?v=Tmge6lqoqDs&feature=youtu.be)
 
 -----
 
