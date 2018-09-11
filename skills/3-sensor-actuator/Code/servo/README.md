@@ -20,4 +20,4 @@ Prints out current angle on console.
 -[MCPWM unit block diagram](https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/peripherals/mcpwm.html)
 
 ## Supporting Artifacts
--[Video Demo](https://youtu.be/HlOa5WF57U4)
+-[Video Demo](https://youtu.be/DMBLtDQ1yFM)
