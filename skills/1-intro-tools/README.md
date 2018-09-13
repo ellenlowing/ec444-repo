@@ -35,6 +35,8 @@ This video demonstrates LED lit up with 1kHz and 10Hz square wave.
 
 ### Setup Editors and IDEs
 
+![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/ide.png)
+
 ### Install ESP32 IDF and Toolchain
 Hello World program on console
 
@@ -44,6 +46,10 @@ Hello World program on console
 I chose Youtube to upload videos.
 
 [LED PWM control demo](https://www.youtube.com/watch?v=Tmge6lqoqDs&feature=youtu.be)
+
+### Get access to Piazza and post something
+
+![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/piazza.png)
 
 -----
 
