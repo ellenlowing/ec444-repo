@@ -20,10 +20,13 @@ Exercise 2
 
 ![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/scope_1khz_80%25.png)
 Waveform on oscilloscope with 1kHz frequency.
+
 ![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/scope_10hz_80%25.png)
 Waveform on oscilloscope with 10Hz frequency.
+
 ![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/spectrum_1khz_80%25.png)
 Spectrum analyzer with 1kHz frequency.
+
 ![alt text](https://github.com/BU-EC444/Lo-Ellen/blob/master/skills/1-intro-tools/images/spectrum_10hz_80%25.png)
 Spectrum analyzer with 10Hz frequency.
 
