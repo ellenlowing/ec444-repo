@@ -18,6 +18,18 @@ Exercise 2
 
 ### Analog Discovery
 
+<center><img src="./images/scope_1khz_80%.png" width="50%" /></center>
+Waveform on oscilloscope with 1kHz frequency.
+<center><img src="./images/scope_10hz_80%.png" width="50%" /></center>
+Waveform on oscilloscope with 10Hz frequency.
+<center><img src="./images/spectrum_1khz_80%.png" width="50%" /></center>
+Spectrum analyzer with 1kHz frequency.
+<center><img src="./images/spectrum_10hz_80%.png" width="50%" /></center>
+Spectrum analyzer with 10Hz frequency.
+
+[LED with waveform generator demo](https://www.youtube.com/watch?v=u_IvrO4JbVY)
+This video demonstrates LED lit up with 1kHz and 10Hz square wave.
+
 ### Setup Editors and IDEs
 
 ### Install ESP32 IDF and Toolchain
