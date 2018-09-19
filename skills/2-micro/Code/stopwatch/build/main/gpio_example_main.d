@@ -18,11 +18,6 @@ gpio_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -38,6 +33,9 @@ gpio_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -80,8 +78,7 @@ gpio_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -119,16 +116,6 @@ gpio_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
-
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
@@ -158,6 +145,12 @@ gpio_example_main.o: \
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/corebits.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -244,6 +237,4 @@ gpio_example_main.o: \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
-
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/main/./gpio_example_main.c:
