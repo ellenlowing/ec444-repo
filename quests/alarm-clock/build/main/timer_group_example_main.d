@@ -20,12 +20,24 @@ timer_group_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/i2c.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
+ /Users/ellenlowing/Desktop/EC444/quests/alarm-clock/build/include/sdkconfig.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/quests/alarm-clock/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -36,14 +48,9 @@ timer_group_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
@@ -53,7 +60,6 @@ timer_group_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_timer.h \
- /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /Users/ellenlowing/esp/esp-idf/components/heap/include/multi_heap.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
@@ -71,17 +77,22 @@ timer_group_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/gpio.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/touch_pad.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_intr.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/timers.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
@@ -91,8 +102,6 @@ timer_group_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/timer.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
- /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/mcpwm.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/mcpwm_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/mcpwm_struct.h
@@ -137,17 +146,41 @@ timer_group_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/i2c.h:
+
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_types.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
+
+/Users/ellenlowing/Desktop/EC444/quests/alarm-clock/build/include/sdkconfig.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
+
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
-
-/Users/ellenlowing/Desktop/EC444/quests/alarm-clock/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -169,21 +202,11 @@ timer_group_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
-
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 
@@ -202,8 +225,6 @@ timer_group_example_main.o: \
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_timer.h:
-
-/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h:
 
 /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 
@@ -239,8 +260,6 @@ timer_group_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
 
-/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
-
 /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/touch_pad.h:
@@ -253,6 +272,10 @@ timer_group_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h:
@@ -260,6 +283,14 @@ timer_group_example_main.o: \
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/timers.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h:
 
@@ -278,10 +309,6 @@ timer_group_example_main.o: \
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/timer.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h:
-
-/Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
-
-/Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/mcpwm.h:
 

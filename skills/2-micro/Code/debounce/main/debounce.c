@@ -14,7 +14,7 @@ volatile static bool led = 0;
 void IRAM_ATTR button_intr(void* arg) {
     if (!gpio_get_level(BTN_GPIO)) {
       led = !led;
-    }
+    } else
 }
 
 void btn_task(void *pvParameter){
