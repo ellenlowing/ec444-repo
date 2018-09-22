@@ -1,14 +1,3 @@
-/*
-  First, set up console input for rate of alarm.
-    Re-initialize timer when there is valid input.
-    Perhaps 2 timers to switch ? ----- skip!
-  Second, control LEDs via GPIO to show alarm going off. ----- OK!
-  Third, connect servos to count down through alarming period. --- second hand OK! minute hand left!
-
-  Question: do I need to give user access to change the rate of alarming period?
-
-
-*/
 
 #include <stdio.h>
 #include <string.h>
@@ -25,6 +14,18 @@
 #include "driver/timer.h"
 #include "driver/gpio.h"
 #include "sdkconfig.h"
+#include "esp_console.h"
+#include "argtable3/argtable3.h"
+#include "freertos/event_groups.h"
+#include "tcpip_adapter.h"
+#include "esp_event_loop.h"
+#include "esp_system.h"
+#include "esp_vfs_dev.h"
+#include "driver/uart.h"
+#include "linenoise/linenoise.h"
+#include "esp_vfs_fat.h"
+#include "nvs.h"
+#include "nvs_flash.h"
 
 #include "driver/mcpwm.h"
 #include "soc/mcpwm_reg.h"
@@ -32,7 +33,7 @@
 
 #define TIMER_DIVIDER         16  //  Hardware timer clock divider
 #define TIMER_SCALE           (TIMER_BASE_CLK / TIMER_DIVIDER)  // convert counter value to seconds
-#define TIMER_INTERVAL0_SEC   (10) // sample test interval for the first timer
+#define TIMER_INTERVAL0_SEC   (5) // sample test interval for the first timer
 #define TIMER_INTERVAL1_SEC   (1)
 #define TEST_WITHOUT_RELOAD   0        // testing will be done without auto reload
 #define TEST_WITH_RELOAD      1        // testing will be done with auto reload
@@ -41,9 +42,9 @@
 
 #define SECONDHAND_GPIO 15
 #define MINUTEHAND_GPIO 33
-#define START_SECOND 59
-#define START_MINUTE 59
-#define START_HOUR 11
+// #define START_SECOND 59
+// #define START_MINUTE 35
+// #define START_HOUR 12
 #define SECONDHAND_SERVO MCPWM_OPR_A
 #define MINUTEHAND_SERVO MCPWM_OPR_B
 #define SERVO_MIN_PULSEWIDTH 500 //Minimum pulse width in microsecond
@@ -127,6 +128,124 @@ typedef struct {
 
 xQueueHandle timer_queue_0;
 xQueueHandle timer_queue_1;
+
+uint32_t second_count;
+uint32_t minute_count;
+uint32_t hour_count;
+
+#if CONFIG_STORE_HISTORY
+
+#define MOUNT_PATH "/data"
+#define HISTORY_PATH MOUNT_PATH "/history.txt"
+
+static void initialize_filesystem()
+{
+    static wl_handle_t wl_handle;
+    const esp_vfs_fat_mount_config_t mount_config = {
+            .max_files = 4,
+            .format_if_mount_failed = true
+    };
+    esp_err_t err = esp_vfs_fat_spiflash_mount(MOUNT_PATH, "storage", &mount_config, &wl_handle);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to mount FATFS (%s)", esp_err_to_name(err));
+        return;
+    }
+}
+#endif // CONFIG_STORE_HISTORY
+
+static void initialize_nvs()
+{
+    esp_err_t err = nvs_flash_init();
+    if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK( nvs_flash_erase() );
+        err = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(err);
+}
+
+static void initialize_console()
+{
+    /* Disable buffering on stdin and stdout */
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
+
+    /* Minicom, screen, idf_monitor send CR when ENTER key is pressed */
+    esp_vfs_dev_uart_set_rx_line_endings(ESP_LINE_ENDINGS_CR);
+    /* Move the caret to the beginning of the next line on '\n' */
+    esp_vfs_dev_uart_set_tx_line_endings(ESP_LINE_ENDINGS_CRLF);
+
+    /* Install UART driver for interrupt-driven reads and writes */
+    ESP_ERROR_CHECK( uart_driver_install(CONFIG_CONSOLE_UART_NUM,
+            256, 0, 0, NULL, 0) );
+
+    /* Tell VFS to use UART driver */
+    esp_vfs_dev_uart_use_driver(CONFIG_CONSOLE_UART_NUM);
+
+    /* Initialize the console */
+    esp_console_config_t console_config = {
+            .max_cmdline_args = 8,
+            .max_cmdline_length = 256,
+#if CONFIG_LOG_COLORS
+            .hint_color = atoi(LOG_COLOR_CYAN)
+#endif
+    };
+    ESP_ERROR_CHECK( esp_console_init(&console_config) );
+
+    /* Configure linenoise line completion library */
+    /* Enable multiline editing. If not set, long commands will scroll within
+     * single line.
+     */
+    linenoiseSetMultiLine(1);
+
+    /* Tell linenoise where to get command completions and hints */
+    linenoiseSetCompletionCallback(&esp_console_get_completion);
+    linenoiseSetHintsCallback((linenoiseHintsCallback*) &esp_console_get_hint);
+
+    /* Set command history size */
+    linenoiseHistorySetMaxLen(100);
+
+#if CONFIG_STORE_HISTORY
+    /* Load command history from filesystem */
+    linenoiseHistoryLoad(HISTORY_PATH);
+#endif
+}
+
+static struct {
+    struct arg_int *hour;
+    struct arg_int *min;
+    struct arg_int *sec;
+    struct arg_end *end;
+} join_args;
+
+static int init_time(int argc, char** argv){
+  int nerrors = arg_parse(argc, argv, (void**) &join_args);
+  if(nerrors!=0){
+    arg_print_errors(stderr, join_args.end, argv[0]);
+    return 1;
+  }
+  hour_count = join_args.hour->ival[0];
+  minute_count = join_args.min->ival[0];
+  second_count = join_args.sec->ival[0];
+  return 0;
+}
+
+void register_read()
+{
+    join_args.hour = arg_int0(NULL, NULL, "<hour>", "0-23");
+    join_args.min = arg_int0(NULL, NULL, "<minute>", "0-59");
+    join_args.sec = arg_int0(NULL, NULL, "<second>", "0-59");
+    join_args.end = arg_end(1);
+
+    const esp_console_cmd_t join_cmd = {
+        .command = "set",
+        .help = "Set time at initialization",
+        .hint = NULL,
+        .func = &init_time,
+        .argtable = &join_args
+    };
+
+    ESP_ERROR_CHECK( esp_console_cmd_register(&join_cmd) );
+}
 
 void IRAM_ATTR button_intr(void* arg) {
     if (!gpio_get_level(BTN_GPIO)) {
@@ -451,15 +570,76 @@ static esp_err_t writeDisplay(i2c_port_t i2c_num, uint8_t* data_wr, size_t size)
 
 void app_main()
 {
-    uint32_t second_count = START_SECOND;
-    uint32_t minute_count = START_MINUTE;
-    uint32_t hour_count = START_HOUR;
+    // initialize console and set time variables
+    initialize_nvs();
+
+    #if CONFIG_STORE_HISTORY
+      initialize_filesystem();
+    #endif
+
+    initialize_console();
+
+    /* Register commands */
+    esp_console_register_help_command();
+    register_read();
+    const char* prompt = LOG_COLOR_I "esp32> " LOG_RESET_COLOR;
+
+    int ret;
+
+    printf("\n"
+             "This is an example of ESP-IDF console component.\n"
+             "Type 'help' to get the list of commands.\n"
+             "Use UP/DOWN arrows to navigate through command history.\n"
+             "Press TAB when typing command name to auto-complete.\n");
+
+      /* Figure out if the terminal supports escape sequences */
+      int probe_status = linenoiseProbe();
+      if (probe_status) { /* zero indicates success */
+          printf("\n"
+                 "Your terminal application does not support escape sequences.\n"
+                 "Line editing and history features are disabled.\n"
+                 "On Windows, try using Putty instead.\n");
+          linenoiseSetDumbMode(1);
+      #if CONFIG_LOG_COLORS
+              /* Since the terminal doesn't support escape sequences,
+               * don't use color codes in the prompt.
+               */
+              prompt = "esp32> ";
+      #endif //CONFIG_LOG_COLORS
+      }
+
+      //while((hour_count != 99) && (minute_count != 99) && (second_count != 99)){
+        char* line = linenoise(prompt);
+        if (line != NULL) { /* Ignore empty lines */
+          linenoiseHistoryAdd(line);
+        }
+        /* Add the command to the history */
+
+        #if CONFIG_STORE_HISTORY
+          /* Save command history to filesystem */
+          linenoiseHistorySave(HISTORY_PATH);
+        #endif
+
+        /* Try to run the command */
+        esp_err_t err = esp_console_run(line, &ret);
+        if (err == ESP_ERR_NOT_FOUND) {
+          printf("Unrecognized command\n");
+        } else if (err == ESP_ERR_INVALID_ARG) {
+                    // command was empty
+        } else if (err == ESP_OK && ret != ESP_OK) {
+          printf("Command returned non-zero error code: 0x%x (%s)\n", ret, esp_err_to_name(err));
+        } else if (err != ESP_OK) {
+          printf("Internal error: %s\n", esp_err_to_name(err));
+        }
+        linenoiseFree(line);
+      //}
+
 
     // initialize i2c communication and alpha display
     print_mux = xSemaphoreCreateMutex();
     i2c_example_slave_init();
     i2c_example_master_init();
-    int ret, size;
+    int size;
     uint32_t task_idx = 0;
     uint8_t* data = (uint8_t*) malloc(DATA_LENGTH);
     data_wr = (uint8_t*) malloc(DATA_LENGTH);
@@ -506,8 +686,8 @@ void app_main()
     pwm_config.counter_mode = MCPWM_UP_COUNTER;
     pwm_config.duty_mode = MCPWM_DUTY_MODE_0;
     mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &pwm_config);    //Configure PWM0A & PWM0B with above settings
-    mcpwm_example_servo_control(START_MINUTE, MINUTEHAND_SERVO);
-    mcpwm_example_servo_control(START_SECOND, SECONDHAND_SERVO);
+    mcpwm_example_servo_control(minute_count, MINUTEHAND_SERVO);
+    mcpwm_example_servo_control(second_count, SECONDHAND_SERVO);
 
     // initialize timer and alarm
     timer_queue_0 = xQueueCreate(10, sizeof(timer_event_t));
@@ -530,7 +710,7 @@ void app_main()
             second_count = 0;
             if (minute_count > 58) {
               minute_count = 0;
-              if (hour_count > 23) hour_count = 0;
+              if (hour_count > 22) hour_count = 0;
               else hour_count ++;
             } else {
               minute_count ++;
@@ -562,7 +742,7 @@ void app_main()
           second_count = 0;
           if (minute_count > 58) {
             minute_count = 0;
-            if (hour_count > 23) hour_count = 0;
+            if (hour_count > 22) hour_count = 0;
             else hour_count ++;
           } else {
             minute_count ++;
