@@ -138,10 +138,10 @@ static int set_digits(int argc, char** argv){
 
 static void register_read()
 {
-    join_args.zeroth = arg_str0(NULL, NULL, "1st", "0-15");
-    join_args.first = arg_str0(NULL, NULL, "2nd", "0-15");
-    join_args.second = arg_str0(NULL, NULL, "3rd", "0-15");
-    join_args.third = arg_str0(NULL, NULL, "4th", "0-15");
+    join_args.zeroth = arg_str0(NULL, NULL, "1st", "char/int");
+    join_args.first = arg_str0(NULL, NULL, "2nd", "char/int");
+    join_args.second = arg_str0(NULL, NULL, "3rd", "char/int");
+    join_args.third = arg_str0(NULL, NULL, "4th", "char/int");
     join_args.end = arg_end(1);
 
     const esp_console_cmd_t join_cmd = {

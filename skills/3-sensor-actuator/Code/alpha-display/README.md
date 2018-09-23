@@ -1,29 +1,30 @@
-# I2C Example
+#  Alphanumeric display w/ keyboard input
 
- 
-* This example will show you how to use I2C module by running two tasks on i2c bus:
- 
-    * read external i2c sensor, here we use a BH1750 light sensor(GY-30 module) for instance.
-    * Use one I2C port(master mode) to read or write the other I2C port(slave mode) on one ESP32 chip.
- 
-* Pin assignment:
- 
-    * slave :
-        * GPIO25 is assigned as the data signal of i2c slave port
-        * GPIO26 is assigned as the clock signal of i2c slave port
-    * master:
-        * GPIO18 is assigned as the data signal of i2c master port
-        * GPIO19 is assigned as the clock signal of i2c master port
- 
-* Connection:
- 
-    * connect GPIO18 with GPIO25
-    * connect GPIO19 with GPIO26
-    * connect sda/scl of sensor with GPIO18/GPIO19
-    * no need to add external pull-up resistors, driver will enable internal pull-up resistors.
- 
-* Test items:
- 
-    * read the sensor data, if connected.
-    * i2c master(ESP32) will write data to i2c slave(ESP32).
-    * i2c master(ESP32) will read data from i2c slave(ESP32).
+Author: Ellen Lo, 2019-09-22
+
+## Summary
+In this skill assignment, I was able to provide input via keyboard to show on alphanumeric display. I used command *set* with 4 arguments of integer or single character (e.g. *set A b c D*).
+
+AlphaDisplay.c is designed to be a reusable code for future alphanumeric display debugging purposes. By simply inserting alpha.h, functions to initialize and write digits to display are available for main loop. In function *writeDigit(uint8_t nth, uint8_t num)*, where *nth* refers to the number of digit it is writing to and *num* refers to the ascii number of input character or integer, the program uses input ascii number to look up alphafonttable, which stores all bitmaps of ascii-compatible characters, and sets buffer at address (0x71 to 0x78) for master device to send to slave. Because I learnt from ESP32 API reference that the data to be sent for *i2c_master_write* is of unsigned 8 bit integer data type, I wrote the result from 16 bit alphafonttable at address (0x71 | 0x73 | 0x75 | 0x77) and shifted right the result for address (0x72 | 0x74 | 0x76 | 0x78). [0x71 0x72] pair corresponds to first digit, [0x73 0x74] corresponds to second digit and so on for the last 2 digits.
+
+## Sketches and Photos
+### Console
+<center><img src="./img/console.png" width="80%" /></center>
+3 examples of alphanumeric display shown below. Number on line below command is ascii number of the first digit set; just for debugging purposes.
+
+### Display
+<center><img src="./img/IMG_2393.jpeg" width="80%" /></center>
+<center><img src="./img/IMG_2394.jpeg" width="80%" /></center>
+<center><img src="./img/IMG_2395.jpeg" width="80%" /></center>
+See console image for commands.
+
+
+## Modules, Tools, Source Used in Solution
+-[esp-idf i2c example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/i2c)
+
+-[Arduino Wire.h code] (https://github.com/esp8266/Arduino/blob/master/libraries/Wire/Wire.h)
+
+-[LED backpack github](https://github.com/adafruit/Adafruit_LED_Backpack/blob/master/Adafruit_LEDBackpack.cpp)
+
+## Supporting Artifacts
+-[Video Demo](https://youtu.be/nVKqPdXi-6U)
