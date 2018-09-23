@@ -1,5 +1,5 @@
-i2c_example_main.o: \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/i2c_example_main.c \
+AlphaDisplay.o: \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/AlphaDisplay.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h \
@@ -84,9 +84,7 @@ i2c_example_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/alpha.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -256,9 +254,5 @@ i2c_example_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h:
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/./i2c_example_main.c:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/alpha.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/main/./AlphaDisplay.c:
