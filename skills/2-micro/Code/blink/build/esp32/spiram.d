@@ -20,7 +20,7 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
- /Users/ellenlowing/esp/blink/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
@@ -136,7 +136,7 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/ellenlowing/esp/blink/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h:
 

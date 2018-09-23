@@ -10,7 +10,7 @@ src/ff.o: /Users/ellenlowing/esp/esp-idf/components/fatfs/src/ff.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
- /Users/ellenlowing/esp/blink/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/reent.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -112,7 +112,7 @@ src/ff.o: /Users/ellenlowing/esp/esp-idf/components/fatfs/src/ff.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/ellenlowing/esp/blink/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

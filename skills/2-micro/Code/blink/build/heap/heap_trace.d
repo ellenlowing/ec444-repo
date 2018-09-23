@@ -18,7 +18,7 @@ heap_trace.o: /Users/ellenlowing/esp/esp-idf/components/heap/heap_trace.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
- /Users/ellenlowing/esp/blink/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_trace.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -126,7 +126,7 @@ heap_trace.o: /Users/ellenlowing/esp/esp-idf/components/heap/heap_trace.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/ellenlowing/esp/blink/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_trace.h:
 

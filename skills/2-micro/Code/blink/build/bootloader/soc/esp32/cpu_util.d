@@ -7,7 +7,7 @@ esp32/cpu_util.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -23,5 +23,5 @@ esp32/cpu_util.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-/Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h:
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/cpu_util.c:

@@ -1,6 +1,6 @@
 src/bootloader_common.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/src/bootloader_common.c \
- /Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
@@ -28,7 +28,7 @@ src/bootloader_common.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h
 
-/Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h:
 

@@ -3,7 +3,7 @@ src/bootloader_flash.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -38,7 +38,7 @@ src/bootloader_flash.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/Users/ellenlowing/esp/blink/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 

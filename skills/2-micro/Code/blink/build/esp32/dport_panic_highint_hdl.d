@@ -14,7 +14,7 @@ dport_panic_highint_hdl.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_panic.h \
- /Users/ellenlowing/esp/blink/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h
@@ -47,7 +47,7 @@ dport_panic_highint_hdl.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_panic.h:
 
-/Users/ellenlowing/esp/blink/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

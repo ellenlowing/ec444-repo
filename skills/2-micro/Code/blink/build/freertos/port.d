@@ -26,7 +26,7 @@ port.o: /Users/ellenlowing/esp/esp-idf/components/freertos/port.c \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/system.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/esp/blink/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
@@ -143,7 +143,7 @@ port.o: /Users/ellenlowing/esp/esp-idf/components/freertos/port.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/esp/blink/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/blink/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

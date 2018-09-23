@@ -22,7 +22,7 @@ See console image for commands.
 ## Modules, Tools, Source Used in Solution
 -[esp-idf i2c example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/i2c)
 
--[Arduino Wire.h code] (https://github.com/esp8266/Arduino/blob/master/libraries/Wire/Wire.h)
+-[Arduino Wire.h code](https://github.com/esp8266/Arduino/blob/master/libraries/Wire/Wire.h)
 
 -[LED backpack github](https://github.com/adafruit/Adafruit_LED_Backpack/blob/master/Adafruit_LEDBackpack.cpp)
 
