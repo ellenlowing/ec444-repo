@@ -18,17 +18,15 @@ I created a modular program for alphanumerical display before for the correspond
 ## Sketches and Photos
 ### Wiring
 <center><img src="./img/IMG_2378.jpeg" width="50%" /></center>
-Wiring explained:
 - LED: positive terminal connected to gpio #12, negative to ground via resistor
 - pushbutton: one end connected to power via resistor and also gpi #34
 - servos: positive to power, negative to ground, pwm to gpio #15 and #33 respectively
-- alphanumeric display: esp32's sda(#23) to display's sda(#27) and scl(#22) to scl(#26) with the addition of pullup resistors for both data and clock signal channels
-
+- alphanumeric display: esp32's sda(#23) to display's sda(#27) and scl(#22) to scl(#26) with the addition of pullup resistors for both data and clock signal channels 
 
 ### Console
-<center><img src="./img/prompt.png" width="70%" /></center>
+<center><img src="./img/prompt.png" width="60%" /></center>
 Prompts for user to initialize time at startup. 
-<center><img src="./img/console.png" width="70%" /></center>
+<center><img src="./img/console.png" width="40%" /></center>
 For every second, console will show current time in minute and second for debugging purposes. If console output shows word "triggered" in front of time, it means that pushbutton is pressed and timer 0 of group 0 (alarm) is started. Line "alarm going off" will show when alarm time is up. In addition, "Digit (x) written!" statements show every minute, as a sign to notify update of alphanumeric display.
 
 ## Modules, Tools, Source Used in Solution
