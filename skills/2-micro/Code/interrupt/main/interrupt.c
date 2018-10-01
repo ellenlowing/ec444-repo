@@ -17,6 +17,10 @@ int led = 0;
 int leds [4] = {LED0, LED1, LED2, LED3};
 
 void IRAM_ATTR button_intr(void* arg) {
+    int i;
+    for(i = 0; i < 10000; i++) {
+      //debounce
+    }
     if (!gpio_get_level(BTN_GPIO)) {
       if(led == 3) led = 0;
       else led++;
