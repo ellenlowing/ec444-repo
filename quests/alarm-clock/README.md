@@ -24,9 +24,11 @@ I created a modular program for alphanumerical display before for the correspond
 - alphanumeric display: esp32's sda(#23) to display's sda(#27) and scl(#22) to scl(#26) with the addition of pullup resistors for both data and clock signal channels 
 
 ### Console
-<center><img src="./img/prompt.png" width="60%" /></center>
+<center><img src="./img/prompt.png" width="70%" /></center>
 Prompts for user to initialize time at startup. 
-<center><img src="./img/console.png" width="40%" /></center>
+
+
+<center><img src="./img/console.png" width="30%" /></center>
 For every second, console will show current time in minute and second for debugging purposes. If console output shows word "triggered" in front of time, it means that pushbutton is pressed and timer 0 of group 0 (alarm) is started. Line "alarm going off" will show when alarm time is up. In addition, "Digit (x) written!" statements show every minute, as a sign to notify update of alphanumeric display.
 
 ## Modules, Tools, Source Used in Solution

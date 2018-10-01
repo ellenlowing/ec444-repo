@@ -1,15 +1,30 @@
-# Example: GPIO
+#  Stopwatch with alphanumeric display and pushbutton
 
-This test code shows how to configure gpio and how to use gpio interrupt.
+Author: Ellen Lo, 2019-09-30
 
-## GPIO functions:
+## Summary
+In this skill assignment, I was able to implement a stopwatch with start, pause, and reset timer functions. The user input is pushbutton to switch timer states and output is alphanumeric display which shows timer increments.
 
- * GPIO18: output
- * GPIO19: output
- * GPIO4:  input, pulled up, interrupt from rising edge and falling edge
- * GPIO5:  input, pulled up, interrupt from rising edge.
+AlphaDisplay.c was designed to be a reusable code from alphanumeric display skill, and this stopwatch module uses alphanumeric display functions by importing "alpha.h" library. Functions to initialize display and write digits are available for main code. In function *writeDigit(uint8_t nth, uint8_t num)*, where *nth* refers to the number of digit it is writing to and *num* refers to the ascii number of input character or integer, the program uses input ascii number to look up number table, which stores all bitmaps of ascii-compatible numbers, and sets buffer at odd numbered address (0x71, 0x73, 0x75, and 0x77) for master device to send to slave. Only odd numbered addresses are used in this case because the more significant 8 bits are not required to display numbers (as they are to display characters).
 
-## Test:
- * Connect GPIO18 with GPIO4
- * Connect GPIO19 with GPIO5
- * Generate pulses on GPIO18/19, that triggers interrupt on GPIO4/5
+## Sketches and Photos
+### Code
+<center><img src="./img/IMG_2453.jpeg" width="50%" /></center>
+setTime() is the function that calls alphanumeric display library function writeDigit(nth, num). According to global variable *second_count* which increments per second when timer is started, respective digits are set to corresponding unit of second_count.
+
+### Display
+<center><img src="./img/IMG_2453.jpeg" width="50%" /></center>
+Counts from 1 to 9999.
+
+
+## Modules, Tools, Source Used in Solution
+-[esp-idf i2c example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/i2c)
+
+-[Arduino Wire.h code](https://github.com/esp8266/Arduino/blob/master/libraries/Wire/Wire.h)
+
+-[LED backpack github](https://github.com/adafruit/Adafruit_LED_Backpack/blob/master/Adafruit_LEDBackpack.cpp)
+
+-[Custom alphanumeric display library](https://github.com/BU-EC444/Lo-Ellen/tree/master/skills/3-sensor-actuator/Code/alpha-display)
+
+## Supporting Artifacts
+-[Video Demo](https://youtu.be/AJvFjqGk_ls)

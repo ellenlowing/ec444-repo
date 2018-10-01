@@ -128,7 +128,7 @@ static int set_digits(int argc, char** argv){
   const char * first = join_args.first->sval[0];
   const char * second = join_args.second->sval[0];
   const char * third = join_args.third->sval[0];
-  printf("%d\n", (int)zero[0]);
+  
   writeDigit(0, (int)zero[0]);
   writeDigit(1, (int)first[0]);
   writeDigit(2, (int)second[0]);

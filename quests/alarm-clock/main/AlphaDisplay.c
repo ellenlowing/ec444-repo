@@ -177,16 +177,16 @@ static void setDigit(uint8_t nth, uint8_t num)
   int index = 0;
   switch(nth) {
     case 0:
-      index = 113;
+      index = 0x71;
       break;
     case 1:
-      index = 115;
+      index = 0x73;
       break;
     case 2:
-      index = 117;
+      index = 0x75;
       break;
     case 3:
-      index = 119;
+      index = 0x77;
       break;
   }
   data_wr[index] = numbertable[(int)num];
