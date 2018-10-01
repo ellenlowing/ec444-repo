@@ -9,7 +9,7 @@ AlphaDisplay.c was designed to be a reusable code from alphanumeric display skil
 
 ## Sketches and Photos
 ### Code
-<center><img src="./img/IMG_2453.jpeg" width="50%" /></center>
+<center><img src="./img/setTime.png" width="50%" /></center>
 setTime() is the function that calls alphanumeric display library function writeDigit(nth, num). According to global variable *second_count* which increments per second when timer is started, respective digits are set to corresponding unit of second_count.
 
 ### Display
