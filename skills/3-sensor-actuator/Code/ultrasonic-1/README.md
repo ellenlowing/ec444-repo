@@ -1,14 +1,26 @@
-# Example: ADC1
+#  Ultrasonic range - 1
 
-This test code shows how to configure ADC1 and read the voltage connected to GPIO pin.
+Author: Ellen Lo, 2019-10-01
 
- 
-### ADC1 functions:
+## Summary
+In this skill assignment, I was able to get distance measurement with ultrasonic sensor. I chose to read analog outputs instead of using UART and PWM in this example. A distance value in millimeters is updated and displayed on console every 2 seconds.
 
-ADC1_CHANNEL_6: GPIO34, voltage range [0V..1.1V], the data range [0..4095]
+Although specs sheet says minimum distance is 30cm away from bottom of chip, tests show that the minimum distance is not so accurate. It could be about 40cm.
 
- 
-### Test:
+## Sketches and Photos
+### Console
+<!-- <center><img src="./img/console.png" width="50%" /></center> -->
 
-Please connect the test voltage to GPIO34
+### Wiring
+<!-- <center><img src="./img/IMG_2393.jpeg" width="50%" /></center> -->
+<!-- See console image for commands. -->
+Pin 6 of range finder is wired to 3v power, pin 7 to ground, and pin 3 to analog input A5 of ESP32 (GPIO #4).
 
+## Modules, Tools, Source Used in Solution
+-[esp-idf adc example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/adc)
+
+-[Maxbotics Range Finder Specs](https://www.maxbotix.com/documents/HRLV-MaxSonar-EZ_Datasheet.pdf)
+
+
+## Supporting Artifacts
+-[Video Demo]()

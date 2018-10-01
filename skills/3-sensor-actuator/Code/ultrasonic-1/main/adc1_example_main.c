@@ -83,8 +83,10 @@ void app_main()
         }
         adc_reading /= NO_OF_SAMPLES;
         //Convert adc_reading to voltage in mV
-        uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
-        printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
+        //uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+        uint32_t dist_mm = adc_reading * 5 + 300;
+        //printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
+        printf("Distance: %dmm\n", dist_mm);
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
