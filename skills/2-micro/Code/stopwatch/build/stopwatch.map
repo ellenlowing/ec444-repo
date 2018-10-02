@@ -1105,7 +1105,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
  .bss           0x0000000000000000        0x0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
  .xt.lit        0x0000000000000000       0x28 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
- .xt.prop       0x0000000000000000      0x1d4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
+ .xt.prop       0x0000000000000000      0x1c8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
  .text          0x0000000000000000        0x0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(AlphaDisplay.o)
  .data          0x0000000000000000        0x0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(AlphaDisplay.o)
  .bss           0x0000000000000000        0x0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(AlphaDisplay.o)
@@ -3681,7 +3681,7 @@ END GROUP
  *(.init)
                 0x0000000040080400                _init_end = ABSOLUTE (.)
 
-.iram0.text     0x0000000040080400     0xa23c
+.iram0.text     0x0000000040080400     0xa238
                 0x0000000040080400                _iram_text_start = ABSOLUTE (.)
  *(.iram1 .iram1.*)
  .iram1.literal
@@ -4387,1046 +4387,1047 @@ END GROUP
                 0x0000000040082ac8                esp_log_early_timestamp
                 0x0000000040082ae4                esp_log_timestamp
  *fill*         0x0000000040082b22        0x2 
- .iram1         0x0000000040082b24      0x114 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
+ .iram1         0x0000000040082b24      0x110 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
+                                        0x114 (size before relaxing)
                 0x0000000040082b24                button_intr
-                0x0000000040082b60                timer_group1_isr
- .iram1         0x0000000040082c38      0x1cc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(locks.o)
+                0x0000000040082b5c                timer_group1_isr
+ .iram1         0x0000000040082c34      0x1cc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(locks.o)
                                         0x210 (size before relaxing)
-                0x0000000040082d50                _lock_init
-                0x0000000040082d60                _lock_init_recursive
-                0x0000000040082d70                _lock_close
-                0x0000000040082dac                _lock_acquire
-                0x0000000040082dbc                _lock_acquire_recursive
-                0x0000000040082dcc                _lock_try_acquire
-                0x0000000040082ddc                _lock_try_acquire_recursive
-                0x0000000040082dec                _lock_release
-                0x0000000040082df8                _lock_release_recursive
- .iram1         0x0000000040082e04       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(reent_init.o)
-                0x0000000040082e04                esp_reent_init
- .iram1         0x0000000040082e40       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscalls.o)
+                0x0000000040082d4c                _lock_init
+                0x0000000040082d5c                _lock_init_recursive
+                0x0000000040082d6c                _lock_close
+                0x0000000040082da8                _lock_acquire
+                0x0000000040082db8                _lock_acquire_recursive
+                0x0000000040082dc8                _lock_try_acquire
+                0x0000000040082dd8                _lock_try_acquire_recursive
+                0x0000000040082de8                _lock_release
+                0x0000000040082df4                _lock_release_recursive
+ .iram1         0x0000000040082e00       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(reent_init.o)
+                0x0000000040082e00                esp_reent_init
+ .iram1         0x0000000040082e3c       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscalls.o)
                                          0x62 (size before relaxing)
-                0x0000000040082e40                _malloc_r
-                0x0000000040082e4c                _free_r
-                0x0000000040082e58                _realloc_r
-                0x0000000040082e6c                _calloc_r
- *fill*         0x0000000040082e9a        0x2 
- .iram1         0x0000000040082e9c       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(time.o)
+                0x0000000040082e3c                _malloc_r
+                0x0000000040082e48                _free_r
+                0x0000000040082e54                _realloc_r
+                0x0000000040082e68                _calloc_r
+ *fill*         0x0000000040082e96        0x2 
+ .iram1         0x0000000040082e98       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(time.o)
                                          0x74 (size before relaxing)
-                0x0000000040082e9c                _gettimeofday_r
-                0x0000000040082ee4                _times_r
- .iram1         0x0000000040082f0c      0x11a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(cpu_util.o)
-                0x0000000040082f0c                esp_cpu_stall
-                0x0000000040082fa0                esp_cpu_unstall
-                0x0000000040082ff4                esp_cpu_reset
-                0x0000000040083018                esp_cpu_in_ocd_debug_mode
- *fill*         0x0000000040083026        0x2 
- .iram1         0x0000000040083028      0x2f4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(cache_utils.o)
+                0x0000000040082e98                _gettimeofday_r
+                0x0000000040082ee0                _times_r
+ .iram1         0x0000000040082f08      0x11a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(cpu_util.o)
+                0x0000000040082f08                esp_cpu_stall
+                0x0000000040082f9c                esp_cpu_unstall
+                0x0000000040082ff0                esp_cpu_reset
+                0x0000000040083014                esp_cpu_in_ocd_debug_mode
+ *fill*         0x0000000040083022        0x2 
+ .iram1         0x0000000040083024      0x2f4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(cache_utils.o)
                                         0x340 (size before relaxing)
-                0x000000004008308c                spi_flash_op_block_func
-                0x0000000040083138                spi_flash_disable_interrupts_caches_and_other_cpu
-                0x0000000040083218                spi_flash_enable_interrupts_caches_and_other_cpu
-                0x00000000400832b0                spi_flash_disable_interrupts_caches_and_other_cpu_no_os
-                0x00000000400832dc                spi_flash_enable_interrupts_caches_no_os
-                0x00000000400832f8                spi_flash_cache_enabled
- .iram1         0x000000004008331c      0x722 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_ops.o)
+                0x0000000040083088                spi_flash_op_block_func
+                0x0000000040083134                spi_flash_disable_interrupts_caches_and_other_cpu
+                0x0000000040083214                spi_flash_enable_interrupts_caches_and_other_cpu
+                0x00000000400832ac                spi_flash_disable_interrupts_caches_and_other_cpu_no_os
+                0x00000000400832d8                spi_flash_enable_interrupts_caches_no_os
+                0x00000000400832f4                spi_flash_cache_enabled
+ .iram1         0x0000000040083318      0x722 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_ops.o)
                                         0x74a (size before relaxing)
-                0x000000004008338c                spi_flash_guard_set
-                0x0000000040083398                spi_flash_guard_get
-                0x00000000400833a4                spi_flash_get_chip_size
-                0x00000000400833b0                spi_flash_erase_range
-                0x0000000040083468                spi_flash_erase_sector
-                0x000000004008348c                spi_flash_write
-                0x0000000040083654                spi_flash_read
-                0x00000000400838ec                spi_flash_read_encrypted
-                0x0000000040083934                spi_flash_write_encrypted
- *fill*         0x0000000040083a3e        0x2 
- .iram1         0x0000000040083a40      0x4ce /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_mmap.o)
+                0x0000000040083388                spi_flash_guard_set
+                0x0000000040083394                spi_flash_guard_get
+                0x00000000400833a0                spi_flash_get_chip_size
+                0x00000000400833ac                spi_flash_erase_range
+                0x0000000040083464                spi_flash_erase_sector
+                0x0000000040083488                spi_flash_write
+                0x0000000040083650                spi_flash_read
+                0x00000000400838e8                spi_flash_read_encrypted
+                0x0000000040083930                spi_flash_write_encrypted
+ *fill*         0x0000000040083a3a        0x2 
+ .iram1         0x0000000040083a3c      0x4ce /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_mmap.o)
                                         0x502 (size before relaxing)
-                0x0000000040083b6c                spi_flash_mmap_pages
-                0x0000000040083dac                spi_flash_mmap
-                0x0000000040083e20                spi_flash_munmap
-                0x0000000040083ec4                spi_flash_mark_modified_region
- *fill*         0x0000000040083f0e        0x2 
- .iram1         0x0000000040083f10       0x92 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(gpio.o)
-                0x0000000040083f10                gpio_intr_service
- *fill*         0x0000000040083fa2        0x2 
- .iram1         0x0000000040083fa4      0x839 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(i2c.o)
+                0x0000000040083b68                spi_flash_mmap_pages
+                0x0000000040083da8                spi_flash_mmap
+                0x0000000040083e1c                spi_flash_munmap
+                0x0000000040083ec0                spi_flash_mark_modified_region
+ *fill*         0x0000000040083f0a        0x2 
+ .iram1         0x0000000040083f0c       0x92 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(gpio.o)
+                0x0000000040083f0c                gpio_intr_service
+ *fill*         0x0000000040083f9e        0x2 
+ .iram1         0x0000000040083fa0      0x839 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(i2c.o)
                                         0x859 (size before relaxing)
- *fill*         0x00000000400847dd        0x3 
- .iram1         0x00000000400847e0       0x20 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(dbg_stubs.o)
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- *fill*         0x0000000040084800        0x0 
- .iram1         0x0000000040084800       0x2e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_vector_defaults.o)
-                0x0000000040084800                xt_debugexception
-                0x0000000040084820                xt_highint5
-                0x0000000040084828                _xt_nmi
-                0x0000000040084828                xt_nmi
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
- *fill*         0x000000004008482e        0x0 
+ *fill*         0x00000000400847d9        0x3 
+ .iram1         0x00000000400847dc       0x20 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(dbg_stubs.o)
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ *fill*         0x00000000400847fc        0x0 
+ .iram1         0x00000000400847fc       0x2e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_vector_defaults.o)
+                0x00000000400847fc                xt_debugexception
+                0x000000004008481c                xt_highint5
+                0x0000000040084824                _xt_nmi
+                0x0000000040084824                xt_nmi
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
+ *fill*         0x000000004008482a        0x0 
  *libfreertos.a:(.literal .text .literal.* .text.*)
- *fill*         0x000000004008482e        0x2 
+ *fill*         0x000000004008482a        0x2 
  .text.pxPortInitialiseStack
-                0x0000000040084830       0x86 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
-                0x0000000040084830                pxPortInitialiseStack
- *fill*         0x00000000400848b6        0x2 
+                0x000000004008482c       0x86 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x000000004008482c                pxPortInitialiseStack
+ *fill*         0x00000000400848b2        0x2 
  .text.xPortStartScheduler
-                0x00000000400848b8       0x22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x00000000400848b4       0x22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                          0x2e (size before relaxing)
-                0x00000000400848b8                xPortStartScheduler
- *fill*         0x00000000400848da        0x2 
+                0x00000000400848b4                xPortStartScheduler
+ *fill*         0x00000000400848d6        0x2 
  .text.xPortSysTickHandler
-                0x00000000400848dc       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x00000000400848d8       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                          0x16 (size before relaxing)
-                0x00000000400848dc                xPortSysTickHandler
- *fill*         0x00000000400848ec        0x0 
+                0x00000000400848d8                xPortSysTickHandler
+ *fill*         0x00000000400848e8        0x0 
  .text.vPortYieldOtherCore
-                0x00000000400848ec        0xa /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x00000000400848e8        0xa /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                           0xe (size before relaxing)
-                0x00000000400848ec                vPortYieldOtherCore
- *fill*         0x00000000400848f6        0x2 
+                0x00000000400848e8                vPortYieldOtherCore
+ *fill*         0x00000000400848f2        0x2 
  .text.vPortReleaseTaskMPUSettings
-                0x00000000400848f8        0xa /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x00000000400848f4        0xa /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                           0xe (size before relaxing)
-                0x00000000400848f8                vPortReleaseTaskMPUSettings
- *fill*         0x0000000040084902        0x2 
+                0x00000000400848f4                vPortReleaseTaskMPUSettings
+ *fill*         0x00000000400848fe        0x2 
  .text.xPortInIsrContext
-                0x0000000040084904       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
-                0x0000000040084904                xPortInIsrContext
- *fill*         0x000000004008492a        0x2 
+                0x0000000040084900       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x0000000040084900                xPortInIsrContext
+ *fill*         0x0000000040084926        0x2 
  .text.vPortCPUInitializeMutex
-                0x000000004008492c        0xe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
-                0x000000004008492c                vPortCPUInitializeMutex
- *fill*         0x000000004008493a        0x2 
+                0x0000000040084928        0xe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x0000000040084928                vPortCPUInitializeMutex
+ *fill*         0x0000000040084936        0x2 
  .text.vPortCPUAcquireMutex
-                0x000000004008493c       0x81 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x0000000040084938       0x81 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                          0x88 (size before relaxing)
-                0x000000004008493c                vPortCPUAcquireMutex
- *fill*         0x00000000400849bd        0x3 
+                0x0000000040084938                vPortCPUAcquireMutex
+ *fill*         0x00000000400849b9        0x3 
  .text.vPortCPUReleaseMutex
-                0x00000000400849c0       0x4d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x00000000400849bc       0x4d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
                                          0x50 (size before relaxing)
-                0x00000000400849c0                vPortCPUReleaseMutex
- *fill*         0x0000000040084a0d        0x3 
+                0x00000000400849bc                vPortCPUReleaseMutex
+ *fill*         0x0000000040084a09        0x3 
  .text.prvIsQueueFull
-                0x0000000040084a10       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
- *fill*         0x0000000040084a3a        0x2 
+                0x0000000040084a0c       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+ *fill*         0x0000000040084a36        0x2 
  .text.prvCopyDataToQueue
-                0x0000000040084a3c       0x9e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
- *fill*         0x0000000040084ada        0x2 
+                0x0000000040084a38       0x9e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+ *fill*         0x0000000040084ad6        0x2 
  .text.prvNotifyQueueSetContainer
-                0x0000000040084adc       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084ad8       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x8a (size before relaxing)
- *fill*         0x0000000040084b53        0x1 
+ *fill*         0x0000000040084b4f        0x1 
  .text.prvCopyDataFromQueue
-                0x0000000040084b54       0x24 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084b50       0x24 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
  .text.xQueueGenericReset
-                0x0000000040084b78       0x86 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084b74       0x86 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x96 (size before relaxing)
-                0x0000000040084b78                xQueueGenericReset
- *fill*         0x0000000040084bfe        0x2 
+                0x0000000040084b74                xQueueGenericReset
+ *fill*         0x0000000040084bfa        0x2 
  .text.prvInitialiseNewQueue
-                0x0000000040084c00       0x1f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084bfc       0x1f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x23 (size before relaxing)
- *fill*         0x0000000040084c1f        0x1 
+ *fill*         0x0000000040084c1b        0x1 
  .text.xQueueGenericCreate
-                0x0000000040084c20       0x49 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084c1c       0x49 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x4d (size before relaxing)
-                0x0000000040084c20                xQueueGenericCreate
- *fill*         0x0000000040084c69        0x3 
+                0x0000000040084c1c                xQueueGenericCreate
+ *fill*         0x0000000040084c65        0x3 
  .text.xQueueGetMutexHolder
-                0x0000000040084c6c       0x23 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
-                0x0000000040084c6c                xQueueGetMutexHolder
- *fill*         0x0000000040084c8f        0x1 
+                0x0000000040084c68       0x23 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084c68                xQueueGetMutexHolder
+ *fill*         0x0000000040084c8b        0x1 
  .text.xQueueCreateCountingSemaphore
-                0x0000000040084c90       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084c8c       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x6a (size before relaxing)
-                0x0000000040084c90                xQueueCreateCountingSemaphore
- *fill*         0x0000000040084cf6        0x2 
+                0x0000000040084c8c                xQueueCreateCountingSemaphore
+ *fill*         0x0000000040084cf2        0x2 
  .text.xQueueGenericSend
-                0x0000000040084cf8      0x158 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084cf4      0x158 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                         0x18c (size before relaxing)
-                0x0000000040084cf8                xQueueGenericSend
+                0x0000000040084cf4                xQueueGenericSend
  .text.prvInitialiseMutex
-                0x0000000040084e50       0x22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084e4c       0x22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x26 (size before relaxing)
- *fill*         0x0000000040084e72        0x2 
+ *fill*         0x0000000040084e6e        0x2 
  .text.xQueueCreateMutex
-                0x0000000040084e74       0x16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084e70       0x16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x1a (size before relaxing)
-                0x0000000040084e74                xQueueCreateMutex
- *fill*         0x0000000040084e8a        0x2 
+                0x0000000040084e70                xQueueCreateMutex
+ *fill*         0x0000000040084e86        0x2 
  .text.xQueueGiveMutexRecursive
-                0x0000000040084e8c       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084e88       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x4c (size before relaxing)
-                0x0000000040084e8c                xQueueGiveMutexRecursive
+                0x0000000040084e88                xQueueGiveMutexRecursive
  .text.xQueueGenericSendFromISR
-                0x0000000040084ed4       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084ed0       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0xe6 (size before relaxing)
-                0x0000000040084ed4                xQueueGenericSendFromISR
- *fill*         0x0000000040084faa        0x2 
+                0x0000000040084ed0                xQueueGenericSendFromISR
+ *fill*         0x0000000040084fa6        0x2 
  .text.xQueueGiveFromISR
-                0x0000000040084fac       0xb6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040084fa8       0xb6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0xc2 (size before relaxing)
-                0x0000000040084fac                xQueueGiveFromISR
- *fill*         0x0000000040085062        0x2 
+                0x0000000040084fa8                xQueueGiveFromISR
+ *fill*         0x000000004008505e        0x2 
  .text.xQueueGenericReceive
-                0x0000000040085064      0x144 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040085060      0x144 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                         0x178 (size before relaxing)
-                0x0000000040085064                xQueueGenericReceive
+                0x0000000040085060                xQueueGenericReceive
  .text.xQueueTakeMutexRecursive
-                0x00000000400851a8       0x51 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
-                0x00000000400851a8                xQueueTakeMutexRecursive
- *fill*         0x00000000400851f9        0x3 
+                0x00000000400851a4       0x51 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x00000000400851a4                xQueueTakeMutexRecursive
+ *fill*         0x00000000400851f5        0x3 
  .text.xQueueReceiveFromISR
-                0x00000000400851fc       0x96 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x00000000400851f8       0x96 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0xa6 (size before relaxing)
-                0x00000000400851fc                xQueueReceiveFromISR
- *fill*         0x0000000040085292        0x2 
+                0x00000000400851f8                xQueueReceiveFromISR
+ *fill*         0x000000004008528e        0x2 
  .text.vQueueDelete
-                0x0000000040085294       0x28 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
-                0x0000000040085294                vQueueDelete
+                0x0000000040085290       0x28 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x0000000040085290                vQueueDelete
  .text.vQueueWaitForMessageRestricted
-                0x00000000400852bc       0x23 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+                0x00000000400852b8       0x23 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
                                          0x2a (size before relaxing)
-                0x00000000400852bc                vQueueWaitForMessageRestricted
- *fill*         0x00000000400852df        0x1 
+                0x00000000400852b8                vQueueWaitForMessageRestricted
+ *fill*         0x00000000400852db        0x1 
  .text.prvResetNextTaskUnblockTime
-                0x00000000400852e0       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400852dc       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
  .text.prvDeleteTLS
-                0x0000000040085314       0x40 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085310       0x40 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
  .text.prvInitialiseNewTask
-                0x0000000040085354       0xc4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085350       0xc4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0xd0 (size before relaxing)
  .text.prvInitialiseTaskLists
-                0x0000000040085418       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085414       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x6e (size before relaxing)
- *fill*         0x0000000040085472        0x2 
+ *fill*         0x000000004008546e        0x2 
  .text.prvDeleteTCB
-                0x0000000040085474       0x56 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085470       0x56 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x5d (size before relaxing)
- *fill*         0x00000000400854ca        0x2 
+ *fill*         0x00000000400854c6        0x2 
  .text.prvAddCurrentTaskToDelayedList
-                0x00000000400854cc       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400854c8       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x6a (size before relaxing)
- *fill*         0x0000000040085532        0x2 
+ *fill*         0x000000004008552e        0x2 
  .text.taskYIELD_OTHER_CORE
-                0x0000000040085534       0x53 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085534                taskYIELD_OTHER_CORE
- *fill*         0x0000000040085587        0x1 
+                0x0000000040085530       0x53 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085530                taskYIELD_OTHER_CORE
+ *fill*         0x0000000040085583        0x1 
  .text.vTaskSuspendAll
-                0x0000000040085588       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085588                vTaskSuspendAll
- *fill*         0x00000000400855ae        0x2 
+                0x0000000040085584       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085584                vTaskSuspendAll
+ *fill*         0x00000000400855aa        0x2 
  .text.xTaskGetIdleTaskHandleForCPU
-                0x00000000400855b0       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400855ac       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x2e (size before relaxing)
-                0x00000000400855b0                xTaskGetIdleTaskHandleForCPU
- *fill*         0x00000000400855da        0x2 
+                0x00000000400855ac                xTaskGetIdleTaskHandleForCPU
+ *fill*         0x00000000400855d6        0x2 
  .text.vTaskSwitchContext
-                0x00000000400855dc      0x27e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400855d8      0x27e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x28a (size before relaxing)
-                0x00000000400855dc                vTaskSwitchContext
- *fill*         0x000000004008585a        0x2 
+                0x00000000400855d8                vTaskSwitchContext
+ *fill*         0x0000000040085856        0x2 
  .text.vTaskSetTimeOutState
-                0x000000004008585c       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x000000004008585c                vTaskSetTimeOutState
+                0x0000000040085858       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085858                vTaskSetTimeOutState
  .text.xTaskGetCurrentTaskHandle
-                0x0000000040085890       0x1f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085890                xTaskGetCurrentTaskHandle
- *fill*         0x00000000400858af        0x1 
+                0x000000004008588c       0x1f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x000000004008588c                xTaskGetCurrentTaskHandle
+ *fill*         0x00000000400858ab        0x1 
  .text.__getreent
-                0x00000000400858b0       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x00000000400858b0                __getreent
- *fill*         0x00000000400858c9        0x3 
+                0x00000000400858ac       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400858ac                __getreent
+ *fill*         0x00000000400858c5        0x3 
  .text.pcTaskGetTaskName
-                0x00000000400858cc       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400858c8       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x2d (size before relaxing)
-                0x00000000400858cc                pcTaskGetTaskName
- *fill*         0x00000000400858f6        0x2 
+                0x00000000400858c8                pcTaskGetTaskName
+ *fill*         0x00000000400858f2        0x2 
  .text.xTaskGetAffinity
-                0x00000000400858f8       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400858f4       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x13 (size before relaxing)
-                0x00000000400858f8                xTaskGetAffinity
- *fill*         0x0000000040085908        0x0 
+                0x00000000400858f4                xTaskGetAffinity
+ *fill*         0x0000000040085904        0x0 
  .text.xTaskGetCurrentTaskHandleForCPU
-                0x0000000040085908       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085908                xTaskGetCurrentTaskHandleForCPU
+                0x0000000040085904       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085904                xTaskGetCurrentTaskHandleForCPU
  .text.xTaskGetSchedulerState
-                0x0000000040085920       0x37 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085920                xTaskGetSchedulerState
- *fill*         0x0000000040085957        0x1 
+                0x000000004008591c       0x37 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x000000004008591c                xTaskGetSchedulerState
+ *fill*         0x0000000040085953        0x1 
  .text.vTaskEnterCritical
-                0x0000000040085958       0xac /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085954       0xac /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0xb3 (size before relaxing)
-                0x0000000040085958                vTaskEnterCritical
- *fill*         0x0000000040085a04        0x0 
+                0x0000000040085954                vTaskEnterCritical
+ *fill*         0x0000000040085a00        0x0 
  .text.vTaskExitCritical
-                0x0000000040085a04       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040085a04                vTaskExitCritical
- *fill*         0x0000000040085a7b        0x1 
+                0x0000000040085a00       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085a00                vTaskExitCritical
+ *fill*         0x0000000040085a77        0x1 
  .text.prvAddNewTaskToReadyList
-                0x0000000040085a7c      0x160 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085a78      0x160 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x173 (size before relaxing)
- *fill*         0x0000000040085bdc        0x0 
+ *fill*         0x0000000040085bd8        0x0 
  .text.xTaskCreatePinnedToCore
-                0x0000000040085bdc       0x6e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085bd8       0x6e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x76 (size before relaxing)
-                0x0000000040085bdc                xTaskCreatePinnedToCore
- *fill*         0x0000000040085c4a        0x2 
+                0x0000000040085bd8                xTaskCreatePinnedToCore
+ *fill*         0x0000000040085c46        0x2 
  .text.vTaskStartScheduler
-                0x0000000040085c4c       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085c48       0x77 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x82 (size before relaxing)
-                0x0000000040085c4c                vTaskStartScheduler
- *fill*         0x0000000040085cc3        0x1 
+                0x0000000040085c48                vTaskStartScheduler
+ *fill*         0x0000000040085cbf        0x1 
  .text.vTaskDelete
-                0x0000000040085cc4      0x10a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085cc0      0x10a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x122 (size before relaxing)
-                0x0000000040085cc4                vTaskDelete
- *fill*         0x0000000040085dce        0x2 
+                0x0000000040085cc0                vTaskDelete
+ *fill*         0x0000000040085dca        0x2 
  .text.vTaskDelay
-                0x0000000040085dd0       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085dcc       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x80 (size before relaxing)
-                0x0000000040085dd0                vTaskDelay
+                0x0000000040085dcc                vTaskDelay
  .text.uxTaskPriorityGet
-                0x0000000040085e40       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085e3c       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x23 (size before relaxing)
-                0x0000000040085e40                uxTaskPriorityGet
- *fill*         0x0000000040085e5c        0x0 
+                0x0000000040085e3c                uxTaskPriorityGet
+ *fill*         0x0000000040085e58        0x0 
  .text.vTaskPrioritySet
-                0x0000000040085e5c      0x12d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085e58      0x12d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x143 (size before relaxing)
-                0x0000000040085e5c                vTaskPrioritySet
- *fill*         0x0000000040085f89        0x3 
+                0x0000000040085e58                vTaskPrioritySet
+ *fill*         0x0000000040085f85        0x3 
  .text.prvCheckTasksWaitingTermination
-                0x0000000040085f8c       0xbe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040085f88       0xbe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0xc6 (size before relaxing)
- *fill*         0x000000004008604a        0x2 
+ *fill*         0x0000000040086046        0x2 
  .text.prvIdleTask
-                0x000000004008604c        0xf /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086048        0xf /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x18 (size before relaxing)
- *fill*         0x000000004008605b        0x1 
+ *fill*         0x0000000040086057        0x1 
  .text.xTaskGetTickCount
-                0x000000004008605c       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086058       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x20 (size before relaxing)
-                0x000000004008605c                xTaskGetTickCount
+                0x0000000040086058                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x0000000040086078      0x1b2 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086074      0x1b2 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x1ce (size before relaxing)
-                0x0000000040086078                xTaskIncrementTick
- *fill*         0x000000004008622a        0x2 
+                0x0000000040086074                xTaskIncrementTick
+ *fill*         0x0000000040086226        0x2 
  .text.xTaskResumeAll
-                0x000000004008622c      0x177 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086228      0x177 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x186 (size before relaxing)
-                0x000000004008622c                xTaskResumeAll
- *fill*         0x00000000400863a3        0x1 
+                0x0000000040086228                xTaskResumeAll
+ *fill*         0x000000004008639f        0x1 
  .text.vTaskPlaceOnEventList
-                0x00000000400863a4       0x83 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400863a0       0x83 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x97 (size before relaxing)
-                0x00000000400863a4                vTaskPlaceOnEventList
- *fill*         0x0000000040086427        0x1 
+                0x00000000400863a0                vTaskPlaceOnEventList
+ *fill*         0x0000000040086423        0x1 
  .text.vTaskPlaceOnEventListRestricted
-                0x0000000040086428       0x5b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086424       0x5b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x6f (size before relaxing)
-                0x0000000040086428                vTaskPlaceOnEventListRestricted
- *fill*         0x0000000040086483        0x1 
+                0x0000000040086424                vTaskPlaceOnEventListRestricted
+ *fill*         0x000000004008647f        0x1 
  .text.xTaskRemoveFromEventList
-                0x0000000040086484      0x134 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086480      0x134 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                         0x143 (size before relaxing)
-                0x0000000040086484                xTaskRemoveFromEventList
- *fill*         0x00000000400865b8        0x0 
+                0x0000000040086480                xTaskRemoveFromEventList
+ *fill*         0x00000000400865b4        0x0 
  .text.xTaskCheckForTimeOut
-                0x00000000400865b8       0x89 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x00000000400865b4       0x89 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x94 (size before relaxing)
-                0x00000000400865b8                xTaskCheckForTimeOut
- *fill*         0x0000000040086641        0x3 
+                0x00000000400865b4                xTaskCheckForTimeOut
+ *fill*         0x000000004008663d        0x3 
  .text.vTaskPriorityInherit
-                0x0000000040086644       0xc4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086640       0xc4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0xdb (size before relaxing)
-                0x0000000040086644                vTaskPriorityInherit
- *fill*         0x0000000040086708        0x0 
+                0x0000000040086640                vTaskPriorityInherit
+ *fill*         0x0000000040086704        0x0 
  .text.xTaskPriorityDisinherit
-                0x0000000040086708       0x97 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040086704       0x97 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0xaa (size before relaxing)
-                0x0000000040086708                xTaskPriorityDisinherit
- *fill*         0x000000004008679f        0x1 
+                0x0000000040086704                xTaskPriorityDisinherit
+ *fill*         0x000000004008679b        0x1 
  .text.pvTaskIncrementMutexHeldCount
-                0x00000000400867a0       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
+                0x000000004008679c       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(tasks.o)
                                          0x54 (size before relaxing)
-                0x00000000400867a0                pvTaskIncrementMutexHeldCount
+                0x000000004008679c                pvTaskIncrementMutexHeldCount
  .text.prvGetNextExpireTime
-                0x00000000400867f0       0x20 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x00000000400867ec       0x20 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
  .text.prvInsertTimerInActiveList
-                0x0000000040086810       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x000000004008680c       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x54 (size before relaxing)
  .text.prvCheckForValidListAndQueue
-                0x0000000040086860       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x000000004008685c       0x66 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x7e (size before relaxing)
- *fill*         0x00000000400868c6        0x2 
+ *fill*         0x00000000400868c2        0x2 
  .text.xTimerCreateTimerTask
-                0x00000000400868c8       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x00000000400868c4       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x4c (size before relaxing)
-                0x00000000400868c8                xTimerCreateTimerTask
+                0x00000000400868c4                xTimerCreateTimerTask
  .text.xTimerGenericCommand
-                0x0000000040086910       0x55 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x000000004008690c       0x55 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x5d (size before relaxing)
-                0x0000000040086910                xTimerGenericCommand
- *fill*         0x0000000040086965        0x3 
+                0x000000004008690c                xTimerGenericCommand
+ *fill*         0x0000000040086961        0x3 
  .text.prvSwitchTimerLists
-                0x0000000040086968       0x76 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x0000000040086964       0x76 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x82 (size before relaxing)
- *fill*         0x00000000400869de        0x2 
+ *fill*         0x00000000400869da        0x2 
  .text.prvSampleTimeNow
-                0x00000000400869e0       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x00000000400869dc       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x2f (size before relaxing)
- *fill*         0x0000000040086a0b        0x1 
+ *fill*         0x0000000040086a07        0x1 
  .text.prvProcessExpiredTimer
-                0x0000000040086a0c       0x53 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x0000000040086a08       0x53 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x5f (size before relaxing)
- *fill*         0x0000000040086a5f        0x1 
+ *fill*         0x0000000040086a5b        0x1 
  .text.prvProcessTimerOrBlockTask
-                0x0000000040086a60       0x58 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x0000000040086a5c       0x58 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x6c (size before relaxing)
  .text.prvProcessReceivedCommands
-                0x0000000040086ab8       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x0000000040086ab4       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0xe6 (size before relaxing)
- *fill*         0x0000000040086b8e        0x2 
+ *fill*         0x0000000040086b8a        0x2 
  .text.prvTimerTask
-                0x0000000040086b90       0x15 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
+                0x0000000040086b8c       0x15 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(timers.o)
                                          0x1d (size before relaxing)
- *fill*         0x0000000040086ba5        0x3 
+ *fill*         0x0000000040086ba1        0x3 
  .text._xt_tick_divisor_init
-                0x0000000040086ba8       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_init.o)
+                0x0000000040086ba4       0x1c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_init.o)
                                          0x1f (size before relaxing)
-                0x0000000040086ba8                _xt_tick_divisor_init
- *fill*         0x0000000040086bc4        0x0 
+                0x0000000040086ba4                _xt_tick_divisor_init
+ *fill*         0x0000000040086bc0        0x0 
  .text.xt_unhandled_interrupt
-                0x0000000040086bc4       0x16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr.o)
-                0x0000000040086bc4                xt_unhandled_interrupt
- *fill*         0x0000000040086bda        0x2 
+                0x0000000040086bc0       0x16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr.o)
+                0x0000000040086bc0                xt_unhandled_interrupt
+ *fill*         0x0000000040086bd6        0x2 
  .text.xt_set_interrupt_handler
-                0x0000000040086bdc       0x46 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr.o)
-                0x0000000040086bdc                xt_set_interrupt_handler
- *fill*         0x0000000040086c22        0x2 
- .text          0x0000000040086c24      0x1d0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(portasm.o)
-                0x0000000040086c24                _frxt_setup_switch
-                0x0000000040086c3c                _frxt_int_enter
-                0x0000000040086c84                _frxt_int_exit
-                0x0000000040086cd4                _frxt_timer_int
-                0x0000000040086cfc                _frxt_tick_timer_init
-                0x0000000040086d14                _frxt_dispatch
-                0x0000000040086d5c                vPortYield
-                0x0000000040086da8                vPortYieldFromInt
-                0x0000000040086dc8                _frxt_task_coproc_state
- .text          0x0000000040086df4      0x12b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_context.o)
-                0x0000000040086df4                _xt_context_save
-                0x0000000040086e5c                _xt_context_restore
-                0x0000000040086ea0                _xt_coproc_init
-                0x0000000040086eb4                _xt_coproc_release
-                0x0000000040086ee0                _xt_coproc_savecs
-                0x0000000040086f00                _xt_coproc_restorecs
- *fill*         0x0000000040086f1f        0x1 
+                0x0000000040086bd8       0x46 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr.o)
+                0x0000000040086bd8                xt_set_interrupt_handler
+ *fill*         0x0000000040086c1e        0x2 
+ .text          0x0000000040086c20      0x1d0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(portasm.o)
+                0x0000000040086c20                _frxt_setup_switch
+                0x0000000040086c38                _frxt_int_enter
+                0x0000000040086c80                _frxt_int_exit
+                0x0000000040086cd0                _frxt_timer_int
+                0x0000000040086cf8                _frxt_tick_timer_init
+                0x0000000040086d10                _frxt_dispatch
+                0x0000000040086d58                vPortYield
+                0x0000000040086da4                vPortYieldFromInt
+                0x0000000040086dc4                _frxt_task_coproc_state
+ .text          0x0000000040086df0      0x12b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_context.o)
+                0x0000000040086df0                _xt_context_save
+                0x0000000040086e58                _xt_context_restore
+                0x0000000040086e9c                _xt_coproc_init
+                0x0000000040086eb0                _xt_coproc_release
+                0x0000000040086edc                _xt_coproc_savecs
+                0x0000000040086efc                _xt_coproc_restorecs
+ *fill*         0x0000000040086f1b        0x1 
  .text.prvReturnItemByteBuf
-                0x0000000040086f20       0x4c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040086f1c       0x4c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0x4f (size before relaxing)
- *fill*         0x0000000040086f6c        0x0 
+ *fill*         0x0000000040086f68        0x0 
  .text.prvGetItemByteBuf
-                0x0000000040086f6c       0xd7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040086f68       0xd7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0xdb (size before relaxing)
- *fill*         0x0000000040087043        0x1 
+ *fill*         0x000000004008703f        0x1 
  .text.prvCheckItemFitsByteBuffer
-                0x0000000040087044       0x65 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x00000000400870a9        0x3 
+                0x0000000040087040       0x65 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x00000000400870a5        0x3 
  .text.prvReturnItemDefault
-                0x00000000400870ac      0x146 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x00000000400870a8      0x146 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                         0x156 (size before relaxing)
- *fill*         0x00000000400871f2        0x2 
+ *fill*         0x00000000400871ee        0x2 
  .text.prvGetItemDefault
-                0x00000000400871f4      0x146 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x00000000400871f0      0x146 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                         0x152 (size before relaxing)
- *fill*         0x000000004008733a        0x2 
+ *fill*         0x0000000040087336        0x2 
  .text.prvCheckItemFitsDefault
-                0x000000004008733c       0xb1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x00000000400873ed        0x3 
+                0x0000000040087338       0xb1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x00000000400873e9        0x3 
  .text.prvGetFreeSize
-                0x00000000400873f0       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x00000000400873ec       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0x40 (size before relaxing)
  .text.prvCopyItemByteBuf
-                0x000000004008742c       0x7b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x00000000400874a7        0x1 
+                0x0000000040087428       0x7b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x00000000400874a3        0x1 
  .text.prvCopyItemAllowSplit
-                0x00000000400874a8       0xef /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x00000000400874a4       0xef /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0xf3 (size before relaxing)
- *fill*         0x0000000040087597        0x1 
+ *fill*         0x0000000040087593        0x1 
  .text.prvCopyItemNoSplit
-                0x0000000040087598       0xbc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040087594       0xbc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
  .text.prvReceiveGenericFromISR
-                0x0000000040087654       0xd9 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040087650       0xd9 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0xe5 (size before relaxing)
- *fill*         0x000000004008772d        0x3 
+ *fill*         0x0000000040087729        0x3 
  .text.xRingbufferCreate
-                0x0000000040087730      0x131 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x000000004008772c      0x131 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                         0x140 (size before relaxing)
-                0x0000000040087730                xRingbufferCreate
- *fill*         0x0000000040087861        0x3 
+                0x000000004008772c                xRingbufferCreate
+ *fill*         0x000000004008785d        0x3 
  .text.xRingbufferSendFromISR
-                0x0000000040087864       0xb6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040087860       0xb6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0xc6 (size before relaxing)
-                0x0000000040087864                xRingbufferSendFromISR
- *fill*         0x000000004008791a        0x2 
+                0x0000000040087860                xRingbufferSendFromISR
+ *fill*         0x0000000040087916        0x2 
  .text.xRingbufferReceiveUpToFromISR
-                0x000000004008791c       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040087918       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0x65 (size before relaxing)
-                0x000000004008791c                xRingbufferReceiveUpToFromISR
- *fill*         0x000000004008797d        0x3 
+                0x0000000040087918                xRingbufferReceiveUpToFromISR
+ *fill*         0x0000000040087979        0x3 
  .text.vRingbufferReturnItemFromISR
-                0x0000000040087980       0x56 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x000000004008797c       0x56 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0x62 (size before relaxing)
-                0x0000000040087980                vRingbufferReturnItemFromISR
- *fill*         0x00000000400879d6        0x2 
+                0x000000004008797c                vRingbufferReturnItemFromISR
+ *fill*         0x00000000400879d2        0x2 
  .text.vRingbufferDelete
-                0x00000000400879d8       0x43 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x00000000400879d4       0x43 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
                                          0x46 (size before relaxing)
-                0x00000000400879d8                vRingbufferDelete
- *fill*         0x0000000040087a1b        0x0 
- *fill*         0x0000000040087a1b        0x0 
- *fill*         0x0000000040087a1b        0x0 
- *fill*         0x0000000040087a1b        0x0 
- *fill*         0x0000000040087a1b        0x1 
+                0x00000000400879d4                vRingbufferDelete
+ *fill*         0x0000000040087a17        0x0 
+ *fill*         0x0000000040087a17        0x0 
+ *fill*         0x0000000040087a17        0x0 
+ *fill*         0x0000000040087a17        0x0 
+ *fill*         0x0000000040087a17        0x1 
  .text.vPortStoreTaskMPUSettings
-                0x0000000040087a1c       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
-                0x0000000040087a1c                vPortStoreTaskMPUSettings
- *fill*         0x0000000040087a2f        0x0 
- *fill*         0x0000000040087a2f        0x0 
- *fill*         0x0000000040087a2f        0x0 
- *fill*         0x0000000040087a2f        0x1 
+                0x0000000040087a18       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(port.o)
+                0x0000000040087a18                vPortStoreTaskMPUSettings
+ *fill*         0x0000000040087a2b        0x0 
+ *fill*         0x0000000040087a2b        0x0 
+ *fill*         0x0000000040087a2b        0x0 
+ *fill*         0x0000000040087a2b        0x1 
  .text.prvIsQueueEmpty
-                0x0000000040087a30       0x12 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x0 
- *fill*         0x0000000040087a42        0x2 
- .text          0x0000000040087a44       0x33 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr_asm.o)
-                0x0000000040087a44                xt_ints_on
-                0x0000000040087a5c                xt_ints_off
- *fill*         0x0000000040087a77        0x1 
+                0x0000000040087a2c       0x12 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(queue.o)
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x0 
+ *fill*         0x0000000040087a3e        0x2 
+ .text          0x0000000040087a40       0x33 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(xtensa_intr_asm.o)
+                0x0000000040087a40                xt_ints_on
+                0x0000000040087a58                xt_ints_off
+ *fill*         0x0000000040087a73        0x1 
  .text.vListInitialise
-                0x0000000040087a78       0x15 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
-                0x0000000040087a78                vListInitialise
- *fill*         0x0000000040087a8d        0x3 
+                0x0000000040087a74       0x15 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
+                0x0000000040087a74                vListInitialise
+ *fill*         0x0000000040087a89        0x3 
  .text.vListInitialiseItem
-                0x0000000040087a90        0x9 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
-                0x0000000040087a90                vListInitialiseItem
- *fill*         0x0000000040087a99        0x3 
+                0x0000000040087a8c        0x9 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
+                0x0000000040087a8c                vListInitialiseItem
+ *fill*         0x0000000040087a95        0x3 
  .text.vListInsertEnd
-                0x0000000040087a9c       0x1b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
-                0x0000000040087a9c                vListInsertEnd
- *fill*         0x0000000040087ab7        0x1 
+                0x0000000040087a98       0x1b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
+                0x0000000040087a98                vListInsertEnd
+ *fill*         0x0000000040087ab3        0x1 
  .text.vListInsert
-                0x0000000040087ab8       0x2f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
-                0x0000000040087ab8                vListInsert
- *fill*         0x0000000040087ae7        0x1 
+                0x0000000040087ab4       0x2f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
+                0x0000000040087ab4                vListInsert
+ *fill*         0x0000000040087ae3        0x1 
  .text.uxListRemove
-                0x0000000040087ae8       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
-                0x0000000040087ae8                uxListRemove
- *fill*         0x0000000040087b0e        0x2 
+                0x0000000040087ae4       0x26 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(list.o)
+                0x0000000040087ae4                uxListRemove
+ *fill*         0x0000000040087b0a        0x2 
  .text.prvCheckItemAvail
-                0x0000000040087b10       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+                0x0000000040087b0c       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
  .text.prvGetCurMaxSizeNoSplit
-                0x0000000040087b44       0x3d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x0000000040087b81        0x3 
+                0x0000000040087b40       0x3d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x0000000040087b7d        0x3 
  .text.prvGetCurMaxSizeAllowSplit
-                0x0000000040087b84       0x4e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x0000000040087bd2        0x2 
+                0x0000000040087b80       0x4e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x0000000040087bce        0x2 
  .text.prvGetCurMaxSizeByteBuf
-                0x0000000040087bd4       0x1e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
- *fill*         0x0000000040087bf2        0x0 
+                0x0000000040087bd0       0x1e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
+ *fill*         0x0000000040087bee        0x0 
  *libheap.a:multi_heap.o(.literal .text .literal.* .text.*)
- *fill*         0x0000000040087bf2        0x2 
+ *fill*         0x0000000040087bee        0x2 
  .text.get_prev_free_block
-                0x0000000040087bf4       0x68 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087bf0       0x68 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                          0x77 (size before relaxing)
- *fill*         0x0000000040087c5c        0x0 
+ *fill*         0x0000000040087c58        0x0 
  .text.split_if_necessary
-                0x0000000040087c5c      0x138 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087c58      0x138 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                         0x148 (size before relaxing)
  .text.assert_valid_block
-                0x0000000040087d94       0xb0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087d90       0xb0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                          0xb4 (size before relaxing)
  .text.merge_adjacent
-                0x0000000040087e44      0x12c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087e40      0x12c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                         0x140 (size before relaxing)
  .text.multi_heap_get_allocated_size_impl
-                0x0000000040087f70       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087f6c       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                          0x3c (size before relaxing)
-                0x0000000040087f70                multi_heap_get_allocated_size
-                0x0000000040087f70                multi_heap_get_allocated_size_impl
+                0x0000000040087f6c                multi_heap_get_allocated_size
+                0x0000000040087f6c                multi_heap_get_allocated_size_impl
  .text.multi_heap_malloc_impl
-                0x0000000040087fa8      0x110 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040087fa4      0x110 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                         0x120 (size before relaxing)
-                0x0000000040087fa8                multi_heap_malloc
-                0x0000000040087fa8                multi_heap_malloc_impl
+                0x0000000040087fa4                multi_heap_malloc
+                0x0000000040087fa4                multi_heap_malloc_impl
  .text.multi_heap_free_impl
-                0x00000000400880b8      0x130 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x00000000400880b4      0x130 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                         0x14c (size before relaxing)
-                0x00000000400880b8                multi_heap_free
-                0x00000000400880b8                multi_heap_free_impl
+                0x00000000400880b4                multi_heap_free
+                0x00000000400880b4                multi_heap_free_impl
  .text.multi_heap_realloc_impl
-                0x00000000400881e8      0x258 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x00000000400881e4      0x258 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
                                         0x274 (size before relaxing)
-                0x00000000400881e8                multi_heap_realloc
-                0x00000000400881e8                multi_heap_realloc_impl
- *fill*         0x0000000040088440        0x0 
- *fill*         0x0000000040088440        0x0 
+                0x00000000400881e4                multi_heap_realloc
+                0x00000000400881e4                multi_heap_realloc_impl
+ *fill*         0x000000004008843c        0x0 
+ *fill*         0x000000004008843c        0x0 
  .text.multi_heap_register_impl
-                0x0000000040088440       0x51 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
-                0x0000000040088440                multi_heap_register_impl
-                0x0000000040088440                multi_heap_register
- *fill*         0x0000000040088491        0x3 
+                0x000000004008843c       0x51 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x000000004008843c                multi_heap_register_impl
+                0x000000004008843c                multi_heap_register
+ *fill*         0x000000004008848d        0x3 
  .text.multi_heap_set_lock
-                0x0000000040088494        0x7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
-                0x0000000040088494                multi_heap_set_lock
- *fill*         0x000000004008849b        0x0 
+                0x0000000040088490        0x7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
+                0x0000000040088490                multi_heap_set_lock
+ *fill*         0x0000000040088497        0x0 
  *libheap.a:multi_heap_poisoning.o(.literal .text .literal.* .text.*)
  *libesp32.a:panic.o(.literal .text .literal.* .text.*)
- *fill*         0x000000004008849b        0x1 
+ *fill*         0x0000000040088497        0x1 
  .text.panicPutChar
-                0x000000004008849c       0x1e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
- *fill*         0x00000000400884ba        0x2 
+                0x0000000040088498       0x1e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+ *fill*         0x00000000400884b6        0x2 
  .text.panicPutStr
-                0x00000000400884bc       0x1a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
- *fill*         0x00000000400884d6        0x2 
+                0x00000000400884b8       0x1a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+ *fill*         0x00000000400884d2        0x2 
  .text.panicPutHex
-                0x00000000400884d8       0x2c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400884d4       0x2c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x2f (size before relaxing)
- *fill*         0x0000000040088504        0x0 
+ *fill*         0x0000000040088500        0x0 
  .text.panicPutDec
-                0x0000000040088504       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088500       0x3c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x46 (size before relaxing)
- *fill*         0x0000000040088540        0x0 
+ *fill*         0x000000004008853c        0x0 
  .text.reconfigureAllWdts
-                0x0000000040088540       0xa8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x000000004008853c       0xa8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
  .text.putEntry
-                0x00000000400885e8       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400885e4       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x37 (size before relaxing)
- *fill*         0x0000000040088613        0x1 
+ *fill*         0x000000004008860f        0x1 
  .text.doBacktrace
-                0x0000000040088614       0x71 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088610       0x71 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x78 (size before relaxing)
- *fill*         0x0000000040088685        0x3 
+ *fill*         0x0000000040088681        0x3 
  .text.invoke_abort
-                0x0000000040088688       0x1d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
- *fill*         0x00000000400886a5        0x3 
+                0x0000000040088684       0x1d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+ *fill*         0x00000000400886a1        0x3 
  .text.haltOtherCore
-                0x00000000400886a8       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400886a4       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
  .text.commonErrorHandler_dump
-                0x00000000400886c0       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400886bc       0xd6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                         0x116 (size before relaxing)
- *fill*         0x0000000040088796        0x2 
+ *fill*         0x0000000040088792        0x2 
  .text.esp_panic_dig_reset
-                0x0000000040088798       0x32 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088794       0x32 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x36 (size before relaxing)
- *fill*         0x00000000400887ca        0x2 
+ *fill*         0x00000000400887c6        0x2 
  .text.commonErrorHandler
-                0x00000000400887cc       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400887c8       0x70 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x9a (size before relaxing)
- *fill*         0x000000004008883c        0x0 
- .text.abort    0x000000004008883c       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+ *fill*         0x0000000040088838        0x0 
+ .text.abort    0x0000000040088838       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x3e (size before relaxing)
-                0x000000004008883c                abort
- *fill*         0x0000000040088874        0x0 
+                0x0000000040088838                abort
+ *fill*         0x0000000040088870        0x0 
  .text.vApplicationStackOverflowHook
-                0x0000000040088874       0x17 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088870       0x17 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x23 (size before relaxing)
-                0x0000000040088874                vApplicationStackOverflowHook
- *fill*         0x000000004008888b        0x1 
+                0x0000000040088870                vApplicationStackOverflowHook
+ *fill*         0x0000000040088887        0x1 
  .text.panicHandler
-                0x000000004008888c      0x167 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088888      0x167 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                         0x19a (size before relaxing)
-                0x000000004008888c                panicHandler
- *fill*         0x00000000400889f3        0x1 
+                0x0000000040088888                panicHandler
+ *fill*         0x00000000400889ef        0x1 
  .text.xt_unhandled_exception
-                0x00000000400889f4       0x7d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x00000000400889f0       0x7d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0xa9 (size before relaxing)
-                0x00000000400889f4                xt_unhandled_exception
- *fill*         0x0000000040088a71        0x3 
+                0x00000000400889f0                xt_unhandled_exception
+ *fill*         0x0000000040088a6d        0x3 
  .text._esp_error_check_failed
-                0x0000000040088a74       0x57 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088a70       0x57 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
                                          0x5e (size before relaxing)
-                0x0000000040088a74                _esp_error_check_failed
- *fill*         0x0000000040088acb        0x0 
- *fill*         0x0000000040088acb        0x0 
- *fill*         0x0000000040088acb        0x0 
- *fill*         0x0000000040088acb        0x1 
+                0x0000000040088a70                _esp_error_check_failed
+ *fill*         0x0000000040088ac7        0x0 
+ *fill*         0x0000000040088ac7        0x0 
+ *fill*         0x0000000040088ac7        0x0 
+ *fill*         0x0000000040088ac7        0x1 
  .text.setFirstBreakpoint
-                0x0000000040088acc       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
- *fill*         0x0000000040088adf        0x0 
- *fill*         0x0000000040088adf        0x0 
- *fill*         0x0000000040088adf        0x0 
- *fill*         0x0000000040088adf        0x0 
- *fill*         0x0000000040088adf        0x0 
- *fill*         0x0000000040088adf        0x1 
+                0x0000000040088ac8       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+ *fill*         0x0000000040088adb        0x0 
+ *fill*         0x0000000040088adb        0x0 
+ *fill*         0x0000000040088adb        0x0 
+ *fill*         0x0000000040088adb        0x0 
+ *fill*         0x0000000040088adb        0x0 
+ *fill*         0x0000000040088adb        0x1 
  .text.esp_reset_reason_set_hint
-                0x0000000040088ae0        0x5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
-                0x0000000040088ae0                esp_reset_reason_set_hint
- *fill*         0x0000000040088ae5        0x3 
+                0x0000000040088adc        0x5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088adc                esp_reset_reason_set_hint
+ *fill*         0x0000000040088ae1        0x3 
  .text.esp_reset_reason_get_hint
-                0x0000000040088ae8        0x7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
-                0x0000000040088ae8                esp_reset_reason_get_hint
- *fill*         0x0000000040088aef        0x0 
- *fill*         0x0000000040088aef        0x0 
- *fill*         0x0000000040088aef        0x0 
- *fill*         0x0000000040088aef        0x0 
- *fill*         0x0000000040088aef        0x0 
+                0x0000000040088ae4        0x7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(panic.o)
+                0x0000000040088ae4                esp_reset_reason_get_hint
+ *fill*         0x0000000040088aeb        0x0 
+ *fill*         0x0000000040088aeb        0x0 
+ *fill*         0x0000000040088aeb        0x0 
+ *fill*         0x0000000040088aeb        0x0 
+ *fill*         0x0000000040088aeb        0x0 
  *libesp32.a:core_dump.o(.literal .text .literal.* .text.*)
  *libapp_trace.a:(.literal .text .literal.* .text.*)
  *libxtensa-debug-module.a:eri.o(.literal .text .literal.* .text.*)
- *fill*         0x0000000040088aef        0x1 
+ *fill*         0x0000000040088aeb        0x1 
  .text.eri_write
-                0x0000000040088af0        0x8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/xtensa-debug-module/libxtensa-debug-module.a(eri.o)
-                0x0000000040088af0                eri_write
+                0x0000000040088aec        0x8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/xtensa-debug-module/libxtensa-debug-module.a(eri.o)
+                0x0000000040088aec                eri_write
  *librtc.a:(.literal .text .literal.* .text.*)
  *libsoc.a:rtc_*.o(.literal .text .literal.* .text.*)
  .text.rtc_clk_32k_enable_common
-                0x0000000040088af8       0x81 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
- *fill*         0x0000000040088b79        0x3 
+                0x0000000040088af4       0x81 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x0000000040088b75        0x3 
  .text.rtc_clk_bbpll_disable
-                0x0000000040088b7c       0x3e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
- *fill*         0x0000000040088bba        0x2 
+                0x0000000040088b78       0x3e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x0000000040088bb6        0x2 
  .text.rtc_clk_bbpll_enable
-                0x0000000040088bbc       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088bb8       0x18 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
  .text.rtc_clk_32k_enable
-                0x0000000040088bd4       0x2d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088bd4                rtc_clk_32k_enable
- *fill*         0x0000000040088c01        0x3 
+                0x0000000040088bd0       0x2d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088bd0                rtc_clk_32k_enable
+ *fill*         0x0000000040088bfd        0x3 
  .text.rtc_clk_32k_enable_external
-                0x0000000040088c04        0xe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088c00        0xe /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0x12 (size before relaxing)
-                0x0000000040088c04                rtc_clk_32k_enable_external
- *fill*         0x0000000040088c12        0x2 
+                0x0000000040088c00                rtc_clk_32k_enable_external
+ *fill*         0x0000000040088c0e        0x2 
  .text.rtc_clk_8m_enable
-                0x0000000040088c14       0x9b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088c14                rtc_clk_8m_enable
- *fill*         0x0000000040088caf        0x1 
+                0x0000000040088c10       0x9b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088c10                rtc_clk_8m_enable
+ *fill*         0x0000000040088cab        0x1 
  .text.rtc_clk_slow_freq_set
-                0x0000000040088cb0       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088cb0                rtc_clk_slow_freq_set
+                0x0000000040088cac       0x48 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088cac                rtc_clk_slow_freq_set
  .text.rtc_clk_slow_freq_get
-                0x0000000040088cf8       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088cf8                rtc_clk_slow_freq_get
+                0x0000000040088cf4       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088cf4                rtc_clk_slow_freq_get
  .text.rtc_clk_slow_freq_get_hz
-                0x0000000040088d08       0x29 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088d08                rtc_clk_slow_freq_get_hz
- *fill*         0x0000000040088d31        0x3 
+                0x0000000040088d04       0x29 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088d04                rtc_clk_slow_freq_get_hz
+ *fill*         0x0000000040088d2d        0x3 
  .text.rtc_clk_fast_freq_set
-                0x0000000040088d34       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088d34                rtc_clk_fast_freq_set
- *fill*         0x0000000040088d5e        0x2 
+                0x0000000040088d30       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088d30                rtc_clk_fast_freq_set
+ *fill*         0x0000000040088d5a        0x2 
  .text.rtc_clk_bbpll_configure
-                0x0000000040088d60      0x189 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088d5c      0x189 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                         0x18d (size before relaxing)
-                0x0000000040088d60                rtc_clk_bbpll_configure
- *fill*         0x0000000040088ee9        0x3 
+                0x0000000040088d5c                rtc_clk_bbpll_configure
+ *fill*         0x0000000040088ee5        0x3 
  .text.rtc_clk_xtal_freq_get
-                0x0000000040088eec       0x2e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088eec                rtc_get_xtal
-                0x0000000040088eec                rtc_clk_xtal_freq_get
- *fill*         0x0000000040088f1a        0x2 
+                0x0000000040088ee8       0x2e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088ee8                rtc_get_xtal
+                0x0000000040088ee8                rtc_clk_xtal_freq_get
+ *fill*         0x0000000040088f16        0x2 
  .text.rtc_clk_cpu_freq_mhz_to_config
-                0x0000000040088f1c       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040088f1c                rtc_clk_cpu_freq_mhz_to_config
- *fill*         0x0000000040088f7d        0x3 
+                0x0000000040088f18       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088f18                rtc_clk_cpu_freq_mhz_to_config
+ *fill*         0x0000000040088f79        0x3 
  .text.rtc_clk_cpu_freq_get_config
-                0x0000000040088f80       0x9d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040088f7c       0x9d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0xa5 (size before relaxing)
-                0x0000000040088f80                rtc_clk_cpu_freq_get_config
- *fill*         0x000000004008901d        0x3 
+                0x0000000040088f7c                rtc_clk_cpu_freq_get_config
+ *fill*         0x0000000040089019        0x3 
  .text.rtc_clk_apb_freq_update
-                0x0000000040089020       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040089020                rtc_clk_apb_freq_update
- *fill*         0x0000000040089039        0x3 
+                0x000000004008901c       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x000000004008901c                rtc_clk_apb_freq_update
+ *fill*         0x0000000040089035        0x3 
  .text.rtc_clk_cpu_freq_to_xtal
-                0x000000004008903c       0x9f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040089038       0x9f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0xa3 (size before relaxing)
-                0x000000004008903c                rtc_clk_cpu_freq_to_xtal
- *fill*         0x00000000400890db        0x1 
+                0x0000000040089038                rtc_clk_cpu_freq_to_xtal
+ *fill*         0x00000000400890d7        0x1 
  .text.rtc_clk_cpu_freq_set_xtal
-                0x00000000400890dc       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x00000000400890d8       0x13 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0x1f (size before relaxing)
-                0x00000000400890dc                rtc_clk_cpu_freq_set_xtal
- *fill*         0x00000000400890ef        0x1 
+                0x00000000400890d8                rtc_clk_cpu_freq_set_xtal
+ *fill*         0x00000000400890eb        0x1 
  .text.rtc_clk_cpu_freq_to_pll_mhz
-                0x00000000400890f0       0x84 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x00000000400890ec       0x84 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0x8c (size before relaxing)
  .text.rtc_clk_cpu_freq_to_8m
-                0x0000000040089174       0x62 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040089170       0x62 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0x66 (size before relaxing)
- *fill*         0x00000000400891d6        0x2 
+ *fill*         0x00000000400891d2        0x2 
  .text.rtc_clk_cpu_freq_set_config
-                0x00000000400891d8       0x5c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x00000000400891d4       0x5c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
                                          0x77 (size before relaxing)
-                0x00000000400891d8                rtc_clk_cpu_freq_set_config
- *fill*         0x0000000040089234        0x0 
+                0x00000000400891d4                rtc_clk_cpu_freq_set_config
+ *fill*         0x0000000040089230        0x0 
  .text.rtc_clk_apb_freq_get
-                0x0000000040089234       0x27 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
-                0x0000000040089234                rtc_clk_apb_freq_get
- *fill*         0x000000004008925b        0x1 
+                0x0000000040089230       0x27 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+                0x0000000040089230                rtc_clk_apb_freq_get
+ *fill*         0x0000000040089257        0x1 
  .text.rtc_init
-                0x000000004008925c      0x344 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_init.o)
+                0x0000000040089258      0x344 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_init.o)
                                         0x368 (size before relaxing)
-                0x000000004008925c                rtc_init
+                0x0000000040089258                rtc_init
  .text.rtc_clk_cal_internal
-                0x00000000400895a0      0x1b8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
+                0x000000004008959c      0x1b8 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
                                         0x1c4 (size before relaxing)
  .text.rtc_clk_cal
-                0x0000000040089758       0x4e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
+                0x0000000040089754       0x4e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
                                          0x52 (size before relaxing)
-                0x0000000040089758                rtc_clk_cal
- *fill*         0x00000000400897a6        0x2 
+                0x0000000040089754                rtc_clk_cal
+ *fill*         0x00000000400897a2        0x2 
  .text.rtc_time_get
-                0x00000000400897a8       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
-                0x00000000400897a8                rtc_time_get
+                0x00000000400897a4       0x50 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
+                0x00000000400897a4                rtc_time_get
  .text.rtc_clk_wait_for_slow_cycle
-                0x00000000400897f8       0x79 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
-                0x00000000400897f8                rtc_clk_wait_for_slow_cycle
- *fill*         0x0000000040089871        0x3 
+                0x00000000400897f4       0x79 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
+                0x00000000400897f4                rtc_clk_wait_for_slow_cycle
+ *fill*         0x000000004008986d        0x3 
  .text.rtc_wdt_get_protect_status
-                0x0000000040089874       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089874                rtc_wdt_get_protect_status
- *fill*         0x000000004008988d        0x3 
+                0x0000000040089870       0x19 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089870                rtc_wdt_get_protect_status
+ *fill*         0x0000000040089889        0x3 
  .text.rtc_wdt_protect_off
-                0x0000000040089890       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089890                rtc_wdt_protect_off
+                0x000000004008988c       0x10 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x000000004008988c                rtc_wdt_protect_off
  .text.rtc_wdt_protect_on
-                0x00000000400898a0        0xf /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x00000000400898a0                rtc_wdt_protect_on
- *fill*         0x00000000400898af        0x1 
+                0x000000004008989c        0xf /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x000000004008989c                rtc_wdt_protect_on
+ *fill*         0x00000000400898ab        0x1 
  .text.rtc_wdt_enable
-                0x00000000400898b0       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x00000000400898b0                rtc_wdt_enable
- *fill*         0x00000000400898db        0x1 
+                0x00000000400898ac       0x2b /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x00000000400898ac                rtc_wdt_enable
+ *fill*         0x00000000400898d7        0x1 
  .text.rtc_wdt_feed
-                0x00000000400898dc       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x00000000400898d8       0x2a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
                                          0x32 (size before relaxing)
-                0x00000000400898dc                rtc_wdt_feed
- *fill*         0x0000000040089906        0x2 
+                0x00000000400898d8                rtc_wdt_feed
+ *fill*         0x0000000040089902        0x2 
  .text.rtc_wdt_set_time
-                0x0000000040089908       0x5d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089908                rtc_wdt_set_time
- *fill*         0x0000000040089965        0x3 
+                0x0000000040089904       0x5d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089904                rtc_wdt_set_time
+ *fill*         0x0000000040089961        0x3 
  .text.rtc_wdt_set_stage
-                0x0000000040089968       0xb1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089968                rtc_wdt_set_stage
- *fill*         0x0000000040089a19        0x3 
+                0x0000000040089964       0xb1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089964                rtc_wdt_set_stage
+ *fill*         0x0000000040089a15        0x3 
  .text.rtc_wdt_disable
-                0x0000000040089a1c       0x6a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089a18       0x6a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
                                          0x7e (size before relaxing)
-                0x0000000040089a1c                rtc_wdt_disable
- *fill*         0x0000000040089a86        0x2 
+                0x0000000040089a18                rtc_wdt_disable
+ *fill*         0x0000000040089a82        0x2 
  .text.rtc_wdt_set_length_of_reset_signal
-                0x0000000040089a88       0x69 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089a88                rtc_wdt_set_length_of_reset_signal
- *fill*         0x0000000040089af1        0x3 
+                0x0000000040089a84       0x69 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089a84                rtc_wdt_set_length_of_reset_signal
+ *fill*         0x0000000040089aed        0x3 
  .text.rtc_wdt_is_on
-                0x0000000040089af4       0x25 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
-                0x0000000040089af4                rtc_wdt_is_on
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
- *fill*         0x0000000040089b19        0x0 
+                0x0000000040089af0       0x25 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+                0x0000000040089af0                rtc_wdt_is_on
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
+ *fill*         0x0000000040089b15        0x0 
  *libsoc.a:cpu_util.o(.literal .text .literal.* .text.*)
  *libhal.a:(.literal .text .literal.* .text.*)
- *fill*         0x0000000040089b19        0x3 
- .text          0x0000000040089b1c      0x137 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
-                0x0000000040089b1c                xthal_window_spill_nw
-                0x0000000040089b1c                xthal_spill_registers_into_stack_nw
-                0x0000000040089c30                xthal_window_spill
- *fill*         0x0000000040089c53        0x1 
- .text          0x0000000040089c54        0x8 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(int_asm--set_intclear.o)
-                0x0000000040089c54                xthal_set_intclear
- .text          0x0000000040089c5c       0x48 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(clock.o)
-                0x0000000040089c5c                xthal_get_ccount
-                0x0000000040089c64                xthal_set_ccompare
-                0x0000000040089c84                xthal_get_ccompare
- *fill*         0x0000000040089ca4        0x0 
- .text          0x0000000040089ca4       0x3e /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
-                0x0000000040089ca4                xthal_restore_extra_nw
- *fill*         0x0000000040089ce2        0x2 
- .text          0x0000000040089ce4       0x3e /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
-                0x0000000040089ce4                xthal_save_extra_nw
+ *fill*         0x0000000040089b15        0x3 
+ .text          0x0000000040089b18      0x137 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
+                0x0000000040089b18                xthal_window_spill_nw
+                0x0000000040089b18                xthal_spill_registers_into_stack_nw
+                0x0000000040089c2c                xthal_window_spill
+ *fill*         0x0000000040089c4f        0x1 
+ .text          0x0000000040089c50        0x8 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(int_asm--set_intclear.o)
+                0x0000000040089c50                xthal_set_intclear
+ .text          0x0000000040089c58       0x48 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(clock.o)
+                0x0000000040089c58                xthal_get_ccount
+                0x0000000040089c60                xthal_set_ccompare
+                0x0000000040089c80                xthal_get_ccompare
+ *fill*         0x0000000040089ca0        0x0 
+ .text          0x0000000040089ca0       0x3e /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
+                0x0000000040089ca0                xthal_restore_extra_nw
+ *fill*         0x0000000040089cde        0x2 
+ .text          0x0000000040089ce0       0x3e /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
+                0x0000000040089ce0                xthal_save_extra_nw
  *libgcc.a:lib2funcs.o(.literal .text .literal.* .text.*)
  *libspi_flash.a:spi_flash_rom_patch.o(.literal .text .literal.* .text.*)
- *fill*         0x0000000040089d22        0x2 
+ *fill*         0x0000000040089d1e        0x2 
  .text.esp_rom_spiflash_read_status
-                0x0000000040089d24       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x0000000040089d24                esp_rom_spiflash_read_status
- *fill*         0x0000000040089d85        0x3 
+                0x0000000040089d20       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089d20                esp_rom_spiflash_read_status
+ *fill*         0x0000000040089d81        0x3 
  .text.esp_rom_spiflash_wait_idle
-                0x0000000040089d88       0x32 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x0000000040089d88                esp_rom_spiflash_wait_idle
- *fill*         0x0000000040089dba        0x2 
+                0x0000000040089d84       0x32 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089d84                esp_rom_spiflash_wait_idle
+ *fill*         0x0000000040089db6        0x2 
  .text.esp_rom_spiflash_erase_block_internal
-                0x0000000040089dbc       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089db8       0x38 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x3c (size before relaxing)
  .text.esp_rom_spiflash_erase_sector_internal
-                0x0000000040089df4       0x44 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089df0       0x44 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
  .text.esp_rom_spiflash_read_data
-                0x0000000040089e38      0x121 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- *fill*         0x0000000040089f59        0x3 
+                0x0000000040089e34      0x121 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ *fill*         0x0000000040089f55        0x3 
  .text.esp_rom_spiflash_enable_write
-                0x0000000040089f5c       0x39 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089f58       0x39 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x3d (size before relaxing)
- *fill*         0x0000000040089f95        0x3 
+ *fill*         0x0000000040089f91        0x3 
  .text.esp_rom_spiflash_program_page_internal
-                0x0000000040089f98      0x122 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x0000000040089f94      0x122 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                         0x126 (size before relaxing)
- *fill*         0x000000004008a0ba        0x2 
+ *fill*         0x000000004008a0b6        0x2 
  .text.esp_rom_spiflash_read_statushigh
-                0x000000004008a0bc       0x21 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004008a0bc                esp_rom_spiflash_read_statushigh
- *fill*         0x000000004008a0dd        0x3 
+                0x000000004008a0b8       0x21 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a0b8                esp_rom_spiflash_read_statushigh
+ *fill*         0x000000004008a0d9        0x3 
  .text.esp_rom_spiflash_write_status
-                0x000000004008a0e0       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a0dc       0x34 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x38 (size before relaxing)
-                0x000000004008a0e0                esp_rom_spiflash_write_status
+                0x000000004008a0dc                esp_rom_spiflash_write_status
  .text.esp_rom_spiflash_unlock
-                0x000000004008a114       0x6a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a110       0x6a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x7e (size before relaxing)
-                0x000000004008a114                esp_rom_spiflash_unlock
- *fill*         0x000000004008a17e        0x2 
+                0x000000004008a110                esp_rom_spiflash_unlock
+ *fill*         0x000000004008a17a        0x2 
  .text.esp_rom_spiflash_erase_block
-                0x000000004008a180       0x62 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a17c       0x62 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x66 (size before relaxing)
-                0x000000004008a180                esp_rom_spiflash_erase_block
- *fill*         0x000000004008a1e2        0x2 
+                0x000000004008a17c                esp_rom_spiflash_erase_block
+ *fill*         0x000000004008a1de        0x2 
  .text.esp_rom_spiflash_erase_sector
-                0x000000004008a1e4       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a1e0       0x61 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0x65 (size before relaxing)
-                0x000000004008a1e4                esp_rom_spiflash_erase_sector
- *fill*         0x000000004008a245        0x3 
+                0x000000004008a1e0                esp_rom_spiflash_erase_sector
+ *fill*         0x000000004008a241        0x3 
  .text.esp_rom_spiflash_write
-                0x000000004008a248       0xc6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a244       0xc6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
                                          0xca (size before relaxing)
-                0x000000004008a248                esp_rom_spiflash_write
- *fill*         0x000000004008a30e        0x2 
+                0x000000004008a244                esp_rom_spiflash_write
+ *fill*         0x000000004008a30a        0x2 
  .text.esp_rom_spiflash_write_encrypted
-                0x000000004008a310       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004008a310                esp_rom_spiflash_write_encrypted
- *fill*         0x000000004008a36a        0x2 
+                0x000000004008a30c       0x5a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a30c                esp_rom_spiflash_write_encrypted
+ *fill*         0x000000004008a366        0x2 
  .text.esp_rom_spiflash_read
-                0x000000004008a36c      0x284 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
-                0x000000004008a36c                esp_rom_spiflash_read
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
- *fill*         0x000000004008a5f0        0x0 
+                0x000000004008a368      0x284 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+                0x000000004008a368                esp_rom_spiflash_read
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
+ *fill*         0x000000004008a5ec        0x0 
  *libgcov.a:(.literal .text .literal.* .text.*)
  *lib_a-utoa.o(.literal .text .literal.* .text.*)
  *lib_a-longjmp.o(.literal .text .literal.* .text.*)
@@ -5454,8 +5455,8 @@ END GROUP
  *lib_a-fflush.o(.literal .text .literal.* .text.*)
  *lib_a-refill.o(.literal .text .literal.* .text.*)
  *lib_a-s_fpclassify.o(.literal .text .literal.* .text.*)
- .text          0x000000004008a5f0       0x4c /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libm.a(lib_a-s_fpclassify.o)
-                0x000000004008a5f0                __fpclassifyd
+ .text          0x000000004008a5ec       0x4c /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libm.a(lib_a-s_fpclassify.o)
+                0x000000004008a5ec                __fpclassifyd
  *lib_a-locale.o(.literal .text .literal.* .text.*)
  *lib_a-asctime.o(.literal .text .literal.* .text.*)
  *lib_a-ctime.o(.literal .text .literal.* .text.*)
@@ -5563,8 +5564,8 @@ END GROUP
  *lib_a-strdup_r.o(.literal .text .literal.* .text.*)
  *lib_a-system.o(.literal .text .literal.* .text.*)
  *lib_a-strndup_r.o(.literal .text .literal.* .text.*)
-                0x000000004008a63c                _iram_text_end = ABSOLUTE (.)
-                0x000000004008a63c                _iram_end = ABSOLUTE (.)
+                0x000000004008a638                _iram_text_end = ABSOLUTE (.)
+                0x000000004008a638                _iram_end = ABSOLUTE (.)
 
 .dram0.data     0x000000003ffb0000     0x2130
                 0x000000003ffb0000                _data_start = ABSOLUTE (.)
@@ -11047,7 +11048,7 @@ OUTPUT(/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/stop
  .debug_ranges  0x0000000000002dc0       0x58 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(flash_partitions.o)
  .debug_ranges  0x0000000000002e18       0x30 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/wpa_supplicant/libwpa_supplicant.a(md5-internal.o)
 
-.debug_line     0x0000000000000000    0x3a67b
+.debug_line     0x0000000000000000    0x3a681
  .debug_line    0x0000000000000000      0x32a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/cxx/libcxx.a(cxx_exception_stubs.o)
  .debug_line    0x000000000000032a      0x8e3 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/cxx/libcxx.a(cxx_guards.o)
  .debug_line    0x0000000000000c0d      0xa3d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/esp32/libesp32.a(cpu_start.o)
@@ -11086,92 +11087,92 @@ OUTPUT(/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/stop
  .debug_line    0x000000000000ddc8      0xa1d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(heap_caps.o)
  .debug_line    0x000000000000e7e5     0x126f /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/heap/libheap.a(multi_heap.o)
  .debug_line    0x000000000000fa54      0x886 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/log/liblog.a(log.o)
- .debug_line    0x00000000000102da      0x49c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
- .debug_line    0x0000000000010776      0x528 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(AlphaDisplay.o)
- .debug_line    0x0000000000010c9e      0x150 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-assert.o)
- .debug_line    0x0000000000010dee      0x25c /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fiprintf.o)
- .debug_line    0x000000000001104a      0x2d6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fopen.o)
- .debug_line    0x0000000000011320      0x301 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fputs.o)
- .debug_line    0x0000000000011621      0x216 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fseek.o)
- .debug_line    0x0000000000011837      0x5e6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fseeko.o)
- .debug_line    0x0000000000011e1d      0x2b0 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-printf.o)
- .debug_line    0x00000000000120cd      0x2dc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-puts.o)
- .debug_line    0x00000000000123a9      0x2ec /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-reent.o)
- .debug_line    0x0000000000012695      0x315 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-snprintf.o)
- .debug_line    0x00000000000129aa      0x2c7 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sprintf.o)
- .debug_line    0x0000000000012c71     0x2e07 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-svfprintf.o)
- .debug_line    0x0000000000015a78     0x2539 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vfiprintf.o)
- .debug_line    0x0000000000017fb1     0x2fc4 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vfprintf.o)
- .debug_line    0x000000000001af75      0x275 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vprintf.o)
- .debug_line    0x000000000001b1ea      0x1d7 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-xpg_strerror_r.o)
- .debug_line    0x000000000001b3c1      0xfde /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-dtoa.o)
- .debug_line    0x000000000001c39f      0x234 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-flags.o)
- .debug_line    0x000000000001c5d3      0xdbc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-mprec.o)
- .debug_line    0x000000000001d38f      0x1e6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-s_frexp.o)
- .debug_line    0x000000000001d575      0x5e3 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-strerror.o)
- .debug_line    0x000000000001db58     0x244f /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-svfiprintf.o)
- .debug_line    0x000000000001ffa7       0x60 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-u_strerr.o)
- .debug_line    0x0000000000020007      0x179 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libm.a(lib_a-s_fpclassify.o)
- .debug_line    0x0000000000020180      0x3f0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(locks.o)
- .debug_line    0x0000000000020570      0x163 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(reent_init.o)
- .debug_line    0x00000000000206d3      0x24c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscall_table.o)
- .debug_line    0x000000000002091f      0x2a4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscalls.o)
- .debug_line    0x0000000000020bc3      0x825 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(time.o)
- .debug_line    0x00000000000213e8      0xbd3 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/pthread/libpthread.a(pthread.o)
- .debug_line    0x0000000000021fbb      0x4d6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/pthread/libpthread.a(pthread_local_storage.o)
- .debug_line    0x0000000000022491      0x18d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(cpu_util.o)
- .debug_line    0x000000000002261e      0xd08 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
- .debug_line    0x0000000000023326      0x420 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_init.o)
- .debug_line    0x0000000000023746      0x3eb /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
- .debug_line    0x0000000000023b31      0x456 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
- .debug_line    0x0000000000023f87      0x1ae /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(soc_memory_layout.o)
- .debug_line    0x0000000000024135      0x4a7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(memory_layout_utils.o)
- .debug_line    0x00000000000245dc      0x58e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(cache_utils.o)
- .debug_line    0x0000000000024b6a      0xa31 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_ops.o)
- .debug_line    0x000000000002559b      0xb22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
- .debug_line    0x00000000000260bd      0xb36 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_mmap.o)
- .debug_line    0x0000000000026bf3     0x18ba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/vfs/libvfs.a(vfs.o)
- .debug_line    0x00000000000284ad      0xb16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/vfs/libvfs.a(vfs_uart.o)
- .debug_line    0x0000000000028fc3      0x130 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/xtensa-debug-module/libxtensa-debug-module.a(eri.o)
- .debug_line    0x00000000000290f3      0x6be /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
- .debug_line    0x00000000000297b1      0x4af /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
- .debug_line    0x0000000000029c60      0x4cc /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
- .debug_line    0x000000000002a12c      0x3ac /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
- .debug_line    0x000000000002a4d8      0x124 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
- .debug_line    0x000000000002a5fc      0x17e /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixunsdfdi.o)
- .debug_line    0x000000000002a77a      0x106 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
- .debug_line    0x000000000002a880      0x1e3 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
- .debug_line    0x000000000002aa63      0x205 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_moddi3.o)
- .debug_line    0x000000000002ac68      0x195 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
- .debug_line    0x000000000002adfd      0x1e2 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
- .debug_line    0x000000000002afdf      0xb4d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/app_update/libapp_update.a(esp_ota_ops.o)
- .debug_line    0x000000000002bb2c      0xa94 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_line    0x000000000002c5c0      0x3ea /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x000000000002c9aa      0x3cc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- .debug_line    0x000000000002cd76     0x119a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(gpio.o)
- .debug_line    0x000000000002df10     0x1dba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(i2c.o)
- .debug_line    0x000000000002fcca      0x4e0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(periph_ctrl.o)
- .debug_line    0x00000000000301aa     0x30a5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(rtc_module.o)
- .debug_line    0x000000000003324f      0x9f5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(timer.o)
- .debug_line    0x0000000000033c44     0x2741 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(uart.o)
- .debug_line    0x0000000000036385       0x92 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(clock.o)
- .debug_line    0x0000000000036417      0x2ef /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
- .debug_line    0x0000000000036706       0x50 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(interrupts--intlevel.o)
- .debug_line    0x0000000000036756       0x66 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
- .debug_line    0x00000000000367bc       0x66 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
- .debug_line    0x0000000000036822     0x1572 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
- .debug_line    0x0000000000037d94      0x723 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/mbedtls/libmbedtls.a(sha256.o)
- .debug_line    0x00000000000384b7       0xe3 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/mbedtls/libmbedtls.a(platform_util.o)
- .debug_line    0x000000000003859a       0xcc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
- .debug_line    0x0000000000038666      0x250 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-putchar.o)
- .debug_line    0x00000000000388b6      0x2e1 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-putc.o)
- .debug_line    0x0000000000038b97       0xfc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(gpio_periph.o)
- .debug_line    0x0000000000038c93      0x145 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_periph.o)
- .debug_line    0x0000000000038dd8      0x835 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(partition.o)
- .debug_line    0x000000000003960d      0x196 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatdidf.o)
- .debug_line    0x00000000000397a3      0x6ba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_line    0x0000000000039e5d      0x33d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_line    0x000000000003a19a      0x4e1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/wpa_supplicant/libwpa_supplicant.a(md5-internal.o)
+ .debug_line    0x00000000000102da      0x4a2 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(main.o)
+ .debug_line    0x000000000001077c      0x528 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/main/libmain.a(AlphaDisplay.o)
+ .debug_line    0x0000000000010ca4      0x150 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-assert.o)
+ .debug_line    0x0000000000010df4      0x25c /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fiprintf.o)
+ .debug_line    0x0000000000011050      0x2d6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fopen.o)
+ .debug_line    0x0000000000011326      0x301 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fputs.o)
+ .debug_line    0x0000000000011627      0x216 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fseek.o)
+ .debug_line    0x000000000001183d      0x5e6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-fseeko.o)
+ .debug_line    0x0000000000011e23      0x2b0 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-printf.o)
+ .debug_line    0x00000000000120d3      0x2dc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-puts.o)
+ .debug_line    0x00000000000123af      0x2ec /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-reent.o)
+ .debug_line    0x000000000001269b      0x315 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-snprintf.o)
+ .debug_line    0x00000000000129b0      0x2c7 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-sprintf.o)
+ .debug_line    0x0000000000012c77     0x2e07 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-svfprintf.o)
+ .debug_line    0x0000000000015a7e     0x2539 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vfiprintf.o)
+ .debug_line    0x0000000000017fb7     0x2fc4 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vfprintf.o)
+ .debug_line    0x000000000001af7b      0x275 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-vprintf.o)
+ .debug_line    0x000000000001b1f0      0x1d7 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-xpg_strerror_r.o)
+ .debug_line    0x000000000001b3c7      0xfde /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-dtoa.o)
+ .debug_line    0x000000000001c3a5      0x234 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-flags.o)
+ .debug_line    0x000000000001c5d9      0xdbc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-mprec.o)
+ .debug_line    0x000000000001d395      0x1e6 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-s_frexp.o)
+ .debug_line    0x000000000001d57b      0x5e3 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-strerror.o)
+ .debug_line    0x000000000001db5e     0x244f /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-svfiprintf.o)
+ .debug_line    0x000000000001ffad       0x60 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-u_strerr.o)
+ .debug_line    0x000000000002000d      0x179 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libm.a(lib_a-s_fpclassify.o)
+ .debug_line    0x0000000000020186      0x3f0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(locks.o)
+ .debug_line    0x0000000000020576      0x163 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(reent_init.o)
+ .debug_line    0x00000000000206d9      0x24c /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscall_table.o)
+ .debug_line    0x0000000000020925      0x2a4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(syscalls.o)
+ .debug_line    0x0000000000020bc9      0x825 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/newlib/libnewlib.a(time.o)
+ .debug_line    0x00000000000213ee      0xbd3 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/pthread/libpthread.a(pthread.o)
+ .debug_line    0x0000000000021fc1      0x4d6 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/pthread/libpthread.a(pthread_local_storage.o)
+ .debug_line    0x0000000000022497      0x18d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(cpu_util.o)
+ .debug_line    0x0000000000022624      0xd08 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_clk.o)
+ .debug_line    0x000000000002332c      0x420 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_init.o)
+ .debug_line    0x000000000002374c      0x3eb /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_time.o)
+ .debug_line    0x0000000000023b37      0x456 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_wdt.o)
+ .debug_line    0x0000000000023f8d      0x1ae /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(soc_memory_layout.o)
+ .debug_line    0x000000000002413b      0x4a7 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(memory_layout_utils.o)
+ .debug_line    0x00000000000245e2      0x58e /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(cache_utils.o)
+ .debug_line    0x0000000000024b70      0xa31 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_ops.o)
+ .debug_line    0x00000000000255a1      0xb22 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(spi_flash_rom_patch.o)
+ .debug_line    0x00000000000260c3      0xb36 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(flash_mmap.o)
+ .debug_line    0x0000000000026bf9     0x18ba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/vfs/libvfs.a(vfs.o)
+ .debug_line    0x00000000000284b3      0xb16 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/vfs/libvfs.a(vfs_uart.o)
+ .debug_line    0x0000000000028fc9      0x130 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/xtensa-debug-module/libxtensa-debug-module.a(eri.o)
+ .debug_line    0x00000000000290f9      0x6be /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_addsubdf3.o)
+ .debug_line    0x00000000000297b7      0x4af /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_muldf3.o)
+ .debug_line    0x0000000000029c66      0x4cc /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdf3.o)
+ .debug_line    0x000000000002a132      0x3ac /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_cmpdf2.o)
+ .debug_line    0x000000000002a4de      0x124 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixdfsi.o)
+ .debug_line    0x000000000002a602      0x17e /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_fixunsdfdi.o)
+ .debug_line    0x000000000002a780      0x106 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatsidf.o)
+ .debug_line    0x000000000002a886      0x1e3 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_divdi3.o)
+ .debug_line    0x000000000002aa69      0x205 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_moddi3.o)
+ .debug_line    0x000000000002ac6e      0x195 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x000000000002ae03      0x1e2 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_umoddi3.o)
+ .debug_line    0x000000000002afe5      0xb4d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/app_update/libapp_update.a(esp_ota_ops.o)
+ .debug_line    0x000000000002bb32      0xa94 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x000000000002c5c6      0x3ea /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x000000000002c9b0      0x3cc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ .debug_line    0x000000000002cd7c     0x119a /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(gpio.o)
+ .debug_line    0x000000000002df16     0x1dba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(i2c.o)
+ .debug_line    0x000000000002fcd0      0x4e0 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(periph_ctrl.o)
+ .debug_line    0x00000000000301b0     0x30a5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(rtc_module.o)
+ .debug_line    0x0000000000033255      0x9f5 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(timer.o)
+ .debug_line    0x0000000000033c4a     0x2741 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/driver/libdriver.a(uart.o)
+ .debug_line    0x000000000003638b       0x92 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(clock.o)
+ .debug_line    0x000000000003641d      0x2ef /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(windowspill_asm.o)
+ .debug_line    0x000000000003670c       0x50 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(interrupts--intlevel.o)
+ .debug_line    0x000000000003675c       0x66 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--restore_extra_nw.o)
+ .debug_line    0x00000000000367c2       0x66 /Users/ellenlowing/esp/esp-idf/components/esp32/libhal.a(state_asm--save_extra_nw.o)
+ .debug_line    0x0000000000036828     0x1572 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/freertos/libfreertos.a(ringbuf.o)
+ .debug_line    0x0000000000037d9a      0x723 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/mbedtls/libmbedtls.a(sha256.o)
+ .debug_line    0x00000000000384bd       0xe3 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/mbedtls/libmbedtls.a(platform_util.o)
+ .debug_line    0x00000000000385a0       0xcc /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-errno.o)
+ .debug_line    0x000000000003866c      0x250 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-putchar.o)
+ .debug_line    0x00000000000388bc      0x2e1 /Users/ellenlowing/esp/esp-idf/components/newlib/lib/libc.a(lib_a-putc.o)
+ .debug_line    0x0000000000038b9d       0xfc /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(gpio_periph.o)
+ .debug_line    0x0000000000038c99      0x145 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/soc/libsoc.a(rtc_periph.o)
+ .debug_line    0x0000000000038dde      0x835 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/spi_flash/libspi_flash.a(partition.o)
+ .debug_line    0x0000000000039613      0x196 /Users/ellenlowing/esp/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/libgcc.a(_floatdidf.o)
+ .debug_line    0x00000000000397a9      0x6ba /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x0000000000039e63      0x33d /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x000000000003a1a0      0x4e1 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/wpa_supplicant/libwpa_supplicant.a(md5-internal.o)
 
 .debug_str      0x0000000000000000    0x14870
  .debug_str     0x0000000000000000      0x9b4 /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/stopwatch/build/cxx/libcxx.a(cxx_exception_stubs.o)
