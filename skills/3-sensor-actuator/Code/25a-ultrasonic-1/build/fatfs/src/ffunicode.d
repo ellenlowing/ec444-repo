@@ -11,7 +11,7 @@ src/ffunicode.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/reent.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -108,7 +108,7 @@ src/ffunicode.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

@@ -27,7 +27,7 @@ src/diskio_wl.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -153,7 +153,7 @@ src/diskio_wl.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 

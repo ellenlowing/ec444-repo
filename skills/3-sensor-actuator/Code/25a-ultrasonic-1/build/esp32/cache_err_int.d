@@ -25,7 +25,7 @@ cache_err_int.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -131,7 +131,7 @@ cache_err_int.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

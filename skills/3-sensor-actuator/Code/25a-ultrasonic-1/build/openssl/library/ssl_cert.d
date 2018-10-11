@@ -11,7 +11,7 @@ library/ssl_cert.o: \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/internal/ssl_stack.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -67,7 +67,7 @@ library/ssl_cert.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

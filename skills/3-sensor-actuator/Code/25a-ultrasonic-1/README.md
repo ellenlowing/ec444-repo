@@ -23,4 +23,4 @@ Pin 6 of range finder is wired to 3v power, pin 7 to ground, and pin 3 to analog
 
 
 ## Supporting Artifacts
--[Video Demo]()
+-[Video Demo](https://youtu.be/Jy_FZ1tpyeg)

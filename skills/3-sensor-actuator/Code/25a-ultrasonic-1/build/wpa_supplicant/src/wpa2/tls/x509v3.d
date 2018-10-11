@@ -10,7 +10,7 @@ src/wpa2/tls/x509v3.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -82,7 +82,7 @@ src/wpa2/tls/x509v3.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 

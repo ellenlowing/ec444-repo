@@ -1,6 +1,6 @@
 spiram_psram.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/spiram_psram.c \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h \
@@ -76,7 +76,7 @@ spiram_psram.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 

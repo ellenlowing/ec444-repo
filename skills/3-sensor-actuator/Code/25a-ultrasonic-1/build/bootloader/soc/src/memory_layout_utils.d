@@ -1,7 +1,7 @@
 src//memory_layout_utils.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/src/memory_layout_utils.c \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -11,7 +11,7 @@ src//memory_layout_utils.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

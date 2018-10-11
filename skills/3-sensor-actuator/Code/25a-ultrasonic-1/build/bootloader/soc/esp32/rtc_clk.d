@@ -20,7 +20,7 @@ esp32/rtc_clk.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -83,7 +83,7 @@ esp32/rtc_clk.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/25a-ultrasonic-1/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
