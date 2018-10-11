@@ -45,7 +45,7 @@ ledc_channel_config_t ledc_channel = {
 #define NO_OF_SAMPLES   64          //Multisampling
 
 static esp_adc_cal_characteristics_t *adc_chars;
-static const adc_channel_t channel = ADC2_CHANNEL_0;   // GPIO #4 / A5 input
+static const adc_channel_t channel = ADC2_CHANNEL_7;   // GPIO #27 / 27 input
 static const adc_atten_t atten = ADC_ATTEN_DB_11;
 static const adc_unit_t unit = ADC_UNIT_2;
 
