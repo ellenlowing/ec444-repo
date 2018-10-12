@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := interrupt
+PROJECT_NAME := 11-interrupt
 
 include $(IDF_PATH)/make/project.mk

@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := debounce
+PROJECT_NAME := 7-debounce
 
 include $(IDF_PATH)/make/project.mk

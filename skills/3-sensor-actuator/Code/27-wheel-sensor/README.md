@@ -1,25 +1,20 @@
-#  Ultrasonic range - 1
+#  Wheel sensor
 
-Author: Ellen Lo, 2019-10-01
+Author: Ellen Lo, 2019-10-12
 
 ## Summary
-In this skill assignment, I was able to get distance measurement with ultrasonic sensor. I chose to read analog outputs instead of using UART and PWM in this example. A distance value in millimeters is updated and displayed on console every 2 seconds.
-
-Although specs sheet says minimum distance is 30cm away from bottom of chip, tests show that the minimum distance is not so accurate. It could be about 40cm.
+In this skill assignment, I was able to get wheel speed with optical detector. Because it is able to detect white but not black, I attached a piece of white paper to half of the wheel. My program reads analog-to-digital value, thresholds the reading into LOW and HIGH, and measures the time it takes from one to next rising edge.
 
 ## Sketches and Photos
-### Console
-<!-- <center><img src="./img/console.png" width="50%" /></center> -->
-
 ### Wiring
-<!-- <center><img src="./img/IMG_2393.jpeg" width="50%" /></center> -->
-<!-- See console image for commands. -->
-Pin 6 of range finder is wired to 3v power, pin 7 to ground, and pin 3 to analog input A5 of ESP32 (GPIO #4).
+<center><img src="./wheel-sensor-wiring_bb.png" width="50%" /></center>
+(Note that GPIO 27 is used instead of GPIO 13.)
+Optical detector consists of an infrared LED and a phototransistor. LED is wired to GPIO 12 and grounded through 220 ohm resistor, and phototransistor is powered via 3v power through 10K ohm resistor, connected to GPIO 27 to read adc reading, and grounded.
 
 ## Modules, Tools, Source Used in Solution
 -[esp-idf adc example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/adc)
 
--[Maxbotics Range Finder Specs](https://www.maxbotix.com/documents/HRLV-MaxSonar-EZ_Datasheet.pdf)
+-[Sparkfun guide on optical detector](https://learn.sparkfun.com/tutorials/qrd1114-optical-detector-hookup-guide#example-circuit)
 
 
 ## Supporting Artifacts

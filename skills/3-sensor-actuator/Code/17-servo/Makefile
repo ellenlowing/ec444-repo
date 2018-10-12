@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := servo
+PROJECT_NAME := 17-servo
 
 include $(IDF_PATH)/make/project.mk

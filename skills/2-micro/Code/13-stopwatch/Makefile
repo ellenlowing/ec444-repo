@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := stopwatch
+PROJECT_NAME := 13-stopwatch
 
 include $(IDF_PATH)/make/project.mk

@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := ultrasonic-1
+PROJECT_NAME := 25b-ir-rangefinder
 
 include $(IDF_PATH)/make/project.mk

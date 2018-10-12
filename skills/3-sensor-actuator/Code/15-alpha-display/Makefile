@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := alpha-display
+PROJECT_NAME := 15-alpha-display
 
 include $(IDF_PATH)/make/project.mk

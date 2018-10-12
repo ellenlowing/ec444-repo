@@ -3,6 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := wheel-sensor
+PROJECT_NAME := 27-wheel-sensor
 
 include $(IDF_PATH)/make/project.mk
