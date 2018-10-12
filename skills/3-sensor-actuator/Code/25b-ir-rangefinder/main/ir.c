@@ -1,11 +1,4 @@
-/* ADC1 Example
 
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "freertos/FreeRTOS.h"
@@ -13,14 +6,15 @@
 #include "driver/gpio.h"
 #include "driver/adc.h"
 #include "esp_adc_cal.h"
+#include <math.h>
 
 #define DEFAULT_VREF    1023        //Use adc2_vref_to_gpio() to obtain a better estimate
 #define NO_OF_SAMPLES   64          //Multisampling
 
-static esp_adc_cal_characteristics_t *adc_chars;
-static const adc_channel_t channel = ADC2_CHANNEL_0;   // GPIO #4 / A5 input
-static const adc_atten_t atten = ADC_ATTEN_DB_11;
-static const adc_unit_t unit = ADC_UNIT_2;
+static esp_adc_cal_characteristics_t  *adc_chars;
+static const adc1_channel_t channel = ADC1_CHANNEL_3; //GPIO 39 / A3
+static const adc_atten_t  atten = ADC_ATTEN_DB_11;
+static const adc_unit_t unit = ADC_UNIT_1;
 
 static void check_efuse()
 {
@@ -62,13 +56,10 @@ void app_main()
     } else {
         adc2_config_channel_atten((adc2_channel_t)channel, atten);
     }
-
-    //Characterize ADC
     adc_chars = calloc(1, sizeof(esp_adc_cal_characteristics_t));
     esp_adc_cal_value_t val_type = esp_adc_cal_characterize(unit, atten, ADC_WIDTH_BIT_12, DEFAULT_VREF, adc_chars);
     print_char_val_type(val_type);
 
-    //Continuously sample ADC1
     while (1) {
         uint32_t adc_reading = 0;
         //Multisampling
@@ -82,11 +73,9 @@ void app_main()
             }
         }
         adc_reading /= NO_OF_SAMPLES;
-        //Convert adc_reading to voltage in mV
-        //uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
-        uint32_t dist_mm = adc_reading * 5 + 300;
-        //printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
-        printf("Distance: %dmm\n", dist_mm);
+        uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
+        uint32_t dist = 146060 * (pow(voltage, -1.126));
+        printf("Distance: %dcm\n", dist);
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
