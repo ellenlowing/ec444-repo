@@ -24,7 +24,7 @@ src/bootloader_init.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -139,7 +139,7 @@ src/bootloader_init.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

@@ -205,7 +205,7 @@ void app_main()
     int risingEdgeCount = 0;
     double counter_time_sec = 0;
     double speed = 0;
-    double distance = 3.1415 * 25.75;  // in millimeters
+    double distance = 3.1415 * 25.75 * 0.1;  // in centimeters
 
     while (1) {
         setLED();
@@ -230,21 +230,22 @@ void app_main()
           } else if (risingEdgeCount == 1) {
             timer_pause(TIMER_GROUP_0, TIMER_0);
             esp_err_t ret = timer_get_counter_time_sec(TIMER_GROUP_0, TIMER_0, &counter_time_sec);
-            speed = distance / counter_time_sec / 1000.0;
+            speed = distance / counter_time_sec;
             timer_set_counter_value(TIMER_GROUP_0, TIMER_0, 0x00000000ULL);
             timer_start(TIMER_GROUP_0, TIMER_0);
             risingEdgeCount = 0;
             counter_time_sec = 0;
+            printf("Speed: %fcm/s\n", speed);
           }
         } else if (state == LOW && prevState == HIGH) {
           // from HIGH to LOW
           risingEdgeCount = 1;
         }
-        printf("Speed: %f\n", speed);
         // printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
         // uint32_t dist_mm = adc_reading * 5 + 300;
         // printf("Distance: %dmm\n", dist_mm);
         prevState = state;
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(1);
+        //vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }

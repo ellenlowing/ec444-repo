@@ -43,7 +43,7 @@ nghttp2/lib/nghttp2_session.o: \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_net.h \
@@ -138,7 +138,7 @@ nghttp2/lib/nghttp2_session.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

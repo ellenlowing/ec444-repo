@@ -15,7 +15,7 @@ heap_caps.o: /Users/ellenlowing/esp/esp-idf/components/heap/heap_caps.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -118,7 +118,7 @@ heap_caps.o: /Users/ellenlowing/esp/esp-idf/components/heap/heap_caps.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 

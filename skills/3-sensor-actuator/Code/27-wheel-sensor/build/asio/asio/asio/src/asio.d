@@ -3,7 +3,7 @@ asio/asio/src/asio.o: \
  /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/impl/src.hpp \
  /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/detail/config.hpp \
  /Users/ellenlowing/esp/esp-idf/components/asio/port/include/esp_asio_config.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp \
  /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/error.hpp \
  /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/error_code.hpp \
@@ -323,7 +323,7 @@ asio/asio/src/asio.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/asio/port/include/esp_asio_config.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp:
 

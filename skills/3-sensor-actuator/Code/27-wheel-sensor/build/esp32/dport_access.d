@@ -17,7 +17,7 @@ dport_access.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/lock.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
@@ -130,7 +130,7 @@ dport_access.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h:
 

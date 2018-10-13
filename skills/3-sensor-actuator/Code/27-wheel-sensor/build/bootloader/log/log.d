@@ -4,7 +4,7 @@ log.o: /Users/ellenlowing/esp/esp-idf/components/log/log.c \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
@@ -20,7 +20,7 @@ log.o: /Users/ellenlowing/esp/esp-idf/components/log/log.c \
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/ultrasonic-1/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

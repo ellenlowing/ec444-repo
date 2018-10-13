@@ -33,7 +33,7 @@ core/init.o: /Users/ellenlowing/esp/esp-idf/components/lwip/core/init.c \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/select.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -211,7 +211,7 @@ core/init.o: /Users/ellenlowing/esp/esp-idf/components/lwip/core/init.c \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/wheel-sensor/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h:
 
