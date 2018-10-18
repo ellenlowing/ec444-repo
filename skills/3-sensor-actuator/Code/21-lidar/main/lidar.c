@@ -5,7 +5,6 @@
 #include "driver/uart.h"
 #include "soc/uart_struct.h"
 #include "string.h"
-#include "lidar.h"
 
 #define RX (16)
 #define TX (17)

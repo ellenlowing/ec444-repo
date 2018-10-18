@@ -1,11 +1,3 @@
-/* NEC remote infrared RMT example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
@@ -20,7 +12,7 @@
 #include <sys/time.h>
 #include "driver/gpio.h"
 
-static const char* NEC_TAG = "NEC";
+//static const char* NEC_TAG = "NEC";
 
 //CHOOSE SELF TEST OR NORMAL TEST
 #define RMT_RX_SELF_TEST   1
@@ -48,21 +40,10 @@ static const char* NEC_TAG = "NEC";
 #define RMT_TICK_10_US          (80000000/RMT_CLK_DIV/100000)   /* RMT counter value for 10 us.(Source clock is APB clock) */
 #define ITEM_DURATION(d)  ((d & 0x7fff)*10/RMT_TICK_10_US)
 
-#define PIN_TRIGGER 25 //A1
-#define PIN_ECHO 26 // A0
-//#define NEC_HEADER_HIGH_US    9000                         /*!< NEC protocol header: positive 9ms */
-//#define NEC_HEADER_LOW_US     4500                         /*!< NEC protocol header: negative 4.5ms*/
-//#define NEC_BIT_ONE_HIGH_US    560                         /*!< NEC protocol data bit 1: positive 0.56ms */
-//#define NEC_BIT_ONE_LOW_US    (2250-NEC_BIT_ONE_HIGH_US)   /*!< NEC protocol data bit 1: negative 1.69ms */
-//#define NEC_BIT_ZERO_HIGH_US   560                         /*!< NEC protocol data bit 0: positive 0.56ms */
-//#define NEC_BIT_ZERO_LOW_US   (1120-NEC_BIT_ZERO_HIGH_US)  /*!< NEC protocol data bit 0: negative 0.56ms */
-//#define NEC_BIT_END            560                         /*!< NEC protocol end: positive 0.56ms */
-//#define NEC_BIT_MARGIN         20                          /*!< NEC parse margin time */
+#define PIN_TRIGGER 25
+#define PIN_ECHO 26
 
 
-//#define NEC_DATA_ITEM_NUM   34  /*!< NEC code item number: header + 32bit data + end */
-//#define RMT_TX_DATA_NUM  100    /*!< NEC tx test data number */
-//#define rmt_item32_tIMEOUT_US  9500   /*!< RMT receiver timeout value(us) */
 
 
 // transmitter
@@ -70,7 +51,7 @@ static const char* NEC_TAG = "NEC";
 static void ultrasonic_tx_init() //configure the transmitter
 {
     rmt_config_t rmt_tx;
-    rmt_tx.channel = 0;
+    rmt_tx.channel = RMT_TX_CHANNEL;
     rmt_tx.gpio_num = RMT_TX_GPIO_NUM;
     rmt_tx.mem_block_num = 1;
     rmt_tx.clk_div = RMT_CLK_DIV;
@@ -78,7 +59,7 @@ static void ultrasonic_tx_init() //configure the transmitter
     rmt_tx.tx_config.carrier_duty_percent = 50;
     rmt_tx.tx_config.carrier_freq_hz = 3000;
     rmt_tx.tx_config.carrier_level = 1;
-    rmt_tx.tx_config.carrier_en = RMT_TX_CARRIER_EN;
+    rmt_tx.tx_config.carrier_en = 0;
     rmt_tx.tx_config.idle_level = 0;
     rmt_tx.tx_config.idle_output_en = true;
     rmt_tx.rmt_mode = 0;
@@ -139,7 +120,3 @@ static void ultrasonic_rx_init() //configure the receiver
      }
 
  }
-/**
- * @brief RMT transmitter demo, this task will periodically send NEC data. (100 * 32 bits each time.)
- *
- */
