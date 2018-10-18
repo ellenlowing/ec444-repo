@@ -7,7 +7,9 @@ In this skill assignment, I was able to get distance measurement with a lidar. S
 
 ## Sketches and Photos
 ### Wiring
+<center><img src="./img/IMG_2577.jpeg" width="80%" /></center>
 Lidar uses 5V power (from usb out), transmitter TX and receiver RX pins.
+
 
 ## Modules, Tools, Source Used in Solution
 -[esp-idf uart example](https://github.com/espressif/esp-idf/tree/affe75a10250564353d088f6b9a74dbb6f1ea0df/examples/peripherals/uart_echo)
