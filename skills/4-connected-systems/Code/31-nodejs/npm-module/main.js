@@ -1,9 +1,8 @@
 var http = require('http');
-var dt = require('./customModule');    // import custom module
+var uc = require('upper-case');
 
 http.createServer(function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write("The date and time are currently: " + dt.myDateTime());
+  res.write(uc("hello world"));
   res.end();
-
 }).listen(8080);

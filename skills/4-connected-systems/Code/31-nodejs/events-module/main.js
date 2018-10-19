@@ -1,9 +1,15 @@
 var http = require('http');
-var dt = require('./customModule');    // import custom module
+var events = require('events');
+var emitter = new events.EventEmitter();
+
+var handler = function() {
+  console.log("Loaded!");
+}
+
+emitter.on('fire', handler);
 
 http.createServer(function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write("The date and time are currently: " + dt.myDateTime());
+  emitter.emit('fire');
   res.end();
-
 }).listen(8080);
