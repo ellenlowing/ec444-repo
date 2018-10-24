@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_system.h"
@@ -15,6 +16,7 @@
 #include "driver/uart.h"
 
 char * outputStr;
+char * inputStr;
 
 static void initialize_console()
 {
@@ -62,35 +64,67 @@ static void initialize_console()
 static struct {
     struct arg_str *cmdstr;
     struct arg_end *end;
-} join_args;
+} str_args;
 
-static int read_string(int argc, char** argv){
-  printf("before running read_string func\n");
-  int nerrors = arg_parse(argc, argv, (void**) &join_args);
+static int store_string(int argc, char** argv){
+  // printf("before running store_string func\n");
+  int nerrors = arg_parse(argc, argv, (void**) &str_args);
   if(nerrors!=0){
-    arg_print_errors(stderr, join_args.end, argv[0]);
+    arg_print_errors(stderr, str_args.end, argv[0]);
     return 1;
   }
-  int n = sprintf(outputStr, "%s", join_args.cmdstr->sval[0]);
+  int n = sprintf(outputStr, "%s", str_args.cmdstr->sval[0]);
   printf("%s\n", outputStr);
   return 0;
 }
 
-void register_read()
+void register_store()
 {
-    join_args.cmdstr = arg_str0(NULL, NULL, "<string>", "10 characters");
-    join_args.end = arg_end(1);
+    str_args.cmdstr = arg_str0(NULL, NULL, "<string>", "10 characters");
+    str_args.end = arg_end(1);
 
     const esp_console_cmd_t join_cmd = {
-        .command = "read",
-        .help = "Read string of 10 characters",
+        .command = "store",
+        .help = "Store string of 10 characters",
         .hint = NULL,
-        .func = &read_string,
-        .argtable = &join_args
+        .func = &store_string,
+        .argtable = &str_args
     };
 
     ESP_ERROR_CHECK( esp_console_cmd_register(&join_cmd) );
 }
+
+static struct {
+  struct arg_int *cmdint;
+  struct arg_end *end;
+} query_args;
+
+static int print_query(int argc, char** argv) {
+  int nerrors = arg_parse(argc, argv, (void**) &query_args);
+  if(nerrors!=0){
+    arg_print_errors(stderr, query_args.end, argv[0]);
+    return 1;
+  }
+  int index = query_args.cmdint->ival[0];
+  printf("Character at index %i: ", index);
+  printf("%c\n", inputStr[index]);
+  return 0;
+}
+
+void register_query() {
+  query_args.cmdint = arg_int0(NULL, NULL, "<int>", "0-9");
+  query_args.end = arg_end(1);
+
+  const esp_console_cmd_t join_cmd = {
+      .command = "read",
+      .help = "Read charcter at index given",
+      .hint = NULL,
+      .func = &print_query,
+      .argtable = &query_args
+  };
+  ESP_ERROR_CHECK( esp_console_cmd_register(&join_cmd) );
+}
+
 
 void app_main()
 {
@@ -111,49 +145,28 @@ void app_main()
     // Register command
     outputStr = (char *)malloc(sizeof(char)*10);
     esp_console_register_help_command();
-    register_read();
-
-
-    // while(1) {
-    //   // Get string on console
-    //   char* line = linenoise(prompt);
-    //   /* Add the command to the history */
-    //   linenoiseHistoryAdd(line);
-    //
-    //   /* Try to run the command */
-    //   int ret;
-    //   esp_err_t err = esp_console_run(line, &ret);
-    //   if (err == ESP_ERR_NOT_FOUND) {
-    //     printf("Unrecognized command\n");
-    //   } else if (err == ESP_ERR_INVALID_ARG) {
-    //               // command was empty
-    //   } else if (err == ESP_OK && ret != ESP_OK) {
-    //     printf("Command returned non-zero error code: 0x%x (%s)\n", ret, esp_err_to_name(err));
-    //   } else if (err != ESP_OK) {
-    //     printf("Internal error: %s\n", esp_err_to_name(err));
-    //   }
-    //   linenoiseFree(line);
-    // }
+    register_store();
+    register_query();
 
     // Open
     printf("\n");
     printf("Opening Non-Volatile Storage (NVS) handle... ");
-    nvs_handle my_handle;
+    nvs_handle my_handle;     //TO DO: as global variable instead?
     err = nvs_open("storage", NVS_READWRITE, &my_handle);
     if (err != ESP_OK) {
         printf("Error (%s) opening NVS handle!\n", esp_err_to_name(err));
     } else {
         printf("Done\n");
 
-        // Read
+        // Read from file system
         size_t required_size;
         err = nvs_get_str(my_handle, "str", NULL, &required_size);
-        char* inputStr = malloc(required_size);
+        inputStr = malloc(required_size);
         err = nvs_get_str(my_handle, "str", inputStr, &required_size);
 
         switch (err) {
             case ESP_OK:
-                printf("Done\n");
+                // printf("Done\n");
                 // printf("Restart counter = %d\n", restart_counter);
                 printf("Previous string input = %s\n", inputStr);
                 break;
@@ -164,26 +177,28 @@ void app_main()
                 printf("Error (%s) reading!\n", esp_err_to_name(err));
         }
 
+        while(1) {
+          // Get string on console
+          char* line = linenoise(prompt);
+          /* Add the command to the history */
+          linenoiseHistoryAdd(line);
 
-        // Get string on console
-        char* line = linenoise(prompt);
-        /* Add the command to the history */
-        linenoiseHistoryAdd(line);
+          if(strcmp(line, "exit") == 0) break;
 
-        /* Try to run the command */
-        int ret;
-        esp_err_t err = esp_console_run(line, &ret);
-        if (err == ESP_ERR_NOT_FOUND) {
-          printf("Unrecognized command\n");
-        } else if (err == ESP_ERR_INVALID_ARG) {
-                    // command was empty
-        } else if (err == ESP_OK && ret != ESP_OK) {
-          printf("Command returned non-zero error code: 0x%x (%s)\n", ret, esp_err_to_name(err));
-        } else if (err != ESP_OK) {
-          printf("Internal error: %s\n", esp_err_to_name(err));
+          /* Try to run the command */
+          int ret;
+          esp_err_t err = esp_console_run(line, &ret);
+          if (err == ESP_ERR_NOT_FOUND) {
+            printf("Unrecognized command\n");
+          } else if (err == ESP_ERR_INVALID_ARG) {
+                      // command was empty
+          } else if (err == ESP_OK && ret != ESP_OK) {
+            printf("Command returned non-zero error code: 0x%x (%s)\n", ret, esp_err_to_name(err));
+          } else if (err != ESP_OK) {
+            printf("Internal error: %s\n", esp_err_to_name(err));
+          }
+          linenoiseFree(line);
         }
-        linenoiseFree(line);
-
 
 
         // Write

@@ -18,6 +18,8 @@ cmd_store.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -157,8 +159,6 @@ cmd_store.o: \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
@@ -205,6 +205,10 @@ cmd_store.o: \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -483,10 +487,6 @@ cmd_store.o: \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 
 /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h:
 
