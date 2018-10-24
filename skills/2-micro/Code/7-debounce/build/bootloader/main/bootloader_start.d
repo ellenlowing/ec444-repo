@@ -1,7 +1,7 @@
 bootloader_start.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -24,7 +24,7 @@ bootloader_start.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

@@ -25,7 +25,7 @@ lib/http_utils.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h
@@ -80,7 +80,7 @@ lib/http_utils.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

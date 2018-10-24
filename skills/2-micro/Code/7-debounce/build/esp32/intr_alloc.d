@@ -1,6 +1,6 @@
 intr_alloc.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/intr_alloc.c \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -84,7 +84,7 @@ intr_alloc.o: \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
 

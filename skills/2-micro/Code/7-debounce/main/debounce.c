@@ -6,15 +6,21 @@
 #include "esp_wifi.h"
 #include "esp_system.h"
 
-#define BTN_GPIO 34
+#define BTN_GPIO 14
 #define LED_GPIO 12
 
 volatile static bool led = 0;
+bool btnInit = false;
+clock_t start = 0;
 
 void IRAM_ATTR button_intr(void* arg) {
     if (!gpio_get_level(BTN_GPIO)) {
-      led = !led;
-    } else
+      if(!btnInit) {
+        led = !led;
+        btnInit = true;
+        start = clock();
+      }
+    }
 }
 
 void btn_task(void *pvParameter){
@@ -36,6 +42,7 @@ void btn_task(void *pvParameter){
 
   while(1) {
     gpio_set_level(LED_GPIO, led);
+    if(btnInit && (float)(clock() - start)/CLOCKS_PER_SEC > 0.08) btnInit = false; 
     vTaskDelay(10);
   }
 }

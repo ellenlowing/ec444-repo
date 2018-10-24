@@ -8,7 +8,7 @@ library/ssl_stack.o: \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/internal/x509_vfy.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -58,7 +58,7 @@ library/ssl_stack.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

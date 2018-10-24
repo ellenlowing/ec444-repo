@@ -42,7 +42,7 @@ syscall_table.o: \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -184,7 +184,7 @@ syscall_table.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

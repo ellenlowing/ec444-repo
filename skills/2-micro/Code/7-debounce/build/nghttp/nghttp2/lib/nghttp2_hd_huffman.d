@@ -31,7 +31,7 @@ nghttp2/lib/nghttp2_hd_huffman.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/nghttp2/nghttp2ver.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_hd.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_buf.h \
@@ -101,7 +101,7 @@ nghttp2/lib/nghttp2_hd_huffman.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

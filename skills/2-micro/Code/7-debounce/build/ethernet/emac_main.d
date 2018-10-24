@@ -29,7 +29,7 @@ emac_main.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/gpio.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
@@ -200,7 +200,7 @@ emac_main.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

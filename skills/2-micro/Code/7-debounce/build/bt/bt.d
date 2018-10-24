@@ -22,7 +22,7 @@ bt.o: /Users/ellenlowing/esp/esp-idf/components/bt/bt.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -150,7 +150,7 @@ bt.o: /Users/ellenlowing/esp/esp-idf/components/bt/bt.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 

@@ -1,7 +1,7 @@
 libsodium/src/libsodium/crypto_generichash/blake2b/ref/generichash_blake2b.o: \
  /Users/ellenlowing/esp/esp-idf/components/libsodium/libsodium/src/libsodium/crypto_generichash/blake2b/ref/generichash_blake2b.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -29,7 +29,7 @@ libsodium/src/libsodium/crypto_generichash/blake2b/ref/generichash_blake2b.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 

@@ -1,5 +1,5 @@
 debounce.o: \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/main/debounce.c \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/main/debounce.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h \
@@ -22,7 +22,7 @@ debounce.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -165,7 +165,7 @@ debounce.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -360,4 +360,4 @@ debounce.o: \
 /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_os_adapter.h:
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/main/./debounce.c:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/main/./debounce.c:

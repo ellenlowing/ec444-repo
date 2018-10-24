@@ -26,7 +26,7 @@ esp_ota_ops.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -152,7 +152,7 @@ esp_ota_ops.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

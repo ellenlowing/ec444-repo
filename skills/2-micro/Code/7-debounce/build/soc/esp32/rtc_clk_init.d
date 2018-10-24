@@ -5,7 +5,7 @@ esp32/rtc_clk_init.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/features.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -73,7 +73,7 @@ esp32/rtc_clk_init.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/debounce/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/2-micro/Code/7-debounce/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
