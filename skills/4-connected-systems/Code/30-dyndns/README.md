@@ -7,9 +7,9 @@ In this skill assignment, I was able to connect to forward port with the Linksys
 
 ## Sketches and Photos
 #### Modules
-<center><img src="./portfwd.png" width="80%" /></center>
+<center><img src="./portfwd.png" width="100%" /></center>
 <center><img src="./console.png" width="80%" /></center>
-<center><img src="./phone.jpeg" width="100%" /></center>
+<center><img src="./phone.jpeg" width="80%" /></center>
 
 
 ## Modules, Tools, Source Used in Solution
