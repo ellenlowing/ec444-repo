@@ -7,12 +7,16 @@ In this skill assignment, I was able to connect to forward port with the Linksys
 
 ## Sketches and Photos
 <center><img src="./portfwd.png" width="100%" /></center>
-
+Port forwarding under router admin page
+<br>
 <center><img src="./console.png" width="80%" /></center>
+Accessing with static IP as well as DDNS.
+<br>
 
 <center><img src="./phone.jpeg" width="80%" /></center>
-
+Accessing on phone.
 
 ## Modules, Tools, Source Used in Solution
 -[No-IP](https://www.noip.com/)
+
 -[Port checking tool](http://www.portchecktool.com/)
