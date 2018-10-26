@@ -24,8 +24,8 @@
  * with the config you want -
  * ie. #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define EXAMPLE_WIFI_SSID CONFIG_WIFI_SSID
-#define EXAMPLE_WIFI_PASS CONFIG_WIFI_PASSWORD
+#define EXAMPLE_WIFI_SSID "Group_17"
+#define EXAMPLE_WIFI_PASS "smart-systems"
 
 static const char *TAG="APP";
 
