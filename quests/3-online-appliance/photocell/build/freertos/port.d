@@ -85,6 +85,8 @@ port.o: /Users/ellenlowing/esp/esp-idf/components/freertos/port.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_panic.h \
+ /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
+ /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/portmux_impl.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/portmux_impl.inc.h
@@ -260,6 +262,10 @@ port.o: /Users/ellenlowing/esp/esp-idf/components/freertos/port.c \
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_panic.h:
+
+/Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
+
+/Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/portmux_impl.h:
 

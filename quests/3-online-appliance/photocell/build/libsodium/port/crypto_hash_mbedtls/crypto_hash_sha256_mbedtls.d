@@ -23,6 +23,7 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/photocell/build/include/sdkconfig.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
@@ -73,6 +74,8 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
 /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/photocell/build/include/sdkconfig.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

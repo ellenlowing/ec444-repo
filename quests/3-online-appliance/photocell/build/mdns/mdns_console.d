@@ -40,9 +40,9 @@ mdns_console.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_interface.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/unistd.h \
@@ -84,13 +84,14 @@ mdns_console.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -115,11 +116,13 @@ mdns_console.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_event.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h
 
@@ -203,11 +206,11 @@ mdns_console.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_interface.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h:
 
@@ -291,11 +294,13 @@ mdns_console.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -303,7 +308,7 @@ mdns_console.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -353,15 +358,19 @@ mdns_console.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_event.h:
 

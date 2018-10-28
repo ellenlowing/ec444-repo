@@ -18,9 +18,9 @@
 #define NO_OF_SAMPLES   64          //Multisampling
 
 static esp_adc_cal_characteristics_t *adc_chars;
-static const adc_channel_t channel = ADC2_CHANNEL_7;   // GPIO #27 / A10 input
+static const adc_channel_t channel = ADC1_CHANNEL_5;   // GPIO #33 input
 static const adc_atten_t atten = ADC_ATTEN_DB_11;
-static const adc_unit_t unit = ADC_UNIT_2;
+static const adc_unit_t unit = ADC_UNIT_1;
 
 static void check_efuse()
 {
@@ -85,10 +85,9 @@ void app_main()
         //Convert adc_reading to voltage in mV
         // uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
         // printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
-        if( adc_reading > 3000 ) {
+        // printf("%d\n", adc_reading);
+        if( adc_reading > 1000 ) {
           printf("Bright\n");
-        } else if ( adc_reading > 2000 && adc_reading <= 3000 ) {
-          printf("Mildly bright\n");
         } else {
           printf("Dark\n");
         }

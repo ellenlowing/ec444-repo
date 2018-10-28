@@ -95,7 +95,8 @@ spi_common.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
- /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 
@@ -288,4 +289,6 @@ spi_common.o: \
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h:
 /Users/ellenlowing/esp/esp-idf/components/driver/./spi_common.c:

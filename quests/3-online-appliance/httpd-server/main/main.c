@@ -1,80 +1,94 @@
-/* Simple HTTP Server Example
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-   Modifed to handle:
-   -- GET request to fetch mac address of the ESP32
-   -- PUT request to toggle onboard LED on and off
-   Emily Lam -- October 2018
-*/
-
 #include <esp_wifi.h>
 #include <esp_event_loop.h>
 #include <esp_log.h>
 #include <esp_system.h>
 #include <nvs_flash.h>
 #include <sys/param.h>
-
 #include <http_server.h>
-
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "driver/gpio.h"
+#include "driver/adc.h"
+#include "esp_adc_cal.h"
 
-/* A simple example that demonstrates how to create GET and POST
- * handlers for the web server.
- * The examples use simple WiFi configuration that you can set via
- * 'make menuconfig'.
- * If you'd rather not, just change the below entries to strings
- * with the config you want -
- * ie. #define EXAMPLE_WIFI_SSID "mywifissid"
-*/
 #define EXAMPLE_WIFI_SSID "Group_17"
 #define EXAMPLE_WIFI_PASS "smart-systems"
-
 #define LEDPIN 32
 static const char *TAG="APP";
 
-uint8_t macAddr[6];
+#define DEFAULT_VREF    1023        //Use adc2_vref_to_gpio() to obtain a better estimate
+#define NO_OF_SAMPLES   64          //Multisampling
+static esp_adc_cal_characteristics_t *adc_chars;
+static const adc_channel_t channel = ADC1_CHANNEL_5;   // GPIO #33 input
+static const adc_atten_t atten = ADC_ATTEN_DB_11;
+static const adc_unit_t unit = ADC_UNIT_1;
+
+
+static void check_efuse()
+{
+    //Check TP is burned into eFuse
+    if (esp_adc_cal_check_efuse(ESP_ADC_CAL_VAL_EFUSE_TP) == ESP_OK) {
+        printf("eFuse Two Point: Supported\n");
+    } else {
+        printf("eFuse Two Point: NOT supported\n");
+    }
+
+    //Check Vref is burned into eFuse
+    if (esp_adc_cal_check_efuse(ESP_ADC_CAL_VAL_EFUSE_VREF) == ESP_OK) {
+        printf("eFuse Vref: Supported\n");
+    } else {
+        printf("eFuse Vref: NOT supported\n");
+    }
+}
+
+static void print_char_val_type(esp_adc_cal_value_t val_type)
+{
+    if (val_type == ESP_ADC_CAL_VAL_EFUSE_TP) {
+        printf("Characterized using Two Point Value\n");
+    } else if (val_type == ESP_ADC_CAL_VAL_EFUSE_VREF) {
+        printf("Characterized using eFuse Vref\n");
+    } else {
+        printf("Characterized using Default Vref\n");
+    }
+}
 
 // An HTTP GET handler for hello world
-esp_err_t hello_get_handler(httpd_req_t *req)
+esp_err_t adc_get_handler(httpd_req_t *req)
 {
-    // Send hello world response
-    const char* resp_str = (const char*) req->user_ctx;
+    char* resp_str;
+    uint32_t adc_reading = 0;
+    //Multisampling
+    for (int i = 0; i < NO_OF_SAMPLES; i++) {
+        if (unit == ADC_UNIT_1) {
+            adc_reading += adc1_get_raw((adc1_channel_t)channel);
+        } else {
+            int raw;
+            adc2_get_raw((adc2_channel_t)channel, ADC_WIDTH_BIT_12, &raw);
+            adc_reading += raw;
+        }
+    }
+    adc_reading /= NO_OF_SAMPLES;
+    // printf("%d\n", adc_reading);
+    if( adc_reading > 1000 ) {
+      resp_str = "1";     // Bright!
+    } else {
+      resp_str = "0";     // Dark!
+    }
     httpd_resp_send(req, resp_str, strlen(resp_str));
 
     return ESP_OK;
 }
 
-httpd_uri_t hello = {
-    .uri       = "/hello",
+httpd_uri_t adc = {
+    .uri       = "/adc",
     .method    = HTTP_GET,
-    .handler   = hello_get_handler,
-    /* Let's pass response string in user
-     * context to demonstrate it's usage */
-    .user_ctx  = "Hello World!\n"
+    .handler   = adc_get_handler,
+    .user_ctx  = "Getting ADC ...\n"
 };
 
-//  An HTTP GET handler to return mac address of the ESP32
-esp_err_t mac_get_handler(httpd_req_t *req)
-{
-    // Convert mac address to string
-    char macChar[18] = {0};
-    sprintf(macChar, "%02X:%02X:%02X:%02X:%02X:%02X\n", macAddr[0], macAddr[1], macAddr[2], macAddr[3], macAddr[4], macAddr[5]);
-
-    // Send response
-    const char* resp_buf = (const char*) macChar;
-    httpd_resp_send(req, resp_buf, strlen(resp_buf));
-
-    return ESP_OK;
-}
-
-httpd_uri_t mac = {
-    .uri       = "/mac",
-    .method    = HTTP_GET,
-    .handler   = mac_get_handler,
-    .user_ctx  = NULL
-};
 
 // This demonstrates turning on an LED with real-time commands
 esp_err_t ctrl_put_handler(httpd_req_t *req)
@@ -89,12 +103,12 @@ esp_err_t ctrl_put_handler(httpd_req_t *req)
 
     // LED off
     if (buf == '0') {
-        ESP_LOGI(TAG, "LED Off");
+        // ESP_LOGI(TAG, "LED Off");
         gpio_set_level(LEDPIN, 0);
     }
     // LED on
     else {
-        ESP_LOGI(TAG, "LED On");
+        // ESP_LOGI(TAG, "LED On");
         gpio_set_level(LEDPIN, 1);
     }
 
@@ -121,8 +135,7 @@ httpd_handle_t start_webserver(void)
     if (httpd_start(&server, &config) == ESP_OK) {
         // Set URI handlers
         ESP_LOGI(TAG, "Registering URI handlers");
-        httpd_register_uri_handler(server, &hello);
-        httpd_register_uri_handler(server, &mac);
+        httpd_register_uri_handler(server, &adc);
         httpd_register_uri_handler(server, &ctrl);
         return server;
     }
@@ -198,8 +211,20 @@ void app_main()
     gpio_pad_select_gpio(LEDPIN);
     gpio_set_direction(LEDPIN, GPIO_MODE_OUTPUT);
 
-    // Get Mac address
-    esp_read_mac(macAddr, ESP_MAC_WIFI_STA);;
+    // Initialize ADC
+    //Check if Two Point or Vref are burned into eFuse
+    check_efuse();
+    //Configure ADC
+    if (unit == ADC_UNIT_1) {
+        adc1_config_width(ADC_WIDTH_BIT_12);
+        adc1_config_channel_atten(channel, atten);
+    } else {
+        adc2_config_channel_atten((adc2_channel_t)channel, atten);
+    }
+    //Characterize ADC
+    adc_chars = calloc(1, sizeof(esp_adc_cal_characteristics_t));
+    esp_adc_cal_value_t val_type = esp_adc_cal_characterize(unit, atten, ADC_WIDTH_BIT_12, DEFAULT_VREF, adc_chars);
+    print_char_val_type(val_type);
 
     // Httpd Sever and WiFi
     static httpd_handle_t server = NULL;

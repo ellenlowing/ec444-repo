@@ -6,13 +6,45 @@
     <style media="screen">
       body {
         font-family: Arial;
+        font-size: 16px;
         text-align: center;
       }
+
+      button {
+        font-size: 0.8em;
+        padding: 10px 15px;
+      }
+
+      .container {
+        font-size: 1em;
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #state {
+        background-color: #FFFF00;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+
     </style>
   </head>
   <body>
-    <h3>Control your LED!</h3>
-    <button id="button">ON</button>
+    <div class="container">
+      <div class="control">
+        <h1>Control your LED!</h3>
+        <button id="button">ON</button>
+      </div>
+      <br><br>
+      <div class="monitor">
+        <h1>Room brightness check</h3>
+        <p id="state">BRIGHT</p>
+      </div>
+    </div>
     <script src="toggle.js"></script>
   </body>
 </html>

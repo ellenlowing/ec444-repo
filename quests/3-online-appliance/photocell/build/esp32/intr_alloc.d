@@ -82,7 +82,8 @@ intr_alloc.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
+ /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_ipc.h
 
 /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/photocell/build/include/sdkconfig.h:
 
@@ -249,4 +250,6 @@ intr_alloc.o: \
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_ipc.h:
 /Users/ellenlowing/esp/esp-idf/components/esp32/./intr_alloc.c:

@@ -6,6 +6,7 @@ from builtins import str
 import http.client
 import argparse
 import time
+import json
 
 def put_handler(ip, espport, nodeport):
     # Establish HTTP connection
@@ -13,15 +14,28 @@ def put_handler(ip, espport, nodeport):
     sess = http.client.HTTPConnection(ip + ":" + espport, timeout = 15)
     node = http.client.HTTPConnection(ip + ":" + nodeport, timeout = 15)
 
+    headers = {'Content-Type': 'application/json'}
+    adc_data = {'adc_reading': '0'}
+
     while True:
-        # Get button state from node server: "1" means LED ON, "0" means OFF
         try:
+        # Get button state from node server: "1" means LED ON, "0" means OFF
             node.request("GET", url="/ctrl")
             resp = node.getresponse()
             btnState = resp.read()
-            # Put current button state to esp session
+        # Put current button state to esp session
             sess.request("PUT", url="/ctrl", body=btnState)
             resp = sess.getresponse()
+            resp.read()
+        # Request light diode ADC data from esp32
+            sess.request("GET", url="/adc")
+            resp = sess.getresponse()
+            adc = resp.read()
+        # Send ADC data to node server
+            adc_data['adc_reading'] = adc
+            adc_json = json.dumps(adc_data)
+            node.request("POST", "/adc", adc_json, headers)
+            resp = node.getresponse()
             resp.read()
         except KeyboardInterrupt:
             print("Quitting . . .")

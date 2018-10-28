@@ -21,6 +21,8 @@ src/nvs_api.o: \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_storage.hpp \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_platform.hpp \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -73,8 +75,7 @@ src/nvs_api.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h \
- /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -119,6 +120,10 @@ src/nvs_api.o: \
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_platform.hpp:
 
@@ -224,9 +229,7 @@ src/nvs_api.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h:
-
-/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 

@@ -34,7 +34,8 @@ src/nvs_page.o: \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/intrusive_list.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp \
- /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h \
+ /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_ops.hpp
 
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_page.hpp:
 
@@ -105,4 +106,6 @@ src/nvs_page.o: \
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h:
+
+/Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_ops.hpp:
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_page.cpp:

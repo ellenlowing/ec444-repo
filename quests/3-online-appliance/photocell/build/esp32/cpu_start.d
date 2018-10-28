@@ -60,6 +60,7 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/rtc_wdt.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/rtc_io.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/gpio.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
@@ -106,6 +107,8 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_event.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
@@ -113,9 +116,9 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
  /Users/ellenlowing/esp/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
@@ -129,23 +132,27 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/select.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_ipc.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs_dev.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/esp_newlib.h \
@@ -161,7 +168,6 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
  /Users/ellenlowing/esp/esp-idf/components/app_trace/include/esp_app_trace_util.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dbg_stubs.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_efuse.h \
- /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_spiram.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/esp_clk_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_pm.h \
@@ -293,6 +299,8 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/rtc_wdt.h:
 
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h:
+
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/rtc_io.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/gpio.h:
@@ -385,6 +393,10 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h:
 
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
+
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_event.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
@@ -399,11 +411,11 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi_types.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h:
 
@@ -431,11 +443,13 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -443,17 +457,21 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_ipc.h:
 
@@ -464,6 +482,8 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs_dev.h:
 
 /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 
@@ -494,8 +514,6 @@ cpu_start.o: /Users/ellenlowing/esp/esp-idf/components/esp32/cpu_start.c \
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dbg_stubs.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_efuse.h:
-
-/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_spiram.h:
 

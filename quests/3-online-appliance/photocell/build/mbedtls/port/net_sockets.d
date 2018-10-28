@@ -2,16 +2,12 @@ port/net_sockets.o: \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/net_sockets.c \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/photocell/build/include/sdkconfig.h \
- /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h \
- /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
- /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/config.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/features.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/reent.h \
@@ -20,16 +16,21 @@ port/net_sockets.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/lock.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
@@ -50,10 +51,10 @@ port/net_sockets.o: \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/sys/socket.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/unistd.h \
@@ -98,13 +99,14 @@ port/net_sockets.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -128,39 +130,34 @@ port/net_sockets.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/err.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/netdb.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netdb.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
 /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/photocell/build/include/sdkconfig.h:
 
-/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h:
-
-/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/_ansi.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/config.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/newlib.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/ieeefp.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/config.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/features.h:
 
@@ -178,6 +175,24 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/lock.h:
 
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h:
+
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/types.h:
@@ -188,15 +203,7 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h:
 
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/cdefs.h:
-
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h:
-
-/Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h:
 
@@ -238,13 +245,13 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/sys/socket.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h:
 
@@ -334,11 +341,13 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -346,7 +355,7 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -394,21 +403,27 @@ port/net_sockets.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/err.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/netdb.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/netdb.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netdb.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h:
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/net_sockets.c:

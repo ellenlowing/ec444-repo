@@ -79,7 +79,7 @@ rmt.o: /Users/ellenlowing/esp/esp-idf/components/driver/rmt.c \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -253,7 +253,7 @@ rmt.o: /Users/ellenlowing/esp/esp-idf/components/driver/rmt.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 

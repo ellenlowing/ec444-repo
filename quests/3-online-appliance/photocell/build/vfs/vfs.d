@@ -98,6 +98,7 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -298,6 +299,8 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 

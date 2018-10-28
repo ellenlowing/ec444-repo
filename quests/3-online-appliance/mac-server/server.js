@@ -4,6 +4,7 @@ var app = express();
 var http = require('http');
 
 var buttonState = false;
+var adcState = "0";
 
 // serve files from the public directory
 app.use(express.static('public'));
@@ -26,9 +27,28 @@ app.post('/', (req, res) => {
   res.end();
 });
 
+// handle GET request from python client
 app.get('/ctrl', (req, res) => {
   if(buttonState) res.end("1")
   else res.end("0");
+});
+
+// handle PUT request from python client
+app.post('/adc', (req, res) => {
+  response = {
+    adc_reading: req.body.adc_reading
+  };
+  // if(response.adc_reading == "1") adcState = true;
+  // else adcState = false;
+  adcState = response.adc_reading;
+  console.log("ADC:  " + response.adc_reading);
+  // res.send(response.adc_reading);
+  res.end();
+});
+
+app.get('/adc', (req, res) => {
+  res.set('Content-Type', 'application/json');
+  res.send( {adcState: adcState} );
 });
 
 // start the express web server listening on 1111

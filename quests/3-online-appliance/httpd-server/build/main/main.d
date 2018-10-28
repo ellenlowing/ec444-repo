@@ -137,7 +137,10 @@ main.o: \
  /Users/ellenlowing/esp/esp-idf/components/http_server/include/http_server.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h
+ /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/adc.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi.h:
 
@@ -414,4 +417,10 @@ main.o: \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
 /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/adc.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h:
 /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/httpd-server/main/./main.c:

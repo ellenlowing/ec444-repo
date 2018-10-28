@@ -109,6 +109,7 @@ esp_spiffs.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/spiffs/spiffs_api.h
@@ -330,6 +331,8 @@ esp_spiffs.o: \
 /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/spi_flash.h:
 

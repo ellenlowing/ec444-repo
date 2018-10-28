@@ -92,7 +92,8 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/cache.h \
- /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_himem.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
 
@@ -281,4 +282,6 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/cache.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_himem.h:
 /Users/ellenlowing/esp/esp-idf/components/esp32/./spiram.c:
