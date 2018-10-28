@@ -1,16 +1,15 @@
-# Pseudo-mechanical clock
+# Online appliance
 Author: Ellen Lo, 2018-10-27
 
 ## Summary
 
 ## How to run
-To start node server, run `node server.js` under /mac-server
+Given that server port is 1111 and esp32 port is 80,
 
-To start python client, run `python2 client.py smartsystems.ddns.net 80 1111` under /httpd-client
-
-To run httpd server on ESP32, run `make flash` under /httpd-server
-
-To control LED, browse `http://smartsystems.ddns.net:1111/`
+1. to start node server, run `node server.js` under /mac-server
+2. to start python client, run `python2 client.py smartsystems.ddns.net 80 1111` under /httpd-client
+3. to run httpd server on ESP32, run `make flash` under /httpd-server
+4. to control LED, browse `http://smartsystems.ddns.net:1111/`
 
 ## Implementation
 
