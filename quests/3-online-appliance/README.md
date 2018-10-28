@@ -10,6 +10,8 @@ To start python client, run `python2 client.py smartsystems.ddns.net 80 1111` un
 
 To run httpd server on ESP32, run `make flash` under /httpd-server
 
+To control LED, browse `http://smartsystems.ddns.net:1111/`
+
 ## Implementation
 
 
