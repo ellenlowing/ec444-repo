@@ -14,7 +14,7 @@ can.o: /Users/ellenlowing/esp/esp-idf/components/driver/can.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -84,6 +84,9 @@ can.o: /Users/ellenlowing/esp/esp-idf/components/driver/can.c \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_pm.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp32/pm.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h \
@@ -124,7 +127,7 @@ can.o: /Users/ellenlowing/esp/esp-idf/components/driver/can.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -263,6 +266,12 @@ can.o: /Users/ellenlowing/esp/esp-idf/components/driver/can.c \
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_pm.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp32/pm.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
 

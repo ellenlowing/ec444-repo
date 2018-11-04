@@ -18,7 +18,7 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/fcntl.h \
@@ -98,6 +98,7 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
 
@@ -139,7 +140,7 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 
@@ -298,6 +299,8 @@ vfs.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs.c \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/unistd.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 

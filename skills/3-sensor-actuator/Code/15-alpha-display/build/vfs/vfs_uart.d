@@ -36,7 +36,7 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/unistd.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -95,6 +95,7 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs_dev.h \
@@ -112,7 +113,7 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart_select.h
 
@@ -190,7 +191,7 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -308,6 +309,8 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
 
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
+
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 
 /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h:
@@ -342,7 +345,7 @@ vfs_uart.o: /Users/ellenlowing/esp/esp-idf/components/vfs/vfs_uart.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
 

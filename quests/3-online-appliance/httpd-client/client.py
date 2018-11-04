@@ -11,11 +11,13 @@ import json
 def put_handler(ip, espport, nodeport):
     # Establish HTTP connection
     print("Connecting to => " + ip + ":" + espport)
-    sess = http.client.HTTPConnection(ip + ":" + espport, timeout = 15)
-    node = http.client.HTTPConnection(ip + ":" + nodeport, timeout = 15)
+    sess = http.client.HTTPConnection(ip + ":" + espport)
+    node = http.client.HTTPConnection(ip + ":" + nodeport)
 
     headers = {'Content-Type': 'application/json'}
     adc_data = {'adc_reading': '0'}
+    hour = -1
+    minute = -1
 
     while True:
         try:
@@ -37,6 +39,21 @@ def put_handler(ip, espport, nodeport):
             node.request("POST", "/adc", adc_json, headers)
             resp = node.getresponse()
             resp.read()
+        # Get Time data from node server
+            node.request("GET", url="/scheduler")
+            resp = node.getresponse()
+            scheduler_json = resp.read()
+            scheduler_data = json.loads(scheduler_json)
+            scheduler_hour = scheduler_data['hour']
+            scheduler_minute = scheduler_data['minute']
+        # Send Time data to esp32 if schedule time updates
+            if (hour != scheduler_hour) or (minute != scheduler_minute):
+                hour = scheduler_hour
+                minute = scheduler_minute
+                scheduler_str = str(scheduler_hour) + ' ' + str(scheduler_minute)
+                sess.request("POST", url="/scheduler", body=scheduler_str)
+                resp = sess.getresponse()
+                resp.read()
         except KeyboardInterrupt:
             print("Quitting . . .")
 

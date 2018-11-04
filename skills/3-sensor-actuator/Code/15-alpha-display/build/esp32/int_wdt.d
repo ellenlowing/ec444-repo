@@ -1,5 +1,5 @@
 int_wdt.o: /Users/ellenlowing/esp/esp-idf/components/esp32/int_wdt.c \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -90,7 +90,7 @@ int_wdt.o: /Users/ellenlowing/esp/esp-idf/components/esp32/int_wdt.c \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_int_wdt.h
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
 

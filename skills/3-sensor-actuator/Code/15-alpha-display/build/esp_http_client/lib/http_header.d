@@ -27,7 +27,7 @@ lib/http_header.o: \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -38,7 +38,8 @@ lib/http_header.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -94,7 +95,7 @@ lib/http_header.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -117,4 +118,6 @@ lib/http_header.o: \
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h:
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/http_header.c:

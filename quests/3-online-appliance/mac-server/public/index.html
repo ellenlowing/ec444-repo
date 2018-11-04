@@ -36,13 +36,24 @@
   <body>
     <div class="container">
       <div class="control">
-        <h1>Control your LED!</h3>
+        <h2>Control your LED!</h3>
         <button id="button">ON</button>
       </div>
       <br><br>
       <div class="monitor">
-        <h1>Room brightness check</h3>
+        <h2>Room brightness check</h3>
         <p id="state">BRIGHT</p>
+      </div>
+      <br><br>
+      <div class="scheduler">
+        <h2>Schedule time to turn light on</h2>
+        <form class="" action="/scheduler" method="POST">
+          <input type="text" name="hour" placeholder="Hour">
+          <input type="text" name="minute" placeholder="Minute">
+          <br>
+          <br>
+          <button type="submit" name="button" id="submit">Submit</button>
+        </form>
       </div>
     </div>
     <script src="toggle.js"></script>

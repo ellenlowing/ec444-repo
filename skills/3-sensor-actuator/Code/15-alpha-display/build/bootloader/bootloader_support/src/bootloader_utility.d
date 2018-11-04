@@ -2,7 +2,7 @@ src/bootloader_utility.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -50,9 +50,9 @@ src/bootloader_utility.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_flash_data_types.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
- /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_config.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_common.h \
@@ -63,7 +63,7 @@ src/bootloader_utility.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -159,11 +159,11 @@ src/bootloader_utility.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
+
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h:
 

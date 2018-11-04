@@ -1,6 +1,7 @@
 var buttonState = false;
 var button = document.getElementById('button');
 var state = document.getElementById('state');
+var submit = document.getElementById('submit');
 var url = 'http://smartsystems.ddns.net:1111/';
 
 // lights on/off? --- buttonState --- textToDisplay
@@ -23,6 +24,11 @@ button.addEventListener('click', (e) => {
   }));
 });
 
+// submit.addEventListener('click', (e) => {
+//   e.preventDefault();
+// })
+
+
 // state of brightness --- JSON
 // BRIGHT              --- 1
 // DARK                --- 0
@@ -32,7 +38,7 @@ setInterval( function() {
   stateXhr.open("GET", url+'adc', true);
   stateXhr.onload = function () {
     var resp = JSON.parse(stateXhr.response).adcState;
-    console.log(resp);
+    // console.log(resp);
     if(resp == '1') {
       state.innerHTML = "BRIGHT";
       state.style.backgroundColor = "#FFFF00";

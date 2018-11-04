@@ -24,7 +24,7 @@ src/nvs_page.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -34,7 +34,8 @@ src/nvs_page.o: \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/intrusive_list.h \
  /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp \
- /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h \
+ /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_ops.hpp
 
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_page.hpp:
 
@@ -84,7 +85,7 @@ src/nvs_page.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -105,4 +106,6 @@ src/nvs_page.o: \
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/crc.h:
+
+/Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_ops.hpp:
 /Users/ellenlowing/esp/esp-idf/components/nvs_flash/src/nvs_page.cpp:

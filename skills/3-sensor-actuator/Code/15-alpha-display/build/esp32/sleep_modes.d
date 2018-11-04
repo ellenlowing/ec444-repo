@@ -28,7 +28,7 @@ sleep_modes.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -90,6 +90,10 @@ sleep_modes.o: \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/rtc_io.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/rtc_gpio_channel.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/rtc_periph.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -105,9 +109,14 @@ sleep_modes.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/lock.h:
 
@@ -165,7 +174,7 @@ sleep_modes.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -289,6 +298,14 @@ sleep_modes.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/rtc_periph.h:
 
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
@@ -319,9 +336,19 @@ sleep_modes.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h:
 
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
 /Users/ellenlowing/esp/esp-idf/components/esp32/./sleep_modes.c:

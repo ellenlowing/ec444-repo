@@ -140,7 +140,51 @@ main.o: \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h \
  /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/adc.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h \
- /Users/ellenlowing/esp/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h
+ /Users/ellenlowing/esp/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/timer.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h \
+ /Users/ellenlowing/esp/esp-idf/components/console/esp_console.h \
+ /Users/ellenlowing/esp/esp-idf/components/console/argtable3/argtable3.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/timers.h \
+ /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
+ /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs_dev.h \
+ /Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
+ /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
+ /Users/ellenlowing/esp/esp-idf/components/console/linenoise/linenoise.h \
+ /Users/ellenlowing/esp/esp-idf/components/fatfs/src/esp_vfs_fat.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_types.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_host.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_types.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdspi_host.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/spi_master.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/spi_common.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/lldesc.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/include/soc/spi_periph.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h \
+ /Users/ellenlowing/esp/esp-idf/components/fatfs/src/ff.h \
+ /Users/ellenlowing/esp/esp-idf/components/fatfs/src/integer.h \
+ /Users/ellenlowing/esp/esp-idf/components/fatfs/src/ffconf.h \
+ /Users/ellenlowing/esp/esp-idf/components/wear_levelling/include/wear_levelling.h \
+ /Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h \
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/ledc.h
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_wifi.h:
 
@@ -423,4 +467,92 @@ main.o: \
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/adc_channel.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp_adc_cal/include/esp_adc_cal.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_struct.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/timer.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/timer_group_reg.h:
+
+/Users/ellenlowing/esp/esp-idf/components/console/esp_console.h:
+
+/Users/ellenlowing/esp/esp-idf/components/console/argtable3/argtable3.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/timers.h:
+
+/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h:
+
+/Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs_dev.h:
+
+/Users/ellenlowing/esp/esp-idf/components/vfs/include/esp_vfs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
+
+/Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/uart.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
+
+/Users/ellenlowing/esp/esp-idf/components/console/linenoise/linenoise.h:
+
+/Users/ellenlowing/esp/esp-idf/components/fatfs/src/esp_vfs_fat.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_types.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_host.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdmmc_types.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/sdspi_host.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/spi_master.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/spi_common.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/lldesc.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/include/soc/spi_periph.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_pins.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
+
+/Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_struct.h:
+
+/Users/ellenlowing/esp/esp-idf/components/fatfs/src/ff.h:
+
+/Users/ellenlowing/esp/esp-idf/components/fatfs/src/integer.h:
+
+/Users/ellenlowing/esp/esp-idf/components/fatfs/src/ffconf.h:
+
+/Users/ellenlowing/esp/esp-idf/components/wear_levelling/include/wear_levelling.h:
+
+/Users/ellenlowing/esp/esp-idf/components/nvs_flash/include/nvs.h:
+
+/Users/ellenlowing/esp/esp-idf/components/driver/include/driver/ledc.h:
 /Users/ellenlowing/Desktop/EC444/quests/3-online-appliance/httpd-server/main/./main.c:

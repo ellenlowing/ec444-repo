@@ -3,8 +3,7 @@ src/flash_encrypt.o: \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h \
- /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_flash_data_types.h \
@@ -46,9 +45,7 @@ src/flash_encrypt.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h:
-
-/Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 

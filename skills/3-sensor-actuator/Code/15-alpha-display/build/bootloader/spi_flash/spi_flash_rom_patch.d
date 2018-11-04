@@ -10,7 +10,7 @@ spi_flash_rom_patch.o: \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -32,5 +32,5 @@ spi_flash_rom_patch.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/bootloader/../include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/bootloader/../include/sdkconfig.h:
 /Users/ellenlowing/esp/esp-idf/components/spi_flash/./spi_flash_rom_patch.c:

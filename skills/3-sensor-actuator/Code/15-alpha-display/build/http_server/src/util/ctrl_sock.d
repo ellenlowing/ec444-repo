@@ -21,10 +21,10 @@ src/util/ctrl_sock.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/types.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/sys/socket.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -38,7 +38,7 @@ src/util/ctrl_sock.o: \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/select.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -77,13 +77,14 @@ src/util/ctrl_sock.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -108,15 +109,19 @@ src/util/ctrl_sock.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/err.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/netinet/in.h \
- /Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arpa/inet.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h \
+ /Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/../../../lwip/src/include/lwip/inet.h \
  /Users/ellenlowing/esp/esp-idf/components/http_server/src/util/ctrl_sock.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
@@ -161,13 +166,13 @@ src/util/ctrl_sock.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/posix/sys/socket.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/sockets.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/opt.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/lwipopts.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -195,7 +200,7 @@ src/util/ctrl_sock.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_task.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/alpha-display/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/15-alpha-display/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h:
 
@@ -273,11 +278,13 @@ src/util/ctrl_sock.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/debug.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netif/dhcp_state.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/arch.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/cc.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -285,7 +292,7 @@ src/util/ctrl_sock.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/sys_arch.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
@@ -335,23 +342,31 @@ src/util/ctrl_sock.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arch/vfs_lwip.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/inttypes.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/def.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/err.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/lwip/inet.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/netinet/in.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
 
-/Users/ellenlowing/esp/esp-idf/components/lwip/include/lwip/port/arpa/inet.h:
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/netinet/in.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/port/esp32/include/arpa/inet.h:
+
+/Users/ellenlowing/esp/esp-idf/components/lwip/lwip/src/include/../../../lwip/src/include/lwip/inet.h:
 
 /Users/ellenlowing/esp/esp-idf/components/http_server/src/util/ctrl_sock.h:
 /Users/ellenlowing/esp/esp-idf/components/http_server/src/util/ctrl_sock.c:
