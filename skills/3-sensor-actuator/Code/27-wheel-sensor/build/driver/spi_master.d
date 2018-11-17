@@ -101,9 +101,10 @@ spi_master.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 
@@ -307,9 +308,11 @@ spi_master.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h:
 /Users/ellenlowing/esp/esp-idf/components/driver/./spi_master.c:

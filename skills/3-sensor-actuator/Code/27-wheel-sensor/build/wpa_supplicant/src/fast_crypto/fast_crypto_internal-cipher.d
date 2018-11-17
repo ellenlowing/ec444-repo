@@ -41,6 +41,7 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
  /Users/ellenlowing/esp/esp-idf/components/wpa_supplicant/include/crypto/aes.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/aes_alt.h \
@@ -128,6 +129,8 @@ src/fast_crypto/fast_crypto_internal-cipher.o: \
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

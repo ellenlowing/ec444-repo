@@ -86,7 +86,7 @@ i2c.o: /Users/ellenlowing/esp/esp-idf/components/driver/i2c.c \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
@@ -272,7 +272,7 @@ i2c.o: /Users/ellenlowing/esp/esp-idf/components/driver/i2c.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 

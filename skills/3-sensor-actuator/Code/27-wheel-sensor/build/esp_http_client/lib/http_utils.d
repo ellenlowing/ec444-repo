@@ -28,7 +28,8 @@ lib/http_utils.o: \
  /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/27-wheel-sensor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
- /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 
@@ -87,4 +88,6 @@ lib/http_utils.o: \
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h:
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/http_utils.c:

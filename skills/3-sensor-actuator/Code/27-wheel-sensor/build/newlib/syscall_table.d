@@ -96,6 +96,7 @@ syscall_table.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/esp_newlib.h
@@ -291,6 +292,8 @@ syscall_table.o: \
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 

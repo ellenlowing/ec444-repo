@@ -91,6 +91,7 @@ src/vfs_fat_sdmmc.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/fatfs/src/esp_vfs_fat.h \
@@ -302,6 +303,8 @@ src/vfs_fat_sdmmc.o: \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 

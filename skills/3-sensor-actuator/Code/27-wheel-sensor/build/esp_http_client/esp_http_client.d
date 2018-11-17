@@ -65,11 +65,12 @@ esp_http_client.o: \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_header.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport.h \
- /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport_tcp.h \
- /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_tcp.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_auth.h \
  /Users/ellenlowing/esp/esp-idf/components/esp_http_client/include/esp_http_client.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -90,7 +91,10 @@ esp_http_client.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h \
- /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport_ssl.h
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h \
+ /Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_ssl.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 
@@ -222,15 +226,17 @@ esp_http_client.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/queue.h:
 
-/Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport.h:
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport.h:
 
-/Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport_tcp.h:
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_tcp.h:
 
-/Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport.h:
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_utils.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/http_auth.h:
 
@@ -272,5 +278,11 @@ esp_http_client.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h:
 
-/Users/ellenlowing/esp/esp-idf/components/esp_http_client/lib/include/transport_ssl.h:
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/errno.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/errno.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/errno.h:
+
+/Users/ellenlowing/esp/esp-idf/components/tcp_transport/include/esp_transport_ssl.h:
 /Users/ellenlowing/esp/esp-idf/components/esp_http_client/./esp_http_client.c:

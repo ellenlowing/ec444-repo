@@ -32,6 +32,7 @@ port/mbedtls_debug.o: \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
@@ -122,6 +123,8 @@ port/mbedtls_debug.o: \
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

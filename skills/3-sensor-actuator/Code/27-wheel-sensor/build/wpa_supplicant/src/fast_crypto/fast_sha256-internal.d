@@ -39,6 +39,7 @@ src/fast_crypto/fast_sha256-internal.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h
 
@@ -119,6 +120,8 @@ src/fast_crypto/fast_sha256-internal.o: \
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

@@ -51,9 +51,9 @@ src/bootloader_init.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_flash_data_types.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
- /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
+ /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_config.h \
  /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_clock.h \
@@ -161,11 +161,11 @@ src/bootloader_init.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h:
 
-/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
+
+/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /Users/ellenlowing/esp/esp-idf/components/bootloader_support/include/bootloader_random.h:
 
