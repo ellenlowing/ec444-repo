@@ -22,7 +22,8 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
  /Users/ellenlowing/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
+ /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
@@ -72,7 +73,9 @@ port/crypto_hash_mbedtls/crypto_hash_sha256_mbedtls.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
+
+/Users/ellenlowing/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 
 /Users/ellenlowing/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h:
 

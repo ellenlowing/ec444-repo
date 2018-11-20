@@ -24,7 +24,7 @@ task_wdt.o: /Users/ellenlowing/esp/esp-idf/components/esp32/task_wdt.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
@@ -149,7 +149,7 @@ task_wdt.o: /Users/ellenlowing/esp/esp-idf/components/esp32/task_wdt.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

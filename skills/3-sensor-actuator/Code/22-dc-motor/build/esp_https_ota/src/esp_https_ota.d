@@ -29,7 +29,7 @@ src/esp_https_ota.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -83,7 +83,6 @@ src/esp_https_ota.o: \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/port/include/http_parser.h \
  /Users/ellenlowing/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h \
- /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log.h \
  /Users/ellenlowing/esp/esp-idf/components/log/include/esp_log_internal.h
@@ -146,7 +145,7 @@ src/esp_https_ota.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -253,8 +252,6 @@ src/esp_https_ota.o: \
 /Users/ellenlowing/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 
 /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_partition.h:
-
-/Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /Users/ellenlowing/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 

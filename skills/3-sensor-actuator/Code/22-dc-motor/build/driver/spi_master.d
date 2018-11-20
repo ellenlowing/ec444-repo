@@ -25,7 +25,7 @@ spi_master.o: \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/sched.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/alloca.h \
@@ -101,9 +101,10 @@ spi_master.o: \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/task.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/limits.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h \
- /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h \
- /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h
+ /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h:
 
@@ -155,7 +156,7 @@ spi_master.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdlib.h:
 
@@ -307,9 +308,11 @@ spi_master.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-/Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/ringbuf.h:
+/Users/ellenlowing/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /Users/ellenlowing/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/include/stdatomic.h:
 /Users/ellenlowing/esp/esp-idf/components/driver/./spi_master.c:

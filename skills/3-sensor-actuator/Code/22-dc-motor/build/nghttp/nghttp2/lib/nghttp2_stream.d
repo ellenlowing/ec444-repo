@@ -41,7 +41,7 @@ nghttp2/lib/nghttp2_stream.o: \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
@@ -130,7 +130,7 @@ nghttp2/lib/nghttp2_stream.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 

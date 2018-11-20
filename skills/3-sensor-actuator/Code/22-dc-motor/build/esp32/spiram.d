@@ -20,7 +20,7 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/endian.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_err.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdio.h \
@@ -92,7 +92,8 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_dport_access.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/cache.h \
- /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h
+ /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_himem.h
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h:
 
@@ -136,7 +137,7 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -281,4 +282,6 @@ spiram.o: /Users/ellenlowing/esp/esp-idf/components/esp32/spiram.c \
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/rom/cache.h:
 
 /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_himem.h:
 /Users/ellenlowing/esp/esp-idf/components/esp32/./spiram.c:

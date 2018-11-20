@@ -24,7 +24,7 @@ select.o: /Users/ellenlowing/esp/esp-idf/components/newlib/select.c \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/sys/reent.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -87,6 +87,7 @@ select.o: /Users/ellenlowing/esp/esp-idf/components/newlib/select.c \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h \
+ /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/vfs/include/sys/dirent.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/string.h \
@@ -142,7 +143,7 @@ select.o: /Users/ellenlowing/esp/esp-idf/components/newlib/select.c \
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -267,6 +268,8 @@ select.o: /Users/ellenlowing/esp/esp-idf/components/newlib/select.c \
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/time.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/time.h:
+
+/Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/sys/termios.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/dirent.h:
 

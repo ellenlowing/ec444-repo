@@ -11,13 +11,13 @@
 #define GPIO_PWM0A_OUT 32   //Set GPIO 15 as PWM0A Enable pin Left
 #define GPIO_PWM0B_OUT 14   //Set GPIO A0 as PWM0B Enable pin Right
 
-// Left wheele GPIO input
+// Left wheel GPIO input
 #define GPIO_LEFT_IN_ONE 15 //left 1
 #define GPIO_LEFT_IN_TWO 33 //left 2
 
-//Right wheele GPIO input
+//Right wheel GPIO input
 #define GPIO_RIGHT_IN_ONE 27 //A5
-#define GPIO_RIGHT_IN_TWO 4 //
+#define GPIO_RIGHT_IN_TWO 4  //
 
 static void mcpwm_example_gpio_initialize()
 {
@@ -31,7 +31,7 @@ static void mcpwm_example_gpio_initialize()
     gpio_set_level(GPIO_PWM0B_OUT, 0);
 
 
-    // Set left wheele GPIO output
+    // Set left wheel GPIO output
     gpio_pad_select_gpio(GPIO_LEFT_IN_ONE);
     gpio_set_direction(GPIO_LEFT_IN_ONE, GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_LEFT_IN_ONE, 0);
@@ -40,7 +40,7 @@ static void mcpwm_example_gpio_initialize()
     gpio_set_direction(GPIO_LEFT_IN_TWO, GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_LEFT_IN_TWO, 0);
 
-    //Right wheele GPIO output
+    //Right wheel GPIO output
     gpio_pad_select_gpio(GPIO_RIGHT_IN_ONE);
     gpio_set_direction(GPIO_RIGHT_IN_ONE, GPIO_MODE_OUTPUT);
     gpio_set_level(GPIO_RIGHT_IN_ONE, 0);
@@ -77,7 +77,7 @@ static void brushed_motor_backward(mcpwm_unit_t mcpwm_num, mcpwm_timer_t timer_n
     gpio_set_level(GPIO_LEFT_IN_ONE, 0);
     gpio_set_level(GPIO_LEFT_IN_TWO, 1);
 
-    // Set GPIO Two i high 1 low
+    // Set GPIO Two 1 high 1 low
     gpio_set_level(GPIO_RIGHT_IN_ONE, 0);
     gpio_set_level(GPIO_RIGHT_IN_TWO, 1);
 }
@@ -94,20 +94,6 @@ static void brushed_motor_stop(mcpwm_unit_t mcpwm_num, mcpwm_timer_t timer_num, 
 
     // Set GPIO Two both low
     gpio_set_level(GPIO_RIGHT_IN_ONE, 0);
-    gpio_set_level(GPIO_RIGHT_IN_TWO, 0);
-}
-
-static void brushed_motor_left(mcpwm_unit_t mcpwm_num, mcpwm_timer_t timer_num, float duty_cycle)
-{
-    mcpwm_set_duty(mcpwm_num, timer_num, MCPWM_OPR_A, duty_cycle);
-    mcpwm_set_duty(mcpwm_num, timer_num, MCPWM_OPR_B, duty_cycle);
-
-    // Set GPIO One both low
-    gpio_set_level(GPIO_LEFT_IN_ONE, 0);
-    gpio_set_level(GPIO_LEFT_IN_TWO, 0);
-
-    // Set GPIO Two both low
-    gpio_set_level(GPIO_RIGHT_IN_ONE, 1);
     gpio_set_level(GPIO_RIGHT_IN_TWO, 0);
 }
 
@@ -130,10 +116,11 @@ static void mcpwm_example_brushed_motor_control(void *arg)
         brushed_motor_forward(MCPWM_UNIT_0, MCPWM_TIMER_0, 100);
         vTaskDelay(2000 / portTICK_RATE_MS);
         brushed_motor_stop(MCPWM_UNIT_0, MCPWM_TIMER_0, 100);
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        vTaskDelay(2000 / portTICK_RATE_MS);
+        brushed_motor_backward(MCPWM_UNIT_0, MCPWM_TIMER_0, 100);
+        vTaskDelay(2000 / portTICK_RATE_MS);
         brushed_motor_stop(MCPWM_UNIT_0, MCPWM_TIMER_0, 100);
-        vTaskDelay(1000 / portTICK_RATE_MS);
-
+        vTaskDelay(2000 / portTICK_RATE_MS);
     }
 }
 

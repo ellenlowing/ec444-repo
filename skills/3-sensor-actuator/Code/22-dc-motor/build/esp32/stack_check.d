@@ -1,6 +1,6 @@
 stack_check.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/stack_check.c \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/stdint.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -59,7 +59,7 @@ stack_check.o: \
  /Users/ellenlowing/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /Users/ellenlowing/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/esp32/include/esp_system.h:
 

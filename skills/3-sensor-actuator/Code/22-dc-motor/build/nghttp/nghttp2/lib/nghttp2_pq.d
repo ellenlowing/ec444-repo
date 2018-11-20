@@ -33,7 +33,7 @@ nghttp2/lib/nghttp2_pq.o: \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_int.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h \
- /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h \
+ /Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h \
  /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h \
  /Users/ellenlowing/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
 
@@ -103,7 +103,7 @@ nghttp2/lib/nghttp2_pq.o: \
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/servo/build/include/sdkconfig.h:
+/Users/ellenlowing/Desktop/EC444/skills/3-sensor-actuator/Code/22-dc-motor/build/include/sdkconfig.h:
 
 /Users/ellenlowing/esp/esp-idf/components/newlib/include/assert.h:
 
