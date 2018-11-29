@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+var amzn = [];
+var fb = [];
+var googl = [];
+var msft = [];
+window.onload = function () {
+
+  $.ajax( {
+    url: 'stocks-csv.txt',
+    datatype: 'text',
+  }).done(parseCSV);
+
+  function parseCSV(data) {
+    var rows = data.split(/\r?\n|\r/);
+    for (var row = 1; row < rows.length; row++) {
+      var cells = rows[row].split(',');
+      var stock = cells[1];
+      if(stock.localeCompare("AMZN") == 0) {
+        amzn.push( {x: Number(cells[0]), y: Number(cells[2]) } );
+      } else if(stock.localeCompare("FB") == 0) {
+        fb.push( {x: Number(cells[0]), y: Number(cells[2]) } );
+      } else if(stock.localeCompare("GOOGL") == 0) {
+        googl.push( {x: Number(cells[0]), y: Number(cells[2]) } );
+      } else if(stock.localeCompare("MSFT") == 0) {
+        msft.push( {x: Number(cells[0]), y: Number(cells[2]) } );
+      }
+    }
+  }
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+  	animationEnabled: true,
+  	title:{
+  		text: "Stocks from Amazon, Facebook, Google, and Microsoft"
+  	},
+  	axisX: {
+      title: "Month",
+      minimum: 1,
+      maximum: 10
+  	},
+  	axisY: {
+  		title: "Closing",
+  		includeZero: false,
+  		suffix: ""
+  	},
+  	legend:{
+  		cursor: "pointer",
+  		fontSize: 16,
+  		itemclick: toggleDataSeries
+  	},
+  	toolTip:{
+  		shared: true
+  	},
+  	data: [{
+  		name: "AMZN",
+  		type: "line",
+  		showInLegend: true,
+  		dataPoints: amzn
+  	},
+  	{
+  		name: "FB",
+  		type: "line",
+  		showInLegend: true,
+  		dataPoints: fb
+  	},
+  	{
+  		name: "GOOGL",
+  		type: "line",
+  		showInLegend: true,
+  		dataPoints: googl
+  	},
+    {
+      name: "MSFT",
+      type: "line",
+      showInLegend: true,
+      dataPoints: msft
+    }]
+  });
+  chart.render();
+
+  function toggleDataSeries(e){
+  	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+  		e.dataSeries.visible = false;
+  	}
+  	else{
+  		e.dataSeries.visible = true;
+  	}
+  	chart.render();
+  }
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 800px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
