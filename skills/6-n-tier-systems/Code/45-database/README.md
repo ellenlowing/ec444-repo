@@ -7,7 +7,7 @@ In this skill assignment, I was able to store data and retrieve with LevelDB. In
 
 ## Sketches and Photos
 #### Console output
-<center><img src="./img/console.PNG" width="80%" /></center>
+<center><img src="./img/console.png" width="80%" /></center>
 
 ## Modules, Tools, Source Used in Solution
 -[LevelDB](https://github.com/Level/level#createReadStream)
