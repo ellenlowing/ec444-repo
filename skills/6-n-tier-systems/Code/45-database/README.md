@@ -1,4 +1,4 @@
-#  Leader election
+#  Database
 
 Author: Ellen Lo, 2018-11-29
 
