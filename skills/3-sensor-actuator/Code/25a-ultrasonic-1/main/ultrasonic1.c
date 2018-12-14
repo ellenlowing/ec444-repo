@@ -18,9 +18,9 @@
 #define NO_OF_SAMPLES   64          //Multisampling
 
 static esp_adc_cal_characteristics_t *adc_chars;
-static const adc_channel_t channel = ADC2_CHANNEL_0;   // GPIO #4 / A5 input
+static const adc_channel_t channel = ADC1_CHANNEL_0;   // GPIO #4 / A5 input
 static const adc_atten_t atten = ADC_ATTEN_DB_11;
-static const adc_unit_t unit = ADC_UNIT_2;
+static const adc_unit_t unit = ADC_UNIT_1;
 
 static void check_efuse()
 {
@@ -84,7 +84,7 @@ void app_main()
         adc_reading /= NO_OF_SAMPLES;
         //Convert adc_reading to voltage in mV
         //uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
-        uint32_t dist_mm = adc_reading * 5 + 300;
+        uint32_t dist_mm = (adc_reading * 5 + 300) / 10;
         //printf("Raw: %d\tVoltage: %dmV\n", adc_reading, voltage);
         printf("Distance: %dmm\n", dist_mm);
         vTaskDelay(pdMS_TO_TICKS(1000));
