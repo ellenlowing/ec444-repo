@@ -1,0 +1,118 @@
+<!-- client side -->
+
+<!doctype html>
+<html>
+
+<!-- HTML HEAD -->
+<head>
+	<title>Line Chart</title>
+	<!-- Source for Canvas JS - points to the web - needs internet -->
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<!-- Source for Socket.io - this one is local -->
+	<script src="/socket.io/socket.io.js"></script>
+
+	<style>
+  	canvas{
+  		-moz-user-select: none;
+  		-webkit-user-select: none;
+  		-ms-user-select: none;
+  	}
+	</style>
+</head>
+
+<body>
+	<!-- HTML layout -->
+  <h1>Smart Key History</h1> <br>
+	<div id="message_disp"></div>
+	<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+	<script>
+
+		var dps = [];
+		var dates = [];
+		var dataLength = 20;
+		var chart = new CanvasJS.Chart("chartContainer", {
+			exportEnabled: true,
+			animationEnabled: true,
+			zoomEnabled: true,
+			title :{
+				text: "Time series for fobs"
+			},
+			axisY: {
+				includeZero: false,
+        title : "Lock/unlock status"
+			},
+      axisX: {
+        title : "Time",
+				valueFormatString: "MMM DD, hh:mm:ss"
+			},
+			legend:{
+				cursor:"pointer",
+				verticalAlign: "bottom",
+				horizontalAlign: "left",
+				dockInsidePlotArea: true
+			},
+			data: [{
+				type: "line",
+				markerSize: 8,
+				dataPoints: dps
+			}]
+		});
+
+		var timestamp;
+		var fob_id;
+		var hub_id;
+		var validation;
+		var socket = io();
+
+		function init() {
+			socket.on('message', function(msg){
+				// Parse received message from server
+				timestamp = Object.keys(msg)[0];
+				fob_id = msg[Object.keys(msg)][0].fob_id;
+				hub_id = msg[Object.keys(msg)][0].hub_id;
+				validation = msg[Object.keys(msg)][0].validation;
+				var markerType;
+				if(validation) {
+					markerType = 'circle';
+					markerColor = 'black';
+				}
+				else {
+					markerType = 'cross';
+					markerColor = 'red';
+				}
+				var time_arr = timestamp.split(':');
+				var year = time_arr[0];
+				var month = time_arr[1];
+				var date = time_arr[2];
+				var hour = time_arr[3];
+				var minute = time_arr[4];
+				var second = time_arr[5];
+
+				// Update data array
+				if(!dates.includes(timestamp)) {
+					dates.push(timestamp);
+					dps.push({
+						x: new Date(year, month, date, hour, minute, second),
+						y: Number(fob_id),
+						markerType: markerType,
+						markerColor: markerColor
+					});
+				}
+
+				if (dps.length > dataLength) {
+				dps.shift();
+			}
+
+			});
+
+			chart.render();
+		}
+
+		init();
+		setInterval( () => { chart.render(); }, 1000);
+
+	</script>
+</body>
+
+</html>
