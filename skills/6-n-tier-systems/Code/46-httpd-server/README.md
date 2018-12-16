@@ -1,27 +1,19 @@
-# Simple HTTPD Server Example
+#  HTTPD server
 
-The Example consists of HTTPD server demo with demostration of URI handling :
-    1. URI \hello for GET command returns "Hello World!" message
-    2. URI \echo for POST command echoes back the POSTed message
+Author: Ellen Lo, 2018-12-14
 
-* Configure the project using "make menuconfig" and goto :
-    * Example Configuration ->
-        1. WIFI SSID: WIFI network to which your PC is also connected to.
-        2. WIFI Password: WIFI password
+## Summary
+In this skill assignment, I made slight modifications to httpd server code from quest 3 to demonstrate the ability of the huzzah board to respond to HTTP GET and PUT request. To control LED, `curl -X PUT -d "1" 192.168.1.141:80/ctrl` is the command used to make PUT request to server and it turns LED on. `curl -X PUT -d "0" 192.168.1.141:80/ctrl` turns LED off. I am also able to get the state of button push from esp 32. By reading the current state of button through gpio_get_level function, `curl 192.168.1.141:80/hello` prints "PRESSED!" and "Not pressed" that corresponds to current button push state.
 
-* In order to test the HTTPD server persistent sockets demo :
-    1. compile and burn the firmware "make flash"
-    2. run "make monitor" and note down the IP assigned to your ESP module. The default port is 80
-    3. test the example :
-        * run the test script : "python2 scripts/client.py \<IP\> \<port\> \<MSG\>"
-            * the provided test script first does a GET \hello and displays the response
-            * the script does a POST to \echo with the user input \<MSG\> and displays the response
-        * or use curl (asssuming IP is 192.168.43.130):
-            1. "curl 192.168.43.130:80/hello"  - tests the GET "\hello" handler
-            2. "curl -X POST --data-binary @anyfile 192.168.43.130:80/echo > tmpfile"
-                * "anyfile" is the file being sent as request body and "tmpfile" is where the body of the response is saved
-                * since the server echoes back the request body, the two files should be same, as can be confirmed using : "cmp anyfile tmpfile"
-            3. "curl -X PUT -d "0" 192.168.43.130:80/ctrl" - disable /hello and /echo handlers
-            4. "curl -X PUT -d "1" 192.168.43.130:80/ctrl" -  enable /hello and /echo handlers
+## Sketches and Photos
+#### Wiring
+<center><img src="./img/IMG_3426.jpeg" width="80%" /></center>
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
+#### Console of ESP32
+<center><img src="./img/esp.png" width="80%" /></center>
+
+#### Console output of curl
+<center><img src="./img/curl.png" width="80%" /></center>
+
+## Modules, Tools, Source Used in Solution
+-[Video demo](https://www.youtube.com/watch?v=w2ltofdI4-E)
